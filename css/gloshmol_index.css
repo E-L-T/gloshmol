@@ -5,7 +5,7 @@ body
 
 #bloc_page
 {
-    width: 100%;
+    width: 97%; /* pour éviter l'apparition d'une glissière latérale */
     margin: auto;
 }
 
@@ -106,11 +106,11 @@ nav a:hover
 	align-items: flex-start;
 }
 
-.realisation /*transférer toutes ces propriétés (sauf la couleur) dans .element et la couleur dans .element nth-child*/
+.realisation
 {
     width: 20vw;
     height: 15vw;
-    margin: 10px;  
+    margin: 0.7vw; /*10px;*/
     /*border: 1px black solid;*/
     position: relative;
 }
@@ -122,10 +122,6 @@ nav a:hover
 
 .texteRealisation
 {
-	/*display: flex;
-    flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;*/
     opacity: 0;
     padding-top: 15%;
     font-size: 1.3vw;
