@@ -1,19 +1,33 @@
+/* Main*/
+@font-face 
+{
+    font-family: 'muliextralight';
+    src: url('muli-extralight-webfont.eot');
+    src: url('muli-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('muli-extralight-webfont.woff2') format('woff2'),
+         url('muli-extralight-webfont.woff') format('woff'),
+         url('muli-extralight-webfont.ttf') format('truetype'),
+         url('muli-extralight-webfont.svg#muliextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
     color: black;
+    font-family: 'muliextralight';
 }
 
-#bloc_page
-{
-    width: 97%; /* pour éviter l'apparition d'une glissière latérale */
-    margin: auto;
-}
+
 
 /* Header */
 header
 {
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
+    min-height: 100px;
+    padding-top: 20px;
 }
 
 header a
@@ -38,32 +52,51 @@ header a
 
 /* Nav */
 
-nav ul
+.menuPrincipal, .filtres
+{
+    margin: 0px;
+}
+
+#nav ul
 {
     list-style-type: none;
     display: flex;
-    min-width: 530px;
+    margin: 0px;
 }
 
-nav li 
+#nav 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 70px;
+}
+
+#nav li 
 {
     margin-right: 25px;
     margin-top: 5px;
 }
 
-nav a
+#nav a
 {
-    font-weight: bold;
-    font-size: 0.8em;
+    font-weight: normal;
+    font-size: 1em;
 }
 
-nav a:hover
+#nav a:hover
 {
     color: rgb(253,0,141);
     text-decoration: underline;
 }
 
 /* Section */
+section
+{
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
 #filtres ul 
 {
     min-width: 380px;
@@ -96,9 +129,10 @@ nav a:hover
 
 #realisations
 {
-  	width:100%;
-  	height:100%;
-    margin-left: 20px;
+  	width: 100%;
+  	height: 100%;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,22 +142,26 @@ nav a:hover
 
 .realisation
 {
-    width: 20vw;
-    height: 15vw;
-    margin: 0.7vw; /*10px;*/
+    width: 21.75vw;
+    height: 16.3125vw;
+    margin-left: 0.7vw;
+    margin-right: 0.7vw;
+    margin-top: 0.7vw;
+    margin-bottom: 0.7vw; /*10px;*/
     /*border: 1px black solid;*/
     position: relative;
 }
 .realisation p
 {
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
 .texteRealisation
 {
     opacity: 0;
-    padding-top: 15%;
+    padding-top: 0%; /*j'étais à 15%*/
+    padding-left: 8%;
     font-size: 1.3vw;
 }
 
@@ -141,22 +179,29 @@ img
 
 .realisation:hover img
 {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .titre
 {
-    font-size: 0.8em;
+    font-size: 1.2em;
+    margin-bottom: 0.5%;
+}
+
+.titre strong
+{
+    font-weight: normal;
 }
 
 .motCle
 {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .annee
 {
-    font-size: 0.9em;
-    font-style: italic;
+    font-size: 0.8em;
+    /*font-style: italic;*/
 }
 
+/** { border: 1px solid #f00; }*/
