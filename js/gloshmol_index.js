@@ -33,7 +33,7 @@ filtrerSommaire("filtreLivret", "livret");
 filtrerSommaire("filtreTout", "");
 
 //Apparition de la liste de filtres au hover du menu
-var filtreRealisationsElt = document.getElementById("filtres");
+/*var filtreRealisationsElt = document.getElementById("filtres");
 var menuRealisationsElt = document.getElementById("menuRealisations");
 menuRealisationsElt.addEventListener("mouseover", function() {
     filtreRealisationsElt.style.display = "block";
@@ -46,4 +46,24 @@ filtreRealisationsElt.addEventListener("mouseout", function() {
 });
 menuRealisationsElt.addEventListener("mouseout", function() {
     filtreRealisationsElt.style.display = "none";
-});
+});*/
+
+function dropDownMenu(idMenu, idContenu) {
+    var contenuElt = document.getElementById(idContenu);
+    var menuElt = document.getElementById(idMenu);
+    menuElt.addEventListener("mouseover", function() {
+        contenuElt.style.display = "block";
+    });
+    contenuElt.addEventListener("mouseover", function() {
+        contenuElt.style.display = "block";
+    });
+    contenuElt.addEventListener("mouseout", function() {
+        contenuElt.style.display = "none";
+    });
+    menuElt.addEventListener("mouseout", function() {
+        contenuElt.style.display = "none";
+    });
+}
+
+dropDownMenu("menuRealisations", "filtres");
+dropDownMenu("menuAPropos", "aPropos");

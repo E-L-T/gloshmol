@@ -101,23 +101,30 @@ header a
     text-decoration: none;
 }
 
-#filtres
+#filtres, #aPropos
 {
     margin-bottom: 30px;
     display: none;
+    position: relative;
+    bottom: 2px;
 }
 
-#filtres ul 
+#aPropos
+{
+    left: 175px;
+}
+
+#filtres ul, #aPropos ul 
 {
     min-width: 380px;
 }
 
-#filtres li
+#filtres li, #aPropos li
 {
     margin-right: 5px;
 }
 
-#filtres a
+#filtres a, #aPropos a
 {
     text-decoration: none;
     color: black;
@@ -128,8 +135,6 @@ header a
 {
     color:rgba(253,0,141,0.5);
 }
-
-
 
 .menuPrincipal
 {
