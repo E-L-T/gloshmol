@@ -31,7 +31,10 @@ body
     font-family: 'muliextralight';
 }
 
-
+html
+{ 
+    overflow-y: scroll;
+}
 
 /* Header */
 header
@@ -98,44 +101,45 @@ header a
     text-decoration: none;
 }
 
-.filtres ul 
+#filtres
+{
+    margin-bottom: 30px;
+    display: none;
+}
+
+#filtres ul 
 {
     min-width: 380px;
 }
 
-.filtres li
+#filtres li
 {
     margin-right: 5px;
 }
 
-.filtres a
+#filtres a
 {
     text-decoration: none;
     color: black;
     font-size: 0.7em;
 }
 
-.filtres a:hover
+#filtres a:hover
 {
     color:rgba(253,0,141,0.5);
 }
 
-.filtres
-{
-    margin-bottom: 30px;
-    /*display: none;*/
-}
+
 
 .menuPrincipal
 {
 
 }
 
-/*.menuRealisations
+.menuRealisations
 {
-    position: relative;
-    display: inline-block;
-}*/
+   
+}
 
 /*.menuRealisations:hover .filtres
 {
