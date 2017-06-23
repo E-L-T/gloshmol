@@ -29,6 +29,7 @@ body
 {
     color: black;
     font-family: 'muliextralight';
+    background-image: url("../images/PatternsNav.jpg");
 }
 
 html
@@ -39,26 +40,23 @@ html
 /* Header */
 header
 {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
     min-height: 100px;
-    padding-top: 20px;
 }
 
 header a
 {
     text-decoration: none;
     color: black;
-
 }
 
 #logo 
 {
-    margin-left: 20px;
-    margin-top: 10px;
+    position: fixed;
+    left: 50px;
+    top: 30px;
     font-size: 1.4em;
     min-width: 200px;
+    z-index: 1;
 }
 
 #logo a
@@ -66,39 +64,49 @@ header a
     color: rgba(253,0,141,0.8);
 }
 
-/* Nav */
-
-#nav ul
+#logo a:focus
 {
-    list-style-type: none;
-    display: flex;
-    margin: 0px;
+    outline: 0;
 }
 
-#nav 
+/* Nav */
+nav 
 {
+    position: absolute;
+    top: 30px;
+    right: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-height: 70px;
 }
 
-#nav li 
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+}
+
+
+
+nav li 
 {
     margin-right: 25px;
     margin-top: 5px;
 }
 
-#nav .menuPrincipal a
+nav .menuPrincipal a
 {
     font-weight: normal;
     font-size: 1em;
 }
 
-#nav a:hover
+nav a:hover, nav a:focus
 {
     color:rgba(253,0,141,0.5); /*color: rgb(253,0,141);*/
     text-decoration: none;
+    outline: 0;
 }
 
 #filtres, #aPropos
@@ -131,27 +139,13 @@ header a
     font-size: 0.7em;
 }
 
-#filtres a:hover
+#filtres a:hover, #aPropos a:hover, #filtres a:focus, #aPropos a:focus
 {
     color:rgba(253,0,141,0.5);
+    outline: 0;
 }
 
-.menuPrincipal
-{
-
-}
-
-.menuRealisations
-{
-   
-}
-
-/*.menuRealisations:hover .filtres
-{
-    display: inline-block;
-}*/
-
-@media all and (max-width: 1024px)
+@media all and (max-width: 900px)
 {
     
 }
