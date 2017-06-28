@@ -52,3 +52,38 @@ function dropDownMenu(idMenu, idContenu) {
 
 dropDownMenu("menuRealisations", "filtres");
 dropDownMenu("menuAPropos", "aPropos");
+
+//gestionnaire d'événement pour changer le logo en dessous et au-dessus de 1000 pixels de largeur
+//aide trouvée ici : https://stackoverflow.com/questions/641857/javascript-window-resize-event
+
+
+var addEvent = function(object, type, callback) {
+    if (object == null || typeof(object) == 'undefined') return;
+    if (object.addEventListener) {
+        object.addEventListener(type, callback, false);
+    } else if (object.attachEvent) {
+        object.attachEvent("on" + type, callback);
+    } else {
+        object["on"+type] = callback;
+    }
+};
+
+addEvent(window, "resize", function() {
+    if (window.innerWidth < 1000) {
+    document.getElementById("lienLogo").innerHTML = "gloshmol";
+    document.getElementById("logo").style.textAlign = "center";
+    } else if (window.innerWidth > 1000) {
+    document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
+    document.getElementById("logo").style.textAlign = "left";
+    }
+});
+
+//J'ajoute ceci pour lancer l'instruction dès l'ouverture de la page
+ if (window.innerWidth < 1000) {
+    document.getElementById("lienLogo").innerHTML = "gloshmol";
+    document.getElementById("logo").style.textAlign = "center";
+}; 
+if (window.innerWidth > 1000) {
+document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
+document.getElementById("logo").style.textAlign = "left";
+};
