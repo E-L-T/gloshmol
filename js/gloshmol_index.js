@@ -91,12 +91,17 @@ document.getElementById("logo").style.textAlign = "left";
 //Apparition du menu vertical post clic menu burger
 document.getElementById("iconeMenu").addEventListener("click", function () {
     //Faire disparaître le contenu de la page avec les réalisations.
-    document.getElementById("logo").innerHTML = "";
-    document.getElementById("iconeMenu").innerHTML = "";
-    document.getElementById("realisations").innerHTML = "";
-    //Faire apparaître le menu en vertical
-    document.getElementById("nav").style.display = "block";
+    document.getElementById("logo").style.display = "none";
+    document.getElementById("iconeMenu").style.display = "none";
+    document.getElementById("realisations").style.display = "none";
+    //Faire apparaître le menu en vertical. A partir de là, je peux le faire dans le CSS...
+    document.getElementById("nav").style.display = "flex";    
     //Ré-afficher les sous menus
     document.getElementById("filtres").style.display = "block";
     document.getElementById("aPropos").style.display = "block";
+    //Les afficher dans le bon ordre
+    var filtres = document.getElementById("filtres");
+    document.getElementById("liMenuRealisations").appendChild(filtres);
+    var aPropos = document.getElementById("aPropos");
+    document.getElementById("menuAPropos").appendChild(aPropos);
 });
