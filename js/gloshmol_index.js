@@ -20,8 +20,6 @@ function filtrerSommaire(filtre, realisationChoix) {
         for (j = 0; j < texteRealisationsElts.length; j++) {
             texteRealisationsElts[j].style.display = "block";
         }
-        //filtreElt.style.color = "rgba(253,0,141,0.8)";
-        //filtreElt.style.textDecoration = "underline";
     });
 }
 //Appels de la fonction pour chaque catégorie de réalisation
@@ -49,9 +47,11 @@ function dropDownMenu(idMenu, idContenu) {
         contenuElt.style.display = "none";
     });
 }
+if (window.innerWidth > 1000) { //pour éviter effet non voulu en version mobile
+    dropDownMenu("menuRealisations", "filtres");
+    dropDownMenu("menuAPropos", "aPropos");
+}
 
-dropDownMenu("menuRealisations", "filtres");
-dropDownMenu("menuAPropos", "aPropos");
 
 //gestionnaire d'événement pour changer le logo en dessous et au-dessus de 1000 pixels de largeur
 //aide trouvée ici : https://stackoverflow.com/questions/641857/javascript-window-resize-event
@@ -87,3 +87,16 @@ if (window.innerWidth > 1000) {
 document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
 document.getElementById("logo").style.textAlign = "left";
 };
+
+//Apparition du menu vertical post clic menu burger
+document.getElementById("iconeMenu").addEventListener("click", function () {
+    //Faire disparaître le contenu de la page avec les réalisations.
+    document.getElementById("logo").innerHTML = "";
+    document.getElementById("iconeMenu").innerHTML = "";
+    document.getElementById("realisations").innerHTML = "";
+    //Faire apparaître le menu en vertical
+    document.getElementById("nav").style.display = "block";
+    //Ré-afficher les sous menus
+    document.getElementById("filtres").style.display = "block";
+    document.getElementById("aPropos").style.display = "block";
+});
