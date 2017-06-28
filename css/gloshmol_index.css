@@ -1,16 +1,5 @@
 /* Main*/
-/* @font-face 
-{
-    font-family: 'muliextralight';
-    src: url('muli-extralight-webfont.eot');
-    src: url('muli-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('muli-extralight-webfont.woff2') format('woff2'),
-         url('muli-extralight-webfont.woff') format('woff'),
-         url('muli-extralight-webfont.ttf') format('truetype'),
-         url('muli-extralight-webfont.svg#muliextralight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} */
+
 /* CSS généré par FontSquirrel pour gérer affichage sur Firefox cf http://geoff.evason.name/2010/05/03/cross-domain-workaround-for-font-face-and-firefox/*/
 @font-face {
     font-family: 'muliextralight';
@@ -52,7 +41,7 @@ header a
 #logo 
 {
     position: fixed;
-    left: 50px;
+    left: 5vw;
     top: 30px;
     font-size: 1.4em;
     min-width: 200px;
@@ -74,7 +63,7 @@ nav
 {
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -87,8 +76,6 @@ nav ul
     display: flex;
     margin: 0px;
 }
-
-
 
 nav li 
 {
@@ -145,16 +132,11 @@ nav a:hover, nav a:focus
     outline: 0;
 }
 
-@media all and (max-width: 900px)
-{
-    
-}
-
 /* Section */
 section
 {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: 2.8vw;
+    /*margin-right: 1.5vw;*/
 }
 
 
@@ -162,8 +144,8 @@ section
 
 #realisations
 {
-  	width: 100%;
-  	height: 100%;
+  	/*width: 100%;*/
+  	/*height: 100%;*/
     /*margin-left: 20px;
     margin-right: 20px;*/
     display: flex;
@@ -177,11 +159,10 @@ section
 {
     width: 21.75vw;
     height: 16.3125vw;
-    margin-left: 0.7vw;
-    margin-right: 0.7vw;
-    margin-top: 0.7vw;
-    margin-bottom: 0.7vw; /*10px;*/
-    /*border: 1px black solid;*/
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw; /*10px;*/
     position: relative;
 }
 .realisation p
@@ -235,6 +216,77 @@ img
 {
     font-size: 0.8em;
     /*font-style: italic;*/
+}
+
+@media all and (max-width: 550px)
+{
+   
+
+    section
+    {
+        margin: 0vw;
+    }
+
+    #realisations
+    {
+        display: block;
+        /*flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;*/
+    }
+
+     .realisation
+    {
+        display: flex;
+        width: 95vw;
+        height: 95vh;
+        margin: auto;
+        max-height: 400px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .texteRealisation
+    {
+        font-size: 3vw;
+        max-height: 15vw;
+    }
+
+    .realisation:hover, .realisation:active .texteRealisation
+    {
+        opacity: 1;
+        cursor:pointer;
+        overflow:hidden;
+    }
+
+    .realisation:hover, .realisation:active img
+    {
+        opacity: 0.4;
+        cursor:pointer;
+        overflow:hidden;
+    }
+}
+
+@media all and (max-width: 900px)
+{
+    nav
+    {
+        display: none;
+    }
+
+    header
+    {
+        display: flex;
+    }
+
+    #logo
+    {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin: auto;
+    }
 }
 
 /** { border: 1px solid #f00; }*/
