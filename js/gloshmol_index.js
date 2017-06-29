@@ -31,7 +31,7 @@ filtrerSommaire("filtreLivret", "livret");
 filtrerSommaire("filtreTout", "");
 
 //Apparition de la liste de filtres au hover du menu
-function dropDownMenu(idMenu, idContenu) {
+/*function dropDownMenu(idMenu, idContenu) {
     var contenuElt = document.getElementById(idContenu);
     var menuElt = document.getElementById(idMenu);
     menuElt.addEventListener("mouseover", function() {
@@ -51,6 +51,7 @@ if (window.innerWidth > 1000) { //pour éviter effet non voulu en version mobile
     dropDownMenu("menuRealisations", "filtres");
     dropDownMenu("menuAPropos", "aPropos");
 }
+*/
 
 
 //gestionnaire d'événement pour changer le logo en dessous et au-dessus de 1000 pixels de largeur
