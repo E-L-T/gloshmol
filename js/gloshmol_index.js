@@ -6,7 +6,11 @@ function filtrerSommaire(filtre, realisationChoix) {
         var realisationsElts = document.getElementById("realisations");
         var integraleRealisationElts = realisationsElts.querySelectorAll(".realisations, .realisation, .exposition, .dessin, .installation, .sculpture, .livret");
         for (i = 0; i < integraleRealisationElts.length; i ++) {
-            integraleRealisationElts[i].style.display = "block";
+           if (window.innerWidth < 1000) {
+               integraleRealisationElts[i].style.display = "flex";
+           } else if (window.innerWidth > 1000) {
+                integraleRealisationElts[i].style.display = "block";
+           }   
         }
         //supprime les éléments ne faisant pas partie de la catégorie sélectionnée
         if (filtre !== "filtreTout") {
@@ -30,7 +34,7 @@ filtrerSommaire("filtreSculpture", "sculpture");
 filtrerSommaire("filtreLivret", "livret");
 filtrerSommaire("filtreTout", "");
 
-//Apparition de la liste de filtres au hover du menu
+//Apparition de la liste de filtres au hover du menu. Remplacé par du CSS
 /*function dropDownMenu(idMenu, idContenu) {
     var contenuElt = document.getElementById(idContenu);
     var menuElt = document.getElementById(idMenu);
@@ -71,38 +75,102 @@ var addEvent = function(object, type, callback) {
 
 addEvent(window, "resize", function() {
     if (window.innerWidth < 1000) {
-    document.getElementById("lienLogo").innerHTML = "gloshmol";
-    document.getElementById("logo").style.textAlign = "center";
+        if (document.getElementById("iconeCroix").style.display === "none") {
+            document.getElementById("realisations").style.display = "block";
+
+        } else if (document.getElementById("iconeCroix").style.display === "block") {
+            document.getElementById("realisations").style.display = "none";
+
+        }
+    //document.querySelector("aside").style.display = "none";
+    //document.getElementById("lienLogo").innerHTML = "gloshmol";
+    //document.getElementById("logo").style.textAlign = "center";
+    //afficherMenuV()
+    //enleverMenuV();
     } else if (window.innerWidth > 1000) {
-    document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
-    document.getElementById("logo").style.textAlign = "left";
+        if (document.getElementById("iconeCroix").style.display === "none") {
+            document.querySelector("aside").style.display = "block";
+            document.querySelector("nav").style.display = "none";
+            document.getElementById("realisations").style.display = "flex";
+        } else if (document.getElementById("iconeCroix").style.display === "block") {
+            document.querySelector("aside").style.display = "block";
+            document.querySelector("nav").style.display = "block";
+            document.getElementById("realisations").style.display = "flex";
+        }
+    //document.querySelector("aside").style.display = "block";
+    //document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
+    //document.getElementById("logo").style.textAlign = "left";
+    //Ajouter la fonction pour affichage normal du menu
+    //enleverMenuV();
+    //document.querySelector("nav").style.display = "block";
+    //document.getElementById("iconeMenu").style.display = "none";
+    //document.getElementById("iconeCroix").style.display = "none";
+    //afficherMenuH();
     }
 });
 
 //J'ajoute ceci pour lancer l'instruction dès l'ouverture de la page
- if (window.innerWidth < 1000) {
+/*if (window.innerWidth < 1000) {
     document.getElementById("lienLogo").innerHTML = "gloshmol";
     document.getElementById("logo").style.textAlign = "center";
 }; 
 if (window.innerWidth > 1000) {
 document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
 document.getElementById("logo").style.textAlign = "left";
-};
+};*/
+
+function afficherMenuV() {
+    if (window.innerWidth > 1000) {
+        document.getElementById("iconeMenu").style.display = "none";
+        document.querySelector("aside").style.display = "block";
+        document.querySelector("nav").style.display = "block";
+        document.getElementById("filtres").style.display = "block";//css
+        document.getElementById("aPropos").style.display = "block";
+        document.getElementById("iconeCroix").style.display = "block";
+    } else if (window.innerWidth < 1000) { //reprendre ici
+    //document.getElementById("logo").style.display = "none";
+    document.getElementById("iconeMenu").style.display = "none";
+    document.getElementById("realisations").style.display = "none";
+    document.querySelector("aside").style.display = "block";
+    document.querySelector("nav").style.display = "block";
+    document.getElementById("filtres").style.display = "block";//css
+    document.getElementById("aPropos").style.display = "block";//css
+    document.getElementById("iconeCroix").style.display = "block";
+    }
+}
+
+function enleverMenuV() {
+    if (window.innerWidth > 1000) {
+        document.getElementById("iconeMenu").style.display = "block";
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("aside").style.display = "block";
+        document.getElementById("iconeCroix").style.display = "none";
+    } else if (window.innerWidth < 1000) {
+        document.getElementById("logo").style.display = "block";
+        document.getElementById("iconeMenu").style.display = "block";
+        document.querySelector("aside").style.display = "none";
+        //document.querySelector("nav").style.display = "none";
+        document.getElementById("iconeCroix").style.display = "none";
+        document.getElementById("realisations").style.display = "block";
+    }    
+}
+
+
 
 //Apparition du menu vertical post clic menu burger
 document.getElementById("iconeMenu").addEventListener("click", function () {
-    //Faire disparaître le contenu de la page avec les réalisations.
-    document.getElementById("logo").style.display = "none";
-    document.getElementById("iconeMenu").style.display = "none";
-    document.getElementById("realisations").style.display = "none";
-    //Faire apparaître le menu en vertical. A partir de là, je peux le faire dans le CSS...
-    document.getElementById("nav").style.display = "flex";    
-    //Ré-afficher les sous menus
-    document.getElementById("filtres").style.display = "block";
-    document.getElementById("aPropos").style.display = "block";
-    //Les afficher dans le bon ordre
-    var filtres = document.getElementById("filtres");
-    document.getElementById("liMenuRealisations").appendChild(filtres);
-    var aPropos = document.getElementById("aPropos");
-    document.getElementById("menuAPropos").appendChild(aPropos);
+    afficherMenuV();
+});
+
+//Disparition du menu vertical quand on clique sur la croix
+document.getElementById("iconeCroix").addEventListener("click", function() {
+    enleverMenuV();
+});
+
+//Disparition du menu vertical quand on clique sur un lien dans le menu vertical
+
+document.querySelector("nav").addEventListener("click", function() {
+    if (window.innerWidth < 1000) {
+        enleverMenuV();
+    } 
 });
