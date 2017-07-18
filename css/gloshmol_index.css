@@ -16,6 +16,9 @@ header
     min-height: 100px;
     display: flex;
     justify-content: center;
+    /*background-color: white;
+    position: fixed;
+    z-index: 10;*/
 
 }
 
@@ -29,6 +32,7 @@ header a
 {
     position: fixed;
     top: 30px;
+    /*left: 26.55vw;*/
     font-size: 1.4em;
     z-index: 1;
 }
@@ -80,8 +84,8 @@ header a
     margin: 0;
     padding: 0;
     position: fixed;
-    top : 10px;
-    left: 10px;
+    top : 18px;
+    left: 18px;
     z-index: 2;
 }
 
@@ -93,8 +97,8 @@ header a
 
 #iconeCroix img
 {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: 0;
     padding: 0;
 }
@@ -104,13 +108,11 @@ header a
 section
 {
     display: flex;
-    /*margin-right: 1.5vw;*/
 }
+
 aside
 {
-    /*position: absolute;*/
     display : block;
-    /*border: 1px solid black;*/
     width: 23.25%;
     height: 100%;
     margin-left: 3vw;
@@ -119,9 +121,10 @@ aside
 nav 
 {
     display: none;
-    position: absolute;
+    position: fixed;
     height: 100%;   
-    margin-top: 32px;
+    margin-top: 24px;
+    margin-left: 30px;
     padding: 0;
     text-align: left;
 }
@@ -131,7 +134,7 @@ nav
     position: relative;
     text-align: left;
     left: 0px;
-    margin-left: 2.2vw;
+    /*margin-left: 2.2vw;*/
 }
 
 .menu
@@ -156,7 +159,7 @@ nav a
 
 nav a:hover, nav a:focus
 {
-    color:rgba(253,0,141,0.5); /*color: rgb(253,0,141);*/
+    color:rgba(253,0,141,0.5);
     text-decoration: none;
     outline: 0;
 }
@@ -165,6 +168,11 @@ nav a:hover, nav a:focus
 {
     color:rgba(253,0,141,0.5);
     outline: 0;
+}
+
+#menuRealisations, #imagier, #achat, #menuAPropos
+{
+    margin-bottom: 15px;
 }
 
 /*Realisations */
@@ -179,10 +187,12 @@ nav a:hover, nav a:focus
     flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+
 }
 
 .realisation
 {
+    display: block;
     width: 23vw;
     height: 16.3125vw;
     margin-left: 0.75vw;
@@ -203,6 +213,7 @@ nav a:hover, nav a:focus
     padding-top: 0%; /*j'étais à 15%*/
     padding-left: 8%;
     font-size: 1.3vw;
+
 }
 
 .realisation:hover .texteRealisation
@@ -241,7 +252,22 @@ nav a:hover, nav a:focus
 .annee
 {
     font-size: 0.8em;
-    /*font-style: italic;*/
 }
+
+/*footer
+{
+    margin: 0;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+}
+
+footer img
+{
+    
+}
+*/
 
 /** { border: 1px solid #f00; }*/

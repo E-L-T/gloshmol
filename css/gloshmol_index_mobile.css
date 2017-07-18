@@ -61,8 +61,8 @@ header
     margin: 0;
     padding: 0;
     position: fixed;
-    top : 10px;
-    left: 10px;
+    top : 18px;
+    left: 18px;
     z-index: 2;
 }
 
@@ -74,8 +74,8 @@ header
 
 #iconeCroix img
 {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: 0;
     padding: 0;
 }
@@ -151,7 +151,6 @@ nav
     position: relative;
     text-align: left;
     left: 0px;
-    margin-left: 2.2vw;
 }
 
 .menu
@@ -213,6 +212,8 @@ nav a:hover, nav a:focus
     text-align: center;
     margin: auto;
     padding-left: 0;
+    padding-top: 8%;
+
 }
 
 

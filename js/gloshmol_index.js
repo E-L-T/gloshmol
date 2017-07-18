@@ -77,9 +77,11 @@ addEvent(window, "resize", function() {
     if (window.innerWidth < 1000) {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.getElementById("realisations").style.display = "block";
+            document.querySelector("aside").style.display = "none";
 
         } else if (document.getElementById("iconeCroix").style.display === "block") {
             document.getElementById("realisations").style.display = "none";
+            document.querySelector("aside").style.display = "block";
 
         }
     //document.querySelector("aside").style.display = "none";
@@ -127,6 +129,7 @@ function afficherMenuV() {
         document.getElementById("filtres").style.display = "block";//css
         document.getElementById("aPropos").style.display = "block";
         document.getElementById("iconeCroix").style.display = "block";
+        //document.querySelectorAll("realisation").style.display = "block";
     } else if (window.innerWidth < 1000) { //reprendre ici
     //document.getElementById("logo").style.display = "none";
     document.getElementById("iconeMenu").style.display = "none";
@@ -136,6 +139,7 @@ function afficherMenuV() {
     document.getElementById("filtres").style.display = "block";//css
     document.getElementById("aPropos").style.display = "block";//css
     document.getElementById("iconeCroix").style.display = "block";
+    //document.querySelectorAll("realisation").style.display = "flex";
     }
 }
 
@@ -145,6 +149,7 @@ function enleverMenuV() {
         document.querySelector("nav").style.display = "none";
         document.querySelector("aside").style.display = "block";
         document.getElementById("iconeCroix").style.display = "none";
+        //document.querySelectorAll("realisation").style.display = "block";
     } else if (window.innerWidth < 1000) {
         document.getElementById("logo").style.display = "block";
         document.getElementById("iconeMenu").style.display = "block";
@@ -152,6 +157,7 @@ function enleverMenuV() {
         //document.querySelector("nav").style.display = "none";
         document.getElementById("iconeCroix").style.display = "none";
         document.getElementById("realisations").style.display = "block";
+        //document.querySelectorAll("realisation").style.display = "flex";
     }    
 }
 
