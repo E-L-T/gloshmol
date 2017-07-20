@@ -14,6 +14,7 @@ html
 header
 {
     min-height: 100px;
+    /*margin-bottom: 40px;*/
     display: flex;
     justify-content: center;
     /*background-color: white;
@@ -113,7 +114,7 @@ section
 aside
 {
     display : block;
-    width: 23.25%;
+    width: 50%;
     height: 100%;
     margin-left: 3vw;
 }
@@ -175,105 +176,16 @@ nav a:hover, nav a:focus
     margin-bottom: 15px;
 }
 
-/*Realisations */
-
-#realisations
+#mediasRealisation
 {
-  	width: 100%;
-  	height: 100%;
-    margin-left: 2.8vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-
+    margin-top: 25px;
 }
 
-.realisation
+#presentationRealisation
 {
-    display: block;
-    width: 23vw;
-    height: 16.3125vw;
-    margin-left: 0.75vw;
-    margin-right: 0.75vw;
-    margin-top: 0.75vw;
-    margin-bottom: 0.75vw; /*10px;*/
-    position: relative;
-}
-.realisation p
-{
-    text-align: left;
-    position: relative;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
-.realisation a
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texteRealisation
-{
-    opacity: 0;
-    padding-top: 0%; /*j'étais à 15%*/
-    padding-left: 8%;
-    font-size: 1.3vw;
-
-}
-
-.realisation:hover .texteRealisation
-{
-	opacity: 1;
-}
-
-.realisation img 
-{
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-}
-
-.realisation:hover img
-{
-    opacity: 0.4;
-}
-
-.titre
-{
-    font-size: 1.2em;
-    margin-bottom: 0.5%;
-}
-
-.titre strong
-{
-    font-weight: normal;
-}
-
-.motCle
-{
-    font-size: 0.8em;
-}
-
-.annee
-{
-    font-size: 0.8em;
-}
-
-/*footer
-{
-    margin: 0;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0;
-}
-
-footer img
-{
-    
-}
-*/
-
-/** { border: 1px solid #f00; }*/
+/* { border: 1px solid #f00; }*/
