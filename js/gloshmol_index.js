@@ -7,7 +7,7 @@ function filtrerSommaire(filtre, realisationChoix) {
         var integraleRealisationElts = realisationsElts.querySelectorAll(".realisations, .realisation, .exposition, .dessin, .installation, .sculpture, .livret");
         for (i = 0; i < integraleRealisationElts.length; i ++) {
            if (window.innerWidth < 1000) {
-               integraleRealisationElts[i].style.display = "flex";
+               integraleRealisationElts[i].style.display = "block"; //essai : je change flex par block
            } else if (window.innerWidth > 1000) {
                 integraleRealisationElts[i].style.display = "block";
            }   
@@ -78,9 +78,10 @@ addEvent(window, "resize", function() {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.getElementById("realisations").style.display = "block";
             document.querySelector("aside").style.display = "none";
+            document.getElementById("iconeMenu").style.display = "block";
 
         } else if (document.getElementById("iconeCroix").style.display === "block") {
-            document.getElementById("realisations").style.display = "none";
+            document.getElementById("realisations").style.display = "block"; //changement none par block
             document.querySelector("aside").style.display = "block";
 
         }
@@ -93,10 +94,12 @@ addEvent(window, "resize", function() {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.querySelector("aside").style.display = "block";
             document.querySelector("nav").style.display = "none";
+            document.getElementById("iconeMenu").style.display = "none";
             document.getElementById("realisations").style.display = "flex";
         } else if (document.getElementById("iconeCroix").style.display === "block") {
             document.querySelector("aside").style.display = "block";
             document.querySelector("nav").style.display = "block";
+            document.getElementById("iconeCroix").style.display = "none";
             document.getElementById("realisations").style.display = "flex";
         }
     //document.querySelector("aside").style.display = "block";
@@ -133,7 +136,7 @@ function afficherMenuV() {
     } else if (window.innerWidth < 1000) { //reprendre ici
     //document.getElementById("logo").style.display = "none";
     document.getElementById("iconeMenu").style.display = "none";
-    document.getElementById("realisations").style.display = "none";
+    /*document.getElementById("realisations").style.display = "none";*/
     document.querySelector("aside").style.display = "block";
     document.querySelector("nav").style.display = "block";
     document.getElementById("filtres").style.display = "block";//css
@@ -157,7 +160,7 @@ function enleverMenuV() {
         //document.querySelector("nav").style.display = "none";
         document.getElementById("iconeCroix").style.display = "none";
         document.getElementById("realisations").style.display = "block";
-        //document.querySelectorAll("realisation").style.display = "flex";
+        /*document.querySelectorAll("realisation").style.display = "block";*/
     }    
 }
 
