@@ -93,7 +93,7 @@ addEvent(window, "resize", function() {
     } else if (window.innerWidth > 1000) {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.querySelector("aside").style.display = "block";
-            document.querySelector("nav").style.display = "none";
+            document.querySelector("nav").style.display = "block";
             document.getElementById("iconeMenu").style.display = "none";
             document.getElementById("realisations").style.display = "flex";
         } else if (document.getElementById("iconeCroix").style.display === "block") {
