@@ -40,10 +40,61 @@ header
     margin: auto;
     padding: 0px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     position: fixed;
+    overflow: hidden;
     z-index: 2;
+    /*pour diminution taille au scroll*/
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+header.smaller
+{
+    height: 70px;
+    min-height: 70px;
+    justify-content: left;
+    background-color: rgb(232,232,232);
+    border-bottom: 1px solid grey;
+    /*align-items: flex-start;*/
+}
+
+#logo
+{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    font-size: 3em;
+    /*min-width: 405px;*/
+    /*word-wrap: keep-all;*/
+    /*pour changement au scroll*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;  
+}
+
+header.smaller #logo
+{
+    font-size: 1.8em;
+    margin-left: 5vw;
+
+}
+
+.clearfix:after 
+{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0; 
 }
 
 #iconeMenu
@@ -52,7 +103,7 @@ header
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 4vw;/*20px;*/
+    top: 20px;/*20px;*/
     right: 6vw;/*20px;*/
     z-index: 6;
 }
@@ -78,7 +129,7 @@ header
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 4vw;/*20px;*/
+    top: 20px;/*20px;*/
     right: 6vw;/*20px;*/
     z-index: 5;
 }
@@ -95,17 +146,6 @@ header
     height: 30px;
     margin: 0;
     padding: 0;
-}
-
-#logo
-{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    margin: auto;
-    font-size: 3em;
-    /*min-width: 405px;*/
-    /*word-wrap: keep-all;*/  
 }
 
 #logo a

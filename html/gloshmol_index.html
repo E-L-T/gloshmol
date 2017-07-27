@@ -8,7 +8,24 @@
 	<link rel="stylesheet" href="../css/12cols.css" media="all" />
     <link rel="stylesheet" href="../css/gloshmol_index.css" /> 
     <link rel="stylesheet" media="all and (max-width: 1000px)" href="../css/gloshmol_index_mobile.css" />
-
+    <script src="../js/classie.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header,"smaller");
+                } else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
 
     <title>gloshmol</title>
 </head>
@@ -33,9 +50,9 @@
         <div id="iconeMenu"><a href="#"><img src="../images/burger.svg" /></a></div>
         <div id="iconeCroix"><a href="#"><img src="../images/cross4.png" /></a></div>
         <header>
-            
-            <div id="logo"><a href="gloshmol_index.html" id="lienLogo">Bertrand Segers</a> <!--<span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div> -->
-            
+            <div class="container clearfix">
+                <div id="logo"><a href="gloshmol_index.html" id="lienLogo">Bertrand Segers</a> <!--<span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div> -->
+            </div>
         </header>
 
         <section>
