@@ -6,17 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/gloshmol_realisations.css" />
     <link rel="stylesheet" media="all and (max-width: 1000px)" href="../../css/gloshmol_realisations_mobile.css" />
+    <link rel="stylesheet" href="../../css/col.css" media="all">
+	<link rel="stylesheet" href="../../css/12cols.css" media="all" />
+    <script src="../../js/classie.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header,"smaller");
+                } else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+
 
 
     <title>Boulogne Île Seguin</title>
 </head>
 <body>
-    <!--<div id="bloc_page"> -->
+       <!-- <div class="section group">
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+        <div class="col span_1_of_12"></div>
+    </div> -->
+    
+    <div class="conteneur">
+        <div id="iconeMenu"><a href="#"><img src="../../images/burger.svg" /></a></div>
+        <div id="iconeCroix"><a href="#"><img src="../../images/cross4.png" /></a></div>
         <header>
-            <div id="iconeMenu"><a href="#"><img src="../../images/menu.png" /></a></div>
-            <div id="iconeCroix"><a href="#"><img src="../../images/cross2.png" /></a></div>
-            <div id="logo"><a href="../gloshmol_index.html" id="lienLogo"><span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div>
-            
+            <div class="container clearfix">    
+                <div id="logo"><a href="../gloshmol_index.html" id="lienLogo">Bertrand Segers</a> <!--<span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div> -->
+            </div>
         </header>
 
         <section>
@@ -30,7 +67,7 @@
                             <a href="#" class="sousMenu" id="filtreDessin">Dessin</a>
                             <a href="#" class="sousMenu" id="filtreInstallation">Installation</a>
                             <a href="#" class="sousMenu" id="filtreSculpture">Sculpture</a>
-                            <a href="#" class="sousMenu" id="filtreLivret">Livret</a>                   
+                            <a href="#" class="sousMenu" id="filtreLivret">Livret</a>
                         </div>
                     </div>
                     <div id="imagier"><a href="#" class="menu">Imagier</a></div>
@@ -49,20 +86,94 @@
             </aside>
 
             <div id ="mediasRealisation">
-                <video width="600" height="400" controls poster="../../images/screenshotLaTransaction.png">
+                <video width="100%" controls poster="../../images/screenshotLaTransaction.png">
                     <source src="../../videos/La_transaction.mp4">
                     <source src="../../videos/La_transaction.avi">
                 </video>
-                <img src="" alt="">
+                
+                <img src="../../images/BIS-02_1-pointe_sud-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Peinture 1/5</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>pointe sud<br />acrylique sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
+                <img src="../../images/BIS-02_2-sable_mouettes-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Peinture 2/5</p>
+                </div>
+                <div class="legendeDetails">
+                    <p><em>sable et mouettes</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
+                <img src="../../images/BIS-02_3-console_fond-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Peinture 3/5</p>
+                </div>
+                <div class="legendeDetails">
+                    <p><em>console et fond</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
+                <img src="../../images/BIS-02_4-verrue_bateau-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Peinture 4/5</p>
+                </div>
+                <div class="legendeDetails">
+                    <p><em>verrue et bateau</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
+                <img src="../../images/BIS-02_5-pont_trou_alarme-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Peinture 5/5</p>
+                </div>
+                <div class="legendeDetails">
+                    <p><em>verrue et bateau</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
+                <img src="../../images/BIS-01-FH71-ile_enveloppe-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Rond</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Encre de Chine sur arches<br />18 x 24 cm</p>
+                </div>
+
+                 <img src="../../images/BIS-06-gabarit-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Gabarit</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>papier et brou de noix sur contreplaqué<br />18 x 24 cm</p>
+                </div>
+
             </div>
 
             <div id ="presentationRealisation">
                 <h3>BIS - Boulogne Île Seguin</h3>
-                <p>Je suis le texte de présentation. Voici le concept du projet Boulogne Ile Seguin. lorem ipsums.lorem ipsumJe suis le texte de présentation. Voici le concept du projet Boulogne Ile Seguin. lorem ipsums.lorem ipsum</p>
+                <p>Type : collaboration artistique<br />
+                Maître d'oeuvre : Agence Nicoalas Michelin Associés<br />Objet : concours pour la façade enveloppe
+                <br />Stade: étude de finition<br />Période : 2003-2004<br /><br />
+                Le concours de la façade enveloppe de l'île Seguin, initié par François Barré, invite des architectes à s'associer 
+                à des artistes pour imaginer une façade qui fasse le tour de l'île.<br />
+                Nicolas Michelin s'associe à 3 artistes, Antonio Gallego, Jan Kopp et moi.</p><br />
+                
+                <h4>Intégration au travail d'équipe</h4>
+                <p>De la même façon que l’ingénieur structure ou que l’économiste mais avec mes moyens d’expression plastique 
+                (dessins, volume, peinture, photo, textes …) j’ai produit des documents qui ont participé à la recherche commune.</p><br />
+
+                <h4>La transaction</h4>
+                <p>La transaction est une performance donnée dans le cadre de la réponse à ce concours. 
+                Elle exprime, en se fondant sur la raison de la figure de l’île, la légitimité de l’artiste 
+                à s’approprier la question de la mémoire. La performance se présente comme une possibilité ouverte 
+                par cette collaboration de fabriquer en phase de concours, du projet à l’échelle 1/1.<br />
+                Le 5/09/2004<br />
+                Vidéo de la performance<br />
+                2 min</p><br/>
             </div>
 
         </section>
-
+    </div>
         
     <script src="../../js/gloshmol_realisations.js"></script>
 </body>

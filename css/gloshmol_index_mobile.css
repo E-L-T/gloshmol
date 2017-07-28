@@ -18,7 +18,7 @@ html
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -26,7 +26,7 @@ body
 {
     font-family: 'muliextralight';
     color: black;
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
@@ -215,6 +215,11 @@ nav
     left: 0px;
 }
 
+#filtres a, #aPropos a
+{
+    margin: 0;
+}
+
 .menu
 {
     margin-bottom: 0.5vw;
@@ -263,7 +268,7 @@ nav a:hover, nav a:focus
     width: 90vw;
     /*height: 66vw;*/
     margin-left: 5vw;
-    margin-left: 5vw;
+    margin-right: 5vw;
     
 }
 
@@ -273,7 +278,7 @@ nav a:hover, nav a:focus
     height: 100%;
     /*position: absolute;*/
     margin-bottom: 0;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
 }
 
 .texteRealisation
@@ -316,7 +321,7 @@ nav a:hover, nav a:focus
 
 .titre
 {
-    font-size: 2em;
+    font-size: 1.5em;
     /*font-weight: bold;*/
     margin-bottom: 0.5%;
     margin-top: 0;
