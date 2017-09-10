@@ -32,8 +32,8 @@ filtrerSommaire("filtreDessin", "dessin");
 filtrerSommaire("filtreInstallation", "installation");
 filtrerSommaire("filtreSculpture", "sculpture");
 filtrerSommaire("filtreLivret", "livret");
-filtrerSommaire("filtreTout", "");
-
+/*filtrerSommaire("filtreTout", "");
+*/
 //Apparition de la liste de filtres au hover du menu. Remplacé par du CSS
 /*function dropDownMenu(idMenu, idContenu) {
     var contenuElt = document.getElementById(idContenu);

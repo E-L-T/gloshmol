@@ -1,4 +1,5 @@
 /* Main*/
+
 @font-face {
     font-family: 'muliextralight';
     src: url('muli-extralight-webfont.eot');
@@ -18,6 +19,8 @@ body
     font-family: 'muliextralight';
     padding-left: 2em; 
     padding-right: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 html
@@ -207,14 +210,15 @@ nav a:hover, nav a:focus
     margin-top: 0;
     font-size: 1.5em;
     font-weight: normal;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #presentationRealisation p
 {
     font-size: 0.8em;
     text-align: justify;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
     line-height: 1.3;
 }
 
@@ -229,7 +233,7 @@ nav a:hover, nav a:focus
 #mediasRealisation .legendeTitre p
 {
     font-size: 1.1em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     margin-top: 0;
 }
 

@@ -36,73 +36,67 @@ body
 header
 {
     width: 100%;
-    height: 150px;
-    margin: auto;
+    height: 50px;
+    min-height: 50px;
+    margin: 0 auto;
     padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-color: white;
+    background-color: rgb(232,232,232);
     position: fixed;
-    top: 0;
     overflow: hidden;
     z-index: 2;
     /*pour diminution taille au scroll*/
-    -webkit-transition: height 0.3s;
+    /*-webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
-    transition: height 0.3s;
+    transition: height 0.3s;*/
 }
 
-header.smaller
+/*header.smaller
 {
     height: 70px;
     min-height: 70px;
     justify-content: left;
     background-color: rgb(232,232,232);
     border-bottom: 1px solid grey;
-    /*align-items: flex-start;*/
-}
-
-header a
-{
-    text-decoration: none;
-    color: black;
-}
+    /*align-items: flex-start;
+}*/
 
 #logo
 {
     position: relative;
     left: 0px;
     top: 0px;
-    margin: auto;
-    font-size: 3em;
+    margin: 0 0 0 5vw;
+    font-size: 1.4em;
     /*min-width: 405px;*/
     /*word-wrap: keep-all;*/
     /*pour changement au scroll*/
-    -webkit-transition: all 0.3s;
+    /*-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s;  
+    transition: all 0.3s;  */
 }
 
-header.smaller #logo
+/*header.smaller #logo
 {
     font-size: 1.8em;
     margin-left: 5vw;
 
-}
+}*/
 
-.clearfix:after 
+/*.clearfix:after 
 {
     visibility: hidden;
     display: block;
     content: "";
     clear: both;
     height: 0; 
-}
+}*/
 
 #logo a
 {
@@ -124,7 +118,7 @@ header.smaller #logo
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 20px;/*20px;*/
+    top: 10px;/*20px;*/
     right: 6vw;/*20px;*/
     z-index: 6;
 }
@@ -273,12 +267,11 @@ nav a:hover, nav a:focus
 {
    display: block;
     width: 100%;
-    margin: 0;
     margin-left: 0;
-    margin-top: 170px;
-    padding: 0;
+/*    margin-top: 170px;
+*/    padding: 0;
     position: relative;
-    top: 0;
+    top: 100px;
 }
 
 #mediasRealisation img, #mediasRealisation video
@@ -303,7 +296,7 @@ nav a:hover, nav a:focus
     margin-top: 0;
     font-size: 2em;
     font-weight: normal;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #presentationRealisation p
@@ -325,7 +318,7 @@ nav a:hover, nav a:focus
 #mediasRealisation .legendeTitre p
 {
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     margin-top: 0;
     margin-left: 5vw;
     margin-right: 5vw;
