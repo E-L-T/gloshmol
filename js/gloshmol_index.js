@@ -6,9 +6,9 @@ function filtrerSommaire(filtre, realisationChoix) {
         var realisationsElts = document.getElementById("realisations");
         var integraleRealisationElts = realisationsElts.querySelectorAll(".realisations, .realisation, .exposition, .dessin, .installation, .sculpture, .livret");
         for (i = 0; i < integraleRealisationElts.length; i ++) {
-           if (window.innerWidth < 1000) {
+           if (window.innerWidth < 900) {
                integraleRealisationElts[i].style.display = "block"; //essai : je change flex par block
-           } else if (window.innerWidth > 1000) {
+           } else if (window.innerWidth > 900) {
                 integraleRealisationElts[i].style.display = "block";
            }   
         }
@@ -51,14 +51,14 @@ filtrerSommaire("filtreLivret", "livret");
         contenuElt.style.display = "none";
     });
 }
-if (window.innerWidth > 1000) { //pour éviter effet non voulu en version mobile
+if (window.innerWidth > 900) { //pour éviter effet non voulu en version mobile
     dropDownMenu("menuRealisations", "filtres");
     dropDownMenu("menuAPropos", "aPropos");
 }
 */
 
 
-//gestionnaire d'événement pour changer le logo en dessous et au-dessus de 1000 pixels de largeur
+//gestionnaire d'événement pour changer le logo en dessous et au-dessus de 900 pixels de largeur
 //aide trouvée ici : https://stackoverflow.com/questions/641857/javascript-window-resize-event
 
 
@@ -74,7 +74,7 @@ var addEvent = function(object, type, callback) {
 };
 
 addEvent(window, "resize", function() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 900) {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.getElementById("realisations").style.display = "block";
             document.querySelector("aside").style.display = "none";
@@ -90,7 +90,7 @@ addEvent(window, "resize", function() {
     //document.getElementById("logo").style.textAlign = "center";
     //afficherMenuV()
     //enleverMenuV();
-    } else if (window.innerWidth > 1000) {
+    } else if (window.innerWidth > 900) {
         if (document.getElementById("iconeCroix").style.display === "none") {
             document.querySelector("aside").style.display = "block";
             document.querySelector("nav").style.display = "block";
@@ -115,17 +115,17 @@ addEvent(window, "resize", function() {
 });
 
 //J'ajoute ceci pour lancer l'instruction dès l'ouverture de la page
-/*if (window.innerWidth < 1000) {
+/*if (window.innerWidth < 900) {
     document.getElementById("lienLogo").innerHTML = "gloshmol";
     document.getElementById("logo").style.textAlign = "center";
 }; 
-if (window.innerWidth > 1000) {
+if (window.innerWidth > 900) {
 document.getElementById("lienLogo").innerHTML = "-:-:-:-gloshmol-:-:-:-";
 document.getElementById("logo").style.textAlign = "left";
 };*/
 
 function afficherMenuV() {
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 900) {
         document.getElementById("iconeMenu").style.display = "none";
         document.querySelector("aside").style.display = "block";
         document.querySelector("nav").style.display = "block";
@@ -133,7 +133,7 @@ function afficherMenuV() {
         document.getElementById("aPropos").style.display = "block";
         document.getElementById("iconeCroix").style.display = "block";
         //document.querySelectorAll("realisation").style.display = "block";
-    } else if (window.innerWidth < 1000) { //reprendre ici
+    } else if (window.innerWidth < 900) { //reprendre ici
     //document.getElementById("logo").style.display = "none";
     document.getElementById("iconeMenu").style.display = "none";
     /*document.getElementById("realisations").style.display = "none";*/
@@ -147,13 +147,13 @@ function afficherMenuV() {
 }
 
 function enleverMenuV() {
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 900) {
         document.getElementById("iconeMenu").style.display = "block";
         document.querySelector("nav").style.display = "none";
         document.querySelector("aside").style.display = "block";
         document.getElementById("iconeCroix").style.display = "none";
         //document.querySelectorAll("realisation").style.display = "block";
-    } else if (window.innerWidth < 1000) {
+    } else if (window.innerWidth < 900) {
         document.getElementById("logo").style.display = "block";
         document.getElementById("iconeMenu").style.display = "block";
         document.querySelector("aside").style.display = "none";
@@ -179,7 +179,7 @@ document.getElementById("iconeCroix").addEventListener("click", function() {
 //Disparition du menu vertical quand on clique sur un lien dans le menu vertical
 
 document.querySelector("nav").addEventListener("click", function() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 900) {
         enleverMenuV();
     } 
 });

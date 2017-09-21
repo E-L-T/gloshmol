@@ -19,6 +19,7 @@ body
     height: 100%;
 }
 
+
 /* Header */
 header
 {
@@ -212,7 +213,7 @@ nav
 .menu
 {
     margin-bottom: 0.5vw;
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: block;
 }
 
@@ -220,7 +221,7 @@ nav
 {
     margin-bottom: 0.5vw;
     display: block;
-    font-size: 1em;
+    font-size: 0.8em;
 
 }
 
@@ -242,7 +243,6 @@ nav a:hover, nav a:focus
 {
     display: block;
     width: 100%;
-    margin: 0;
     margin-left: 0;
     margin-top: 80px;
     padding: 0;
@@ -258,8 +258,16 @@ nav a:hover, nav a:focus
     /*height: 66vw;*/
     margin-left: 5vw;
     margin-right: 5vw;
-    
 }
+
+@media (min-width: 500px) and (max-width: 900px){
+    .realisation{
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}
+
 
 .realisation img 
 {
@@ -295,7 +303,7 @@ nav a:hover, nav a:focus
 .realisation a:hover
 {
     text-decoration: none;
-    color: black;
+    color:rgb(255, 0, 140);
 }
 
 /*.realisation:hover .texteRealisation
@@ -310,7 +318,7 @@ nav a:hover, nav a:focus
 
 .titre
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     /*font-weight: bold;*/
     margin-bottom: 0.5%;
     margin-top: 0;
@@ -319,13 +327,13 @@ nav a:hover, nav a:focus
 
 .motCle
 {
-    font-size: 1em;
+    font-size: 0.8em;
     /*font-weight: bold;*/
 }
 
 .annee
 {
-    font-size: 1em;
+    font-size: 0.8em;
     /*font-weight: bold;*/
 }
 
