@@ -20,7 +20,7 @@ body
     padding-left: 2em; 
     padding-right: 2em;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 html
