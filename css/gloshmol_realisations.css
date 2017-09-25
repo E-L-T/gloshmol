@@ -6,8 +6,15 @@ body
     font-family: 'Muli', sans-serif;
     padding-left: 2em; 
     padding-right: 2em;
-    max-width: 1200px;
-    margin: 0 auto;
+}
+
+/* centre le body au-delà de 1200px de large. Codé de cette façon pour préserver la margin du body sous les 1200 px */
+@media (min-width:1199px){
+    body{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 html
@@ -151,16 +158,16 @@ nav a
     color: black;
 }
 
-nav a:hover, nav a:focus
+nav a:hover, nav a:focus, .active
 {
-    color:rgba(253,0,141,0.5);
+    color:rgba(253,0,141,0.8);
     text-decoration: none;
     outline: 0;
 }
 
 #filtres a:hover, #aPropos a:hover, #filtres a:focus, #aPropos a:focus
 {
-    color:rgba(253,0,141,0.5);
+    color:rgba(253,0,141,0.8);
     outline: 0;
 }
 

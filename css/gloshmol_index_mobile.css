@@ -225,16 +225,16 @@ nav
 
 }
 
-nav a:hover, nav a:focus
+nav a:hover, nav a:focus, active
 {
-    color:rgba(253,0,141,0.5); /*color: rgb(253,0,141);*/
+    color:rgba(253,0,141,0.8); /*color: rgb(253,0,141);*/
     text-decoration: none;
     outline: 0;
 }
 
 #filtres a:hover, #aPropos a:hover, #filtres a:focus, #aPropos a:focus
 {
-    color:rgba(253,0,141,0.5);
+    color:rgba(253,0,141,0.8);
     outline: 0;
 }
 
