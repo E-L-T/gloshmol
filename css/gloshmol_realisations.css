@@ -6,12 +6,12 @@ body
     font-family: 'Muli', sans-serif;
     padding-left: 2em; 
     padding-right: 2em;
+    max-width: 1200px;
 }
 
 /* centre le body au-delà de 1200px de large. Codé de cette façon pour préserver la margin du body sous les 1200 px */
-@media (min-width:1199px){
+@media (min-width:1300px){
     body{
-        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -210,7 +210,7 @@ nav a:hover, nav a:focus, .active
 #presentationRealisation p
 {
     font-size: 0.8em;
-    text-align: justify;
+    text-align: left;
     margin-top: 0;
     margin-bottom: 10px;
     line-height: 1.3;
