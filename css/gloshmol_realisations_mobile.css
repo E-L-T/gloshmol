@@ -173,6 +173,7 @@ aside
     display : none;
     /*border: 1px solid black;*/
     width: 40%;
+    max-width: 160px;
     height: 100%;
     z-index: 4;
     background-color:rgb(220,220,220);
