@@ -105,7 +105,7 @@ header
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 10px;/*20px;*/
+    top: 11px;/*20px;*/
     right: 6vw;/*20px;*/
     z-index: 6;
 }
@@ -131,7 +131,7 @@ header
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 20px;/*20px;*/
+    top: 13px;/*20px;*/
     right: 6vw;/*20px;*/
     z-index: 5;
 }
@@ -144,8 +144,8 @@ header
 
 #iconeCroix img
 {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     margin: 0;
     padding: 0;
 }
