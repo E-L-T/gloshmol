@@ -183,3 +183,6 @@ document.querySelector("nav").addEventListener("click", function() {
         enleverMenuV();
     } 
 });
+
+
+// scroll by pour descendre par palier
