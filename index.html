@@ -4,12 +4,12 @@
     <title>Bertand Segers</title>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#FE4FA5" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Bertrand Segers. Art architecture - dessin peinture sculpture." />
-    <link rel="stylesheet" href="css/col.css" media="all" />
-	<link rel="stylesheet" href="css/12cols.css" media="all" />
+    <!-- <link rel="stylesheet" href="css/col.css" media="all" />
+	<link rel="stylesheet" href="css/12cols.css" media="all" /> -->
     <link rel="stylesheet" href="css/gloshmol_index.css" /> 
-    <link rel="stylesheet" media="all and (max-width: 900px)" href="css/gloshmol_index_mobile.css" />
+    <!-- <link rel="stylesheet" media="all and (max-width: 900px)" href="css/gloshmol_index_mobile.css" /> -->
     <link rel="shortcut icon" href="images/logo_soleil.ico">
     <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
 
@@ -35,7 +35,7 @@
         <div id="iconeMenu"><a href="#"><img src="images/burger3.png" alt="icone menu Burger" /></a></div>
         <div id="iconeCroix"><a href="#"><img src="images/cross5.png" alt="icone croix" /></a></div>
         <header>
-            <div id="logo"><a href="index.html" id="lienLogo">Bertrand Segers</a></div> <!--<span class="tiretsLogo">-:-:-:-gloshmol<span class="tiretsLogo">-:-:-:-</a>-->
+            <div id="logo"><a href="index.html" id="lienLogo">Bertrand Segers</a></div> 
         </header>
 
         <section>
@@ -44,8 +44,7 @@
                     <div id="menuRealisations">
                         <a href="index.html" class="menu active">Réalisations</a>
                         <div id="filtres">
-<!--                            <a href="#" class="sousMenu" id="filtreTout">Tout</a>
--->                            <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
+                           <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
                             <a href="#" class="sousMenu" id="filtreDessin">Dessins</a>
                             <a href="#" class="sousMenu" id="filtreInstallation">Installations</a>
                             <a href="#" class="sousMenu" id="filtreSculpture">Sculptures</a>
@@ -67,7 +66,18 @@
                 </nav>
             </aside>
             <div id="realisations">
-               
+                
+                <div class="realisation installation dessin" id="17">
+                    <a href="boulogne-ile-seguin.html">
+                    <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Boulogne Île Seguin</strong></p>
+                        <p class="motCle">Performance / Installation / Dessin</p>
+                        <p class="annee">2003-2004</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation dessin livret" id="8">
                     <a href="#">
                     <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
@@ -244,24 +254,15 @@
                     </a>
                 </div>
 
-                <div class="realisation installation dessin" id="17">
-                    <a href="boulogne-ile-seguin.html">
-                    <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Boulogne Île Seguin</strong></p>
-                        <p class="motCle">Performance / Installation / Dessin</p>
-                        <p class="annee">2003-2004</p>
-                    </div>
-                    </a>
-                </div>
+                
             </div>    
         </section>
-        <!--<footer>
+       <!--  <footer>
             <p>Bertrand Segers - bs@gloshmol.com</p>
             <a href="https://www.facebook.com/pg/BertrandSegersGloshmol/"><img src="images/iconeFB.png"/></a>
 
         </footer> -->
     </div>
-    <script src="js/gloshmol_index.js"></script>
+<script src="js/gloshmol_index.js"></script>
 </body>
 </html>

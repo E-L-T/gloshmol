@@ -35,23 +35,8 @@ header
     position: fixed;
     overflow: hidden;
     z-index: 2;
-    /*pour diminution taille au scroll*/
-    /*-webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
-    transition: height 0.3s;*/
+    
 }
-
-/*header.smaller
-{
-    height: 70px;
-    min-height: 70px;
-    justify-content: left;
-    background-color: rgb(232,232,232);
-    border-bottom: 1px solid grey;
-    /*align-items: flex-start;
-}*/
 
 #logo
 {
@@ -60,31 +45,8 @@ header
     top: 0px;
     margin: 0 0 0 5vw;
     font-size: 1.4em;
-    /*min-width: 405px;*/
-    /*word-wrap: keep-all;*/
-    /*pour changement au scroll*/
-    /*-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;  */
+   
 }
-
-/*header.smaller #logo
-{
-    font-size: 1.8em;
-    margin-left: 5vw;
-
-}*/
-
-/*.clearfix:after 
-{
-    visibility: hidden;
-    display: block;
-    content: "";
-    clear: both;
-    height: 0; 
-}*/
 
 #iconeMenu
 {
@@ -142,11 +104,6 @@ header
     color: rgba(253,0,141,0.8);
     /*word-wrap: keep-all;*/
 
-}
-
-#logo a:focus
-{
-    outline: 0;
 }
 
 .tiretsLogo
@@ -286,7 +243,7 @@ nav a:hover, nav a:focus, active
     height: 0;
     padding-top: 2px; /*j'étais à 15%*/
     padding-left: 0%;/*8%;*/
-    padding-bottom: 35%;
+    padding-bottom: 35%; /* valeur differente */
     margin: 0; 
 }
 
