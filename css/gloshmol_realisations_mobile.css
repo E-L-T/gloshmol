@@ -90,11 +90,6 @@ header
     color: rgba(253,0,141,0.8);
 }
 
-#logo a:focus
-{
-    outline: 0;
-}
-
 .tiretsLogo
 {
     display: inline;
@@ -237,7 +232,6 @@ nav a:hover, nav a:focus
 #filtres a:hover, #aPropos a:hover, #filtres a:focus, #aPropos a:focus
 {
     color:rgba(253,0,141,0.5);
-    outline: 0;
 }
 
 #menuRealisations, #imagier, #achat, #menuAPropos

@@ -2,7 +2,7 @@
 
 body
 {
-    color: black;
+    color: #333;
     font-family: 'Muli', sans-serif;
     padding-left: 2em; 
     padding-right: 2em;
@@ -50,11 +50,6 @@ header a
     color: rgba(253,0,141,0.8);
 }
 
-#logo a:focus
-{
-    outline: 0;
-}
-
 .tiretsLogo
 {
     display: inline;
@@ -71,15 +66,6 @@ header a
     height: 100%;
 }
 
-#iconeMenu img
-{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-
-}
-
 #iconeCroix
 {
     display: none;
@@ -89,14 +75,6 @@ header a
 {
     width: 100%;
     height: 100%;
-}
-
-#iconeCroix img
-{
-    width: 35px;
-    height: 35px;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -162,13 +140,11 @@ nav a:hover, nav a:focus, .active
 {
     color:rgba(253,0,141,0.8);
     text-decoration: none;
-    outline: 0;
 }
 
 #filtres a:hover, #aPropos a:hover, #filtres a:focus, #aPropos a:focus
 {
     color:rgba(253,0,141,0.8);
-    outline: 0;
 }
 
 #menuRealisations, #imagier, #achat, #menuAPropos
@@ -249,3 +225,207 @@ video
 }
 
 /* { border: 1px solid #f00; }*/
+
+@media (max-width:900px){
+    /* Main*/
+    .disappear{
+        display: none !important;
+    }
+    
+    .appear{
+        display: block !important;
+    }
+
+    html
+    { 
+        /*overflow-y: default;*/
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /* Header */
+
+    header{
+        width: 100%;
+        height: 50px;
+        min-height: 50px;
+        margin: 0 auto;
+        padding: 0px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: rgb(232,232,232);
+        position: fixed;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    #logo
+    {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin: 0 0 0 5vw;
+        font-size: 1.4em;
+    }
+
+    #iconeMenu
+    {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 11px;/*20px;*/
+        right: 6vw;/*20px;*/
+        z-index: 6;
+    }
+
+    #iconeMenu img
+    {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    #iconeCroix
+    {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 13px;/*20px;*/
+        right: 6vw;/*20px;*/
+        z-index: 5;
+    }
+
+    #iconeCroix img
+    {
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Section */
+
+    section
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+    }
+
+    aside
+    {
+        position: fixed;
+        right: -210px;
+        top: 0px;
+        display : block;
+        width: 160px;
+        height: 100%;
+        z-index: 4;
+        background-color:rgb(220,220,220);
+        padding-left: 5vw;
+        padding-top: 70px;
+    
+    }
+    
+    nav{
+        position: static;
+        width: 100%;
+    }
+
+    .menu
+    {
+        margin-bottom: 0.5vw;
+        font-size: 1.2em;
+    }
+
+    .sousMenu
+    {
+        margin-bottom: 0.5vw;
+    }
+
+    /* Contenu médias */
+    #mediasRealisation
+    {
+       display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        position: relative;
+        top: 70px;
+    }
+
+    #mediasRealisation img, #mediasRealisation video
+    {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /*border: 1px solid grey;*/
+    
+        /*max-height: 100vh;*/
+    }
+
+    #presentationRealisation
+    {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        position: relative;
+        top: 70px;
+    }
+
+    #presentationRealisation h3
+    {
+        font-size: 1.4em;
+    }
+
+    #presentationRealisation p
+    {
+        margin: 0;   
+    }
+
+    #presentationRealisation h4
+    {
+        font-size: 1.2em;
+    }
+
+    #mediasRealisation .legendeTitre p
+    {
+        font-size: 1.2em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .legendeDetails p
+    {
+        font-size: 0.8em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px){
+        #presentationRealisation, #mediasRealisation img, #mediasRealisation video, #mediasRealisation div {
+            width: 50vw;
+            margin-left: 25vw;
+            margin-right: 25vw;
+        }
+        #mediasRealisation .legendeTitre p, #mediasRealisation .legendeDetails p{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
