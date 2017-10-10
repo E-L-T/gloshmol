@@ -90,8 +90,13 @@ document.querySelector("nav").addEventListener("click", function() {
 iconeMenuElt.addEventListener("click", function(e){
     e.preventDefault(); //j'ajoute cette ligne pour éviter de remonter automatiquement en haut de page lors d'un clic sur menu burger (ou icone croix, ci-dessous);
     $('aside').animate({right:"0px"},600);
-    iconeMenuElt.classList.toggle("disappear");
+    /* $(this).fadeOut("slow", function () {
+        $(this).css({display:"none"});
+    }); */
     iconeCroixElt.classList.toggle("appear");
+/*     $("#iconeCroix").fadeIn("slow");
+ */ iconeMenuElt.classList.toggle("disappear");
+    
 });
 
 //Disparition du menu vertical quand on clique sur la croix
