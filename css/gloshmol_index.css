@@ -205,6 +205,8 @@ nav a:hover, nav a:focus, .active
 	justify-content: flex-start;
 	align-items: flex-start;
     position: relative;
+/*     transition : 0.6s ease;
+ */    
 /*    top: -75px;
 */
 }
@@ -218,14 +220,16 @@ nav a:hover, nav a:focus, .active
     margin-left: 2.133%;
     margin-bottom: 0;
     margin-top: 0;
+/*     transition : 0.6s ease;
+ */    
 }
 
 .realisation img 
 {
     /*position: absolute;*/
     width: 100%;
-    height: 100%; 
-    margin-bottom: 0;
+/*     height: 100%; 
+ */    margin-bottom: 0;
 /*     transition: all .2s ease-in-out; 
  */}
 
@@ -353,7 +357,8 @@ footer
         padding: 0px;
         width: 100%;
         height: 100%;
-    }
+/*         overflow: hidden;
+ */    }
     /* Header */
     header
     {
@@ -439,17 +444,16 @@ footer
     aside
     {
         position: fixed;
-        right: 0px;
+        right: -210px; /* changement vs 0 */
         top: 0px;
-        display : none;
-        width: 40%;
-        max-width: 160px;
+        display : block;/*  changement vs none; */
+        width: 160px; /* changement vs 40% */
+        /* max-width: 160px; */
         height: 100%;
         z-index: 4;
         background-color:rgb(220,220,220);
         padding-left: 5vw;
         padding-top: 70px;
-        transition: 1s ease;
     }
 
     nav 
@@ -474,9 +478,10 @@ footer
         display: block;
         width: 100%;
         margin-left: 0;
-        margin-top: 80px;
+        margin-top: 100px;
         padding: 0;
         top: 0;
+        overflow: hidden;
     }
 
     .realisation
@@ -484,7 +489,9 @@ footer
         width: 90vw;
         margin-left: 5vw;
         margin-right: 5vw;
-    }
+       /*  height: 100vh;*/
+/*         padding-top: ;
+ */    }
     
     @media (min-width: 500px) and (max-width: 900px){
         .realisation{
