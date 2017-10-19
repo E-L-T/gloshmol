@@ -33,7 +33,7 @@ header
 header a
 {
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 
 #logo 
@@ -133,7 +133,7 @@ nav
 nav a
 {
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 
 nav a:hover, nav a:focus, .active
@@ -219,9 +219,26 @@ nav a:hover, nav a:focus, .active
     line-height: 1.1;
 }
 
-video
+/* video, iframe, .embed-container
 {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    
+} */
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 69%;/* 56.25%; */ /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    margin-bottom: 60px;    
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* { border: 1px solid #f00; }*/
@@ -286,7 +303,7 @@ video
         display: flex;
         justify-content: left;
         align-items: center;
-        background-color: rgb(232,232,232);
+        background-color: white; /* rgb(232,232,232); */
         position: fixed;
         overflow: hidden;
         z-index: 2;
@@ -359,7 +376,7 @@ video
         width: 160px;
         height: 100%;
         z-index: 4;
-        background-color:rgb(220,220,220);
+        background-color:white;/*  rgb(220,220,220); */
         padding-left: 5vw;
         padding-top: 70px;
     
@@ -392,7 +409,7 @@ video
         top: 70px;
     }
 
-    #mediasRealisation img, #mediasRealisation video
+    #mediasRealisation img, #mediasRealisation video, #mediasRealisation .videoWrapper
     {
         width: 90vw;
         margin-left: 5vw;
@@ -400,6 +417,11 @@ video
         /*border: 1px solid grey;*/
     
         /*max-height: 100vh;*/
+    }
+
+    #mediasRealisation .videoWrapper{
+        padding-bottom: 59%;
+        margin-top: 20px;
     }
 
     #presentationRealisation
@@ -448,15 +470,22 @@ video
         position: relative;
         top: 70px;
     }
+
+    #identificationContenu h3
+    {
+        font-size: 1.2em;
+    }
     
-
-
     @media (min-width: 500px) and (max-width: 900px){
-        #presentationRealisation, #mediasRealisation img, #mediasRealisation video, #mediasRealisation div {
+        #presentationRealisation, #mediasRealisation img, #mediasRealisation video, #mediasRealisation .videoWrapper, #mediasRealisation div {
             width: 50vw;
             margin-left: 25vw;
             margin-right: 25vw;
         }
+        #mediasRealisation .videoWrapper{
+            padding-bottom: 33%;
+        }
+
         #mediasRealisation .legendeTitre p, #mediasRealisation .legendeDetails p{
             margin-left: 0;
             margin-right: 0;
