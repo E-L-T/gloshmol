@@ -5,22 +5,30 @@ function filtrerSommaire(filtre, realisationChoix) {
     //si je ne suis pas sur la page index.html, allons y. Attendons que la page se charge, puis activons les filtres (la suite des instructions de cette fonction)
     var filtreElt = document.getElementById(filtre);
     filtreElt.addEventListener("click", function() {
-        //commence par (ré)afficher l'ensemble des éléments
-        var realisationsElts = document.getElementById("realisations");
-        var integraleRealisationElts = realisationsElts.querySelectorAll(".realisations, .realisation, .exposition, .dessin, .installation, .sculpture, .livret");
-        for (i = 0; i < integraleRealisationElts.length; i ++) {
-            integraleRealisationElts[i].style.display = "block";   
+        //redirige sur la page d'accueil si on ne si trouve pas :
+        if(window.location!="index.html"){
+            //console.log(window.location.href);
+            window.location.replace("index.html#" + filtre);
         }
-        //supprime les éléments ne faisant pas partie de la catégorie sélectionnée
-        var excludedElts = realisationsElts.querySelectorAll("div:not(." + realisationChoix + ")"); 
-        for (i = 0; i < excludedElts.length; i++) {
-            excludedElts[i].style.display = "none";
+        window.onload = function(){
+            //commence par (ré)afficher l'ensemble des éléments
+            var realisationsElts = document.getElementById("realisations");
+            var integraleRealisationElts = realisationsElts.querySelectorAll(".realisations, .realisation, .exposition, .dessin, .installation, .sculpture, .livret");
+            for (i = 0; i < integraleRealisationElts.length; i ++) {
+                integraleRealisationElts[i].style.display = "block";   
+            }
+            //supprime les éléments ne faisant pas partie de la catégorie sélectionnée
+            var excludedElts = realisationsElts.querySelectorAll("div:not(." + realisationChoix + ")"); 
+            for (i = 0; i < excludedElts.length; i++) {
+                excludedElts[i].style.display = "none";
+            }
+            //affiche systématiquement le texte de présentation des réalisations
+            var texteRealisationsElts = document.querySelectorAll(".texteRealisation");
+            for (j = 0; j < texteRealisationsElts.length; j++) {
+                texteRealisationsElts[j].style.display = "block";
+            }
         }
-        //affiche systématiquement le texte de présentation des réalisations
-        var texteRealisationsElts = document.querySelectorAll(".texteRealisation");
-        for (j = 0; j < texteRealisationsElts.length; j++) {
-            texteRealisationsElts[j].style.display = "block";
-        }
+        
     });
 }
 //Appels de la fonction pour chaque catégorie de réalisation
