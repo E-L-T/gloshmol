@@ -135,14 +135,21 @@ iconeCroixElt.addEventListener("click", function(e){
 });
 
 //Disparition du menu vertical quand on clique sur un lien dans le menu vertical
-document.querySelector("nav").addEventListener("click", function(e) {
-/*     e.preventDefault(); Là, j'ai besoin de revenir au début de la liste
- */    if (window.innerWidth < mediaLimitSize) {
-        $('aside').animate({right:"-210px"},600);
-        iconeMenuElt.classList.toggle("disappear");
-        iconeCroixElt.classList.toggle("appear");
+var animationDuration = 600;
+document.querySelector("nav").addEventListener("click", function(event) {
+    /* permet de lancer le changement de page après la fin de l'animation \o/ */
+    event.preventDefault();
+    if (window.innerWidth < mediaLimitSize) {
+    $('aside').animate({right:"-210px"},animationDuration);
+    iconeMenuElt.classList.toggle("disappear");
+    iconeCroixElt.classList.toggle("appear");
+    setTimeout(function(){
+        window.location.replace(event.target.href);
+    }, animationDuration);
     } 
 });
+
+
 
 //mousewheel effect
 // using on
@@ -216,3 +223,4 @@ window.addEventListener("keydown", function() {
 //attribuer taille de 100 vh à realisation en mobile
 //scrollBy 100vh
 //transition : 1s ease-in-out sur la div .realisation dans le css mobile */
+

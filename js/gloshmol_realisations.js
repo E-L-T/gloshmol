@@ -28,7 +28,6 @@ function filtrerSommaire(filtre, realisationChoix) {
                 texteRealisationsElts[j].style.display = "block";
              }
         }
-        
     });
 }
 //Appels de la fonction pour chaque catégorie de réalisation
@@ -64,11 +63,17 @@ iconeCroixElt.addEventListener("click", function(e){
 });
 
 //Disparition du menu vertical quand on clique sur un lien dans le menu vertical
-document.querySelector("nav").addEventListener("click", function(e) {
-/*     e.preventDefault(); Là, j'ai besoin de revenir au début de la liste
- */    if (window.innerWidth < mediaLimitSize) {
-        $('.realisationAside').animate({right:"-210px"},600);
-        iconeMenuElt.classList.toggle("disappear");
-        iconeCroixElt.classList.toggle("appear");
+var animationDuration = 600;
+
+document.querySelector("nav").addEventListener("click", function(event){
+    /* permet de lancer le changement de page après la fin de l'animation \o/ */
+    event.preventDefault();
+    if (window.innerWidth < mediaLimitSize) {
+    $('.realisationAside').animate({right:"-210px"},animationDuration);
+    iconeMenuElt.classList.toggle("disappear");
+    iconeCroixElt.classList.toggle("appear");
+    setTimeout(function(){
+        window.location.replace(event.target.href);
+    }, animationDuration);
     } 
 });
