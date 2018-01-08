@@ -335,6 +335,12 @@ h2{
     margin-top: 0;  
 }
 
+.realisation a:active, .realisation a:focus
+
+{
+    outline: none;
+}
+
 .realisation img 
 {
     
