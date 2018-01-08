@@ -2,14 +2,14 @@ var mediaLimitSize = 900;
 
 function filtrerSommaire(filtre, realisationChoix) {
     //gestionnaire d'événement "click"
-    //si je ne suis pas sur la page index.html, allons y. Attendons que la page se charge, puis activons les filtres (la suite des instructions de cette fonction)
+    //si je ne suis pas sur la page index.php, allons y. Attendons que la page se charge, puis activons les filtres (la suite des instructions de cette fonction)
     var filtreElt = document.getElementById(filtre);
     filtreElt.addEventListener("click", function() {
         //redirige sur la page d'accueil si on ne si trouve pas :
-        if(window.location!="index.html"){
+        if(window.location!="index.php"){
             //console.log(window.location.href);
-            window.location.replace("index.html#" + filtre);
-        }
+            window.location.replace("index.php#" + filtre);
+        } 
         window.onload = function(){
             //commence par (ré)afficher l'ensemble des éléments
             var realisationsElts = document.getElementById("realisations");
@@ -26,7 +26,7 @@ function filtrerSommaire(filtre, realisationChoix) {
             var texteRealisationsElts = document.querySelectorAll(".texteRealisation");
             for (j = 0; j < texteRealisationsElts.length; j++) {
                 texteRealisationsElts[j].style.display = "block";
-            }
+             }
         }
         
     });
@@ -37,12 +37,12 @@ filtrerSommaire("filtreDessin", "dessin");
 filtrerSommaire("filtreInstallation", "installation");
 filtrerSommaire("filtreSculpture", "sculpture");
 filtrerSommaire("filtreLivret", "livret");
-/*filtrerSommaire("filtreTout", "");
-*/
+//filtrerSommaire("filtreTout", "");
+
 //Déclaration de la fonction toggleMenu
 var iconeMenuElt = document.querySelector("#iconeMenu");
 /* console.log(iconeMenuElt);
- */var asideElt = document.querySelector("aside");
+ */var asideElt = document.querySelector(".realisationAside");
 /* console.log(asideElt);
  */var iconeCroixElt = document.querySelector("#iconeCroix");
 /* console.log(iconeCroixElt);
@@ -50,7 +50,7 @@ var iconeMenuElt = document.querySelector("#iconeMenu");
 //Apparition du menu vertical post clic menu burger
 iconeMenuElt.addEventListener("click", function(e){
     e.preventDefault(); //j'ajoute cette ligne pour éviter de remonter automatiquement en haut de page lors d'un clic sur menu burger (ou icone croix, ci-dessous);
-    $('aside').animate({right:"0px"},600);
+    $('.realisationAside').animate({right:"0px"},600);
     iconeMenuElt.classList.toggle("disappear");
     iconeCroixElt.classList.toggle("appear");
 });
@@ -58,7 +58,7 @@ iconeMenuElt.addEventListener("click", function(e){
 //Disparition du menu vertical quand on clique sur la croix
 iconeCroixElt.addEventListener("click", function(e){
     e.preventDefault();     
-    $('aside').animate({right:"-210px"},600);
+    $('.realisationAside').animate({right:"-210px"},600);
     iconeMenuElt.classList.toggle("disappear");
     iconeCroixElt.classList.toggle("appear");
 });
@@ -67,7 +67,7 @@ iconeCroixElt.addEventListener("click", function(e){
 document.querySelector("nav").addEventListener("click", function(e) {
 /*     e.preventDefault(); Là, j'ai besoin de revenir au début de la liste
  */    if (window.innerWidth < mediaLimitSize) {
-        $('aside').animate({right:"-210px"},600);
+        $('.realisationAside').animate({right:"-210px"},600);
         iconeMenuElt.classList.toggle("disappear");
         iconeCroixElt.classList.toggle("appear");
     } 

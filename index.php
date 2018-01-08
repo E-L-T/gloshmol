@@ -1,73 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Bertand Segers</title>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#FE4FA5" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Bertrand Segers. Art architecture - dessin peinture sculpture." />
-    <!-- <link rel="stylesheet" href="css/col.css" media="all" />
-	<link rel="stylesheet" href="css/12cols.css" media="all" />  -->
-    <link rel="stylesheet" href="css/gloshmol_index.css" />   
-    <link rel="shortcut icon" href="images/logo_soleil.ico">
-    <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
-    <!-- <script src="js/jquery.fullpage.js"></script> -->
-</head>
+<?php
+require_once('inc/init.inc.php');
+$page= 'Bertrand Segers';
+require_once('inc/haut.inc.php');
+require_once('inc/header.index.inc.php');	
 
-<body>
-    <!-- <div class="section group">
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-    </div> -->
+?>
     
-    <div class="conteneur">
-        <div id="iconeMenu"><a href="#"><img src="images/burger3.png" alt="icone menu Burger" /></a></div>
-        <div id="iconeCroix"><a href="#"><img src="images/cross5.png" alt="icone croix" /></a></div>
-        <header>
-            <div id="logo"><a href="index.html" id="lienLogo">Bertrand Segers</a></div> 
-        </header>
-
-        <section>
-            <aside> 
-                <nav>
-                    <div id="menuRealisations">
-                        <a href="index.html" class="menu active">Réalisations</a>
-                        <div id="filtres">
-                           <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
-                            <a href="#" class="sousMenu" id="filtreDessin">Dessins</a>
-                            <a href="#" class="sousMenu" id="filtreInstallation">Installations</a>
-                            <a href="#" class="sousMenu" id="filtreSculpture">Sculptures</a>
-                            <a href="#" class="sousMenu" id="filtreLivret">Livrets</a>                   
-                        </div>
-                    </div>
-<!--                    <div id="imagier"><a href="#" class="menu">Imagier</a></div>
--->                    <div id="achat"><a href="#" class="menu">Achat</a></div>
-                    <div id="menuAPropos">
-                        <a href="#" class="menu">A propos</a>
-                        <div id="aPropos">
-                            <a href="identification.html" class="sousMenu">Identification</a>
-                            <a href="#" class="sousMenu">Opeds</a>
-                            <a href="#" class="sousMenu">Colportages</a>
-                            <a href="#" class="sousMenu">Conférences</a>
-                        </div>
-                    </div>
-                    <div><a href="#" class="menu">Contact</a></div>    
-                </nav>
-            </aside>
             <div id="realisations">
-
                 <div class="realisation installation dessin" id="17">
-                    <a href="boulogne-ile-seguin.html">
+                    <a href="<?= RACINE_SITE ?>boulogne-ile-seguin.php">
                     <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Boulogne Île Seguin</strong></p>
@@ -253,31 +194,9 @@
                     </a>
                 </div>
 
-                
             </div>    
         </section>
-        
-        
     </div>
-    <div class="conteneur">
-        <footer>
-            <span>&copy;Bertrand Segers - 2017</span>
-            <a href="#">Contact</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Plan du site</a>
-            <a href="#">Ancienne version du site</a>
-            <div>
-                <a href="https://www.facebook.com/pg/BertrandSegersGloshmol/" target="_blank"><img src="images/iconeFB.png"/></a>
-                <a href="https://vimeo.com/user71683044" target="_blank"><img src="images/vimeo2.png"/></a>
-            </div>
-    
-        </footer>
-    </div>
-    
-    <script src="js/jquery-3.2.1.js"></script>   
-    <script src="js/gloshmol_index.js"></script>
-<!-- <script>
-    $('#realisations').fullpage();
-</script> -->
-</body>
-</html>
+<?php
+require_once('inc/footer.index.inc.php');
+?>

@@ -7,11 +7,9 @@ body
     padding-left: 2em; 
     padding-right: 2em;
     max-width: 1200px;    
-    background-color: white;
-    /*margin: 0 0 100px;  bottom = footer height , pour gestion superposition footer */
-    /*padding: 25px;  idem */
 }
-/* centre le body au-delà de 1200px de large. Codé de cette façon pour préserver la margin du body sous les 1200 px */
+
+/* centre le body au-delà de 1200px de large. Codé de cette façon pour préserver la margin du body sous les 1300 px */
 @media (min-width:1300px){
     body{
         margin-left: auto;
@@ -34,11 +32,6 @@ header
     min-height: 100px;
     width: 24%;
     min-width: 200px;
-    /*display: flex;
-    justify-content: center;*/
-    /*background-color: white;
-    position: fixed;
-    z-index: 10;*/
 
 }
 
@@ -52,7 +45,6 @@ header a
 {
     position: fixed;
     top: 30px;
-    /*left: 26.55vw;*/
     font-size: 1.8em;
     z-index: 1;
 }
@@ -62,20 +54,10 @@ header a
     color: rgba(255, 0, 140, 0.8);
 }
 
-.tiretsLogo
-{
-    display: inline;
-}
-
 #iconeMenu
 {
     display: none;
-    /*margin: 0;
-    padding: 0;
-    position: fixed;
-    top : 10px;
-    left: 10px;
-    z-index: 5;*/
+    
 }
 
 #iconeMenu a
@@ -84,14 +66,14 @@ header a
     height: 100%;
 }
 
-#iconeMenu img
+/* #iconeMenu img
 {
-    width: 50px;
-    height: 50px;
+    width: 500px;
+    height: 500px;
     margin: 0;
     padding: 0;
 
-}
+} */
 
 #iconeCroix
 {
@@ -104,43 +86,41 @@ header a
     height: 100%;
 }
 
-#iconeCroix img
+/* #iconeCroix img
 {
     width: 35px;
     height: 35px;
     margin: 0;
     padding: 0;
-}
+} */
 
 
 /* Section */
 section
 {
     display: flex;
-    /*flex-direction: row;
-    justify-content: space-between; */
 }
 
 aside
 {
     display: block;
-    width: 23.78%;
-/*     height: 100%;
- */ 
+    width: 23.78%; 
+}
+
+.realisationAside
+{
+    width: 25.38%;
+    height: 100%;
 }
 
 nav 
 {
     display: block;
     position: fixed;
-/*     height: 100%;   
- */    margin-top: 0px;
+    margin-top: 0px;
     margin-left: 0px;
     padding: 0;
-    text-align: left;
-/*     width: 100%;
- */    background-color: white;
-   
+    text-align: left; 
 }
 
 #filtres, #aPropos
@@ -171,14 +151,14 @@ nav
 
 }
 
-nav a
+a
 {
     text-decoration: none;
     color: #333;
     
 }
 
-nav a:hover, nav a:focus, .active
+a:hover, a:focus, .active
 {
     color:rgba(253,0,141,0.8);
     text-decoration: none;
@@ -199,6 +179,129 @@ nav a:hover, nav a:focus, .active
     margin-bottom: 0;
 }
 
+#mediasRealisation
+{
+    margin: 0 0 50px 0;
+    width: 49.16%;
+}
+
+#mediasRealisation img
+{
+    width: 100%;
+    /*max-height: 100vh;*/
+}
+
+#presentationRealisation
+{
+    display: block;
+    margin-left: 1.6%;
+    width: 23.78%;
+}
+#presentationRealisation h3
+{
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#presentationRealisation p
+{
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+#presentationRealisation h4
+{
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    margin-top: 0;   
+}
+
+#mediasRealisation .legendeTitre p
+{
+    font-size: 1.1em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.legendeDetails p
+{
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.legendeDetails
+{
+    line-height: 1.1;
+}
+
+/* video, iframe, .embed-container
+{
+    margin-bottom: 80px;
+    
+} */
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 69%;/* 56.25%; */ /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    margin-bottom: 60px;    
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* { border: 1px solid #f00; }*/
+
+/* A propos */
+#identificationContenu
+{
+    margin: 0 0 50px 0;
+    padding: 0 0 0 0;
+    width: 49.16%;
+}
+
+h2{
+    margin-top: 0;
+    font-weight: normal;
+}
+
+#identificationContenu h3{
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#identificationContenu p{
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+#identificationContenu p a{
+    text-decoration: underline;
+}
+
+#identificationContenu h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+
 
 /*Realisations */
 
@@ -214,10 +317,6 @@ nav a:hover, nav a:focus, .active
 	justify-content: flex-start;
 	align-items: flex-start;
     position: relative;
-/*     transition : 0.6s ease;
- */    
-/*    top: -75px;
-*/
 }
 
 .realisation
@@ -225,22 +324,17 @@ nav a:hover, nav a:focus, .active
     display: block;
     position: relative;
     width: 31.15%;
-    /*height: 300%;*/
     margin-left: 2.133%;
     margin-bottom: 0;
-    margin-top: 0;
-/*     transition : 0.6s ease;
- */    
+    margin-top: 0;  
 }
 
 .realisation img 
 {
-    /*position: absolute;*/
+    
     width: 100%;
-/*     height: 100%; 
- */    margin-bottom: 0;
-/*     transition: all .2s ease-in-out; 
- */}
+    margin-bottom: 0;
+}
 
 .texteRealisation
 {
@@ -266,24 +360,6 @@ nav a:hover, nav a:focus, .active
     text-align: left;
     position: relative;
 }
-
-a
-{
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover
-{
-    color:rgb(255, 0, 140);
-    text-decoration: none;
-}
-
-
-/*.realisation:hover .texteRealisation
-{
-	opacity: 1;
-}*/
 
 .realisation:hover img
 {
@@ -318,13 +394,11 @@ a:hover
 .annee
 {
     font-size: 0.8em;
-/*    margin-top: 5px;
-*/  margin: 0;
+    margin: 0;
 }
 
-/*title{
-    background-image: url("images/logo_soleil.jpg");
-}*/
+/***** FOOTER  *****/
+
 footer
 {
     margin: 50px 0 0 0;
@@ -339,23 +413,14 @@ footer
     z-index: 3;
     height: 50px;
     
-    
-    /* background-color: orange;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    overflow:hidden; */
 }
 
 footer img{
     margin-left: 5px;
-    color: blue;
 }
 
-footer a{
-    text-decoration: underline;
+footer span {
+    color: rgb(143, 142, 142);
 }
 
 
@@ -383,8 +448,7 @@ footer a{
         padding: 0px;
         width: 100%;
         height: 100%;
-/*         overflow: hidden;
- */    }
+    }
     /* Header */
     header
     {
@@ -449,11 +513,7 @@ footer a{
         padding: 0;
     }
 
-    .tiretsLogo
-    {
-        display: none;
-    }
-    
+
     /* Section */
 
 
@@ -463,8 +523,10 @@ footer a{
         margin: 0 auto;
         padding: 0;
         position: relative;
-        /*z-index: 1;*/
+    }
 
+    .realisationSection{
+        flex-direction: column-reverse;        
     }
 
     aside
@@ -485,6 +547,10 @@ footer a{
         box-shadow: -2px 0px 12px 0px rgba(122,122,122,1);
     }
 
+    .realisationAside{
+        width: 160px;
+    }
+
     nav 
     {
         position: static;
@@ -501,6 +567,85 @@ footer a{
     {
         margin-bottom: 0.5vw;   
     }
+
+    /* Contenu médias */
+    #mediasRealisation
+    {
+       display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        position: relative;
+        top: 70px;
+    }
+
+    #mediasRealisation img, #mediasRealisation video, #mediasRealisation .videoWrapper
+    {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /*border: 1px solid grey;*/
+    
+        /*max-height: 100vh;*/
+    }
+
+    #mediasRealisation .videoWrapper{
+        padding-bottom: 59%;
+        margin-top: 20px;
+    }
+
+    #presentationRealisation
+    {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        position: relative;
+        top: 70px;
+    }
+
+    #presentationRealisation h3
+    {
+        font-size: 1.4em;
+    }
+
+    #presentationRealisation p
+    {
+        margin: 0;   
+    }
+
+    #presentationRealisation h4
+    {
+        font-size: 1.2em;
+    }
+
+    #mediasRealisation .legendeTitre p
+    {
+        font-size: 1.2em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .legendeDetails p
+    {
+        font-size: 0.8em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    /* A propos Identification */
+    #identificationContenu
+    {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        position: relative;
+        top: 70px;
+    }
+
+    #identificationContenu h3
+    {
+        font-size: 1.4em;
+    }
+
     /*Realisations */
     #realisations
     {
@@ -518,9 +663,8 @@ footer a{
         width: 90vw;
         margin-left: 5vw;
         margin-right: 5vw;
-       /*  height: 100vh;*/
-/*         padding-top: ;
- */    }
+    }
+
     footer{
         flex-direction: column;
         align-items: center;
@@ -537,6 +681,26 @@ footer a{
     
     @media (min-width: 500px) and (max-width: 900px){
         .realisation{
+            width: 50vw;
+            margin-left: 25vw;
+            margin-right: 25vw;
+        }
+
+        #presentationRealisation, #mediasRealisation img, #mediasRealisation video, #mediasRealisation .videoWrapper, #mediasRealisation div {
+            width: 50vw;
+            margin-left: 25vw;
+            margin-right: 25vw;
+        }
+        #mediasRealisation .videoWrapper{
+            padding-bottom: 33%;
+        }
+
+        #mediasRealisation .legendeTitre p, #mediasRealisation .legendeDetails p{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        /* A propos identification */
+        #identificationContenu{
             width: 50vw;
             margin-left: 25vw;
             margin-right: 25vw;

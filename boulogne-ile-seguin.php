@@ -1,70 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#FE4FA5" />
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/gloshmol_realisations.css" />
-    <!-- <link rel="stylesheet" media="all and (max-width: 900px)" href="css/gloshmol_realisations_mobile.css" /> -->
-    <!-- <link rel="stylesheet" href="css/col.css" media="all">
-    <link rel="stylesheet" href="css/12cols.css" media="all" /> -->
-    <link rel="shortcut icon" href="images/logo_soleil.ico">
-    <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
-    <title>Boulogne Île Seguin</title>
-</head>
-<body>
-    <!-- <div class="section group"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-        <div class="col span_1_of_12"></div>
-    </div> -->
-    
-    <div class="conteneur">
-        <div id="iconeMenu"><a href="#"><img src="images/burger3.png" /></a></div>
-        <div id="iconeCroix"><a href="#"><img src="images/cross5.png" /></a></div>
-        <header>
-            <div id="logo"><a href="index.html" id="lienLogo">Bertrand Segers</a></div> <!--<span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div> -->
-        </header>
+<?php
+require_once('inc/init.inc.php');
+$page= 'Boulogne Île Seguin';
+require_once('inc/haut.inc.php');
+require_once('inc/header.realisation.inc.php');	
 
-        <section>
-            <aside> 
-                <nav>
-                    <div id="menuRealisations">
-                        <a href="index.html" class="menu active">Réalisations</a>
-                        <div id="filtres">
-<!--                            <a href="#" class="sousMenu" id="filtreTout">Tout</a>
--->                         <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
-                            <a href="#" class="sousMenu" id="filtreDessin">Dessins</a>
-                            <a href="#" class="sousMenu" id="filtreInstallation">Installations</a>
-                            <a href="#" class="sousMenu" id="filtreSculpture">Sculptures</a>
-                            <a href="#" class="sousMenu" id="filtreLivret">Livrets</a>
-                        </div>
-                    </div>
-<!--                    <div id="imagier"><a href="#" class="menu">Imagier</a></div>
--->                    <div id="achat"><a href="#" class="menu">Achat</a></div>
-                    <div id="menuAPropos">
-                        <a href="#" class="menu">A propos</a>
-                        <div id="aPropos">
-                            <a href="identification.html" class="sousMenu">Identification</a>
-                            <a href="#" class="sousMenu">Opeds</a>
-                            <a href="#" class="sousMenu">Colportages</a>
-                            <a href="#" class="sousMenu">Conférences</a>
-                        </div>
-                    </div>
-                    <div><a href="#" class="menu">Contact</a></div>    
-                </nav>
-            </aside>
-
+?>
             <div id ="mediasRealisation">
                 <div class="videoWrapper">
                     <iframe src="https://player.vimeo.com/video/235309761?color=FF008C&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -163,7 +103,7 @@
 
         </section>
     </div>
-    <script src="js/jquery-3.2.1.js"></script>       
-    <script src="js/gloshmol_realisations.js"></script>
-</body>
-</html>
+                
+<?php
+require_once('inc/footer.realisation.inc.php');	
+?>
