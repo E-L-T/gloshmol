@@ -6,7 +6,13 @@ body
     font-family: 'Muli', sans-serif;
     padding-left: 2em; 
     padding-right: 2em;
-    max-width: 1200px;    
+    max-width: 1200px;  
+    /* suite pour coller le footer en bas de page */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 0;
 }
 
 /* centre le body au-delà de 1200px de large. Codé de cette façon pour préserver la margin du body sous les 1300 px */

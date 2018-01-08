@@ -9,6 +9,19 @@ require_once('inc/header.realisation.inc.php');
             <div id ="identificationContenu">
                 <h2>Achat</h2>
                 
+                <p class="pAchat">Pour toute demande d'achat, envoyez un e-mail à bs@gloshmol.com en précisant le nom du fichier image qui vous intéresse.</p>
+
+                <!-- <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br /> -->
+
+
+                
             </div>
         </section>
     </div>
