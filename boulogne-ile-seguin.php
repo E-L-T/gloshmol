@@ -2,6 +2,10 @@
 require_once('inc/init.inc.php');
 $page= 'Boulogne Île Seguin';
 require_once('inc/haut.inc.php');
+$realisations_active = 'active';
+$achat_active = '';
+$a_propos_active = '';
+$contact_active = '';
 require_once('inc/header.realisation.inc.php');	
 
 ?>
@@ -79,19 +83,19 @@ require_once('inc/header.realisation.inc.php');
             </div>
 
             <div id ="presentationRealisation">
-                <h3>BIS - Boulogne Île Seguin</h3>
+                <h2>BIS - Boulogne Île Seguin</h2>
                 <p>Type : collaboration artistique<br />
                 Maître d'oeuvre : Agence Nicoalas Michelin Associés<br />Objet : concours pour la façade enveloppe
                 <br />Stade: étude de finition<br />Période : 2003-2004<br /><br />
                 Le concours de la façade enveloppe de l'île Seguin, initié par François Barré, invite des architectes à s'associer 
                 à des artistes pour imaginer une façade qui fasse le tour de l'île.<br />
-                Nicolas Michelin s'associe à 3 artistes, Antonio Gallego, Jan Kopp et moi.</p><br />
+                Nicolas Michelin s'associe à 3 artistes, Antonio Gallego, Jan Kopp et moi.</p>
 
-                <h4>Intégration au travail d'équipe</h4>
+                <h3>Intégration au travail d'équipe</h3>
                 <p>De la même façon que l’ingénieur structure ou que l’économiste mais avec mes moyens d’expression plastique 
-                (dessins, volume, peinture, photo, textes …) j’ai produit des documents qui ont participé à la recherche commune.</p><br />
+                (dessins, volume, peinture, photo, textes …) j’ai produit des documents qui ont participé à la recherche commune.</p>
 
-                <h4>La transaction</h4>
+                <h3>La transaction</h3>
                 <p>La transaction est une performance donnée dans le cadre de la réponse à ce concours. 
                 Elle exprime, en se fondant sur la raison de la figure de l’île, la légitimité de l’artiste 
                 à s’approprier la question de la mémoire. La performance se présente comme une possibilité ouverte 

@@ -24,7 +24,7 @@
             <aside> 
                 <nav>
                     <div id="menuRealisations">
-                        <a href="<?= RACINE_SITE ?>index.php" class="menu active">Réalisations</a>
+                        <a href="<?= RACINE_SITE ?>index.php" class="menu <?= $realisations_active ?>">Réalisations</a>
                         <div id="filtres">
                            <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
                             <a href="#" class="sousMenu" id="filtreDessin">Dessins</a>
@@ -34,11 +34,11 @@
                         </div>
                     </div>
 <!--                    <div id="imagier"><a href="#" class="menu">Imagier</a></div>
--->                    <div id="achat"><a href="<?= RACINE_SITE ?>achat.php" class="menu">Achat</a></div>
+-->                    <div id="achat"><a href="<?= RACINE_SITE ?>achat.php" class="menu <?= $achat_active ?>">Achat</a></div>
                     <div id="menuAPropos">
-                        <a href="<?= RACINE_SITE ?>apropos.php" class="menu">A propos</a>
+                        <a href="<?= RACINE_SITE ?>apropos.php" class="menu <?= $a_propos_active ?>">A propos</a>
                     </div>
-                    <div><a href="<?= RACINE_SITE ?>contact.php" class="menu">Contact</a></div>    
+                    <div><a href="<?= RACINE_SITE ?>contact.php" class="menu <?= $contact_active ?>">Contact</a></div>    
                 </nav>
             </aside>
             

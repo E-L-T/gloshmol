@@ -67,8 +67,9 @@ var animationDuration = 600;
 
 document.querySelector("nav").addEventListener("click", function(event){
     /* permet de lancer le changement de page après la fin de l'animation \o/ */
-    event.preventDefault();
+    
     if (window.innerWidth < mediaLimitSize) {
+    event.preventDefault();
     $('.realisationAside').animate({right:"-210px"},animationDuration);
     iconeMenuElt.classList.toggle("disappear");
     iconeCroixElt.classList.toggle("appear");

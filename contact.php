@@ -2,6 +2,10 @@
 require_once('inc/init.inc.php');
 $page= 'Contact';
 require_once('inc/haut.inc.php');
+$realisations_active = '';
+$achat_active = '';
+$a_propos_active = '';
+$contact_active = 'active';
 require_once('inc/header.realisation.inc.php');	
 
 ?>
