@@ -56,8 +56,8 @@ require_once('inc/header.index.inc.php');
                 </div>    
 
                 <div class="realisation installation" id="5">
-                    <a href="#">
-                    <img src="images/soleil_rose-portes-18x24-w.jpg" alt="Soleil rose"/>
+                    <a href="<?= RACINE_SITE ?>soleil-rose.php">
+                    <img src="images/soleil_rose-portes-18x24.jpg" alt="Soleil rose"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Soleil rose</strong></p>
                         <p class="motCle">Installation</p>
@@ -67,7 +67,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation sculpture" id="4">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>leger_souffle.php">
                     <img src="images/leger_souffle-130108-MQ_10-w.jpg" alt="Léger souffle"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Léger souffle</strong></p>
@@ -78,7 +78,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation archives" id="3">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>club_B8.php">
                     <img src="images/club_B8-5-101014-M_archives-2.jpg" alt="Club B8"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Club B8</strong></p>
@@ -87,9 +87,20 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
+
+                <div class="realisation archives">
+                    <a href="<?= RACINE_SITE ?>2_portes.php">
+                    <img src="images/portes-121016-w.jpg" alt="2 portes"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>2 portes</strong></p>
+                        <p class="motCle">Installation</p>
+                        <p class="annee">2012</p>
+                    </div>
+                    </a>
+                </div>
                 
                 <div class="realisation exposition" id="2">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>formats.php">
                     <img src="images/FORMATS-120414-portes-7-w.jpg" alt="Club B8"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Formats</strong></p>
