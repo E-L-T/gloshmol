@@ -14,16 +14,6 @@ require_once('inc/header.realisation.inc.php');
                     <iframe src="https://player.vimeo.com/video/238533119?color=FF008C&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
 
-                
-
-                <!-- <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://player.vimeo.com/video/235309761?color=FD37A9&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
-                <!-- Cette solution ci-dessus est pas mal, mais ça incorpore des barres noires sur les côtés de la video. Effet très gênant en version tablette -->
-
-                <!-- <video width="100%" controls poster="images/screenshotLaTransaction.png">
-                    <source src="videos/La_transaction.mp4">
-                    <source src="videos/La_transaction.avi">
-                </video> -->
-                
                 <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Peinture 1/5</p>
@@ -48,7 +38,7 @@ require_once('inc/header.realisation.inc.php');
                     <p><em>console et fond</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
                 </div>
 
-                <img src="images/BIS-02_4-verrue_bateau-W.jpg" alt="">
+                <img src="images/BIS-02_4-verrue_bateau-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Peinture 4/5</p>
                 </div>
@@ -64,21 +54,78 @@ require_once('inc/header.realisation.inc.php');
                     <p><em>verrue et bateau</em><br />acrylique sur contreplaqué<br />18 x 24 cm</p>
                 </div>
 
-                <img src="images/BIS-01-FH71-ile_enveloppe-W.jpg" alt="">
+                <!-- <img src="images/BIS-00-FH71-ile_enveloppe-w-1.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Rond</p>
                 </div>
                 <div class="legendeDetails">
                     <p>Encre de Chine sur arches<br />18 x 24 cm</p>
+                </div> -->
+
+                <div class="vertical"><img src="images/BIS-03_1-facade_Laprade.gif" alt=""></div>
+                <div class="vertical legendeTitre">
+                    <p>Motif façade Laprade</p>
+                </div>
+                <div class="vertical legendeDetails">
+                    <p>Encre sur calque, pochoir, peinture</p>
                 </div>
 
-                 <img src="images/BIS-06-gabarit-W.jpg" alt="">
+                <img src="images/BIS-15-burger-W.jpg" alt="">
                 <div class="legendeTitre">
-                    <p>Gabarit</p>
+                    <p>Maquette burger</p>
                 </div>
                 <div class="legendeDetails">
-                    <p>papier et brou de noix sur contreplaqué<br />18 x 24 cm</p>
+                    <p></p>
                 </div>
+
+                <img src="images/BIS-26-FH75-coupe_gravure-3-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Déplacement de bulles</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Gravure sur bois, encre et savon<br />18 x 24 cm</p>
+                </div>
+
+                <img src="images/BIS-27-MQ-fil-2-W.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Maquette fils 2/2</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>bois, clous, fil<br />18 x 24 cm</p>
+                </div>
+
+                <img src="images/BIS-07-Molloy-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Molloy</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Découpe dans le livre</p>
+                </div>
+
+                <img src="images/BIS-08_1-FH91-BIS-ile_tensions.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Fils</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Tension, gravure sur bois</p>
+                </div>
+                
+                <img src="images/BIS-32-jambe-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Résille</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Jambe de mannequin et bas résille</p>
+                </div>
+
+                <img src="images/BIS-35-boite_esther-w.JPG" alt="">
+                <div class="legendeTitre">
+                    <p>Boîte d'Esther</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Boîte en bois et métal<br />photo 0.10 x2.10 m</p>
+                </div>
+
 
             </div>
 

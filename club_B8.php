@@ -28,11 +28,11 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <img src="images/club_B8-3-100415-B8-BS_GR-04-02.jpg" alt="">
-                <div class="legendeTitre">
+                <div class="vertical"><img src="images/club_B8-3-100415-B8-BS_GR-04-02.jpg" alt=""></div>
+                <div class="vertical legendeTitre">
                     <p>La nuit</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p></p>
                 </div>
 
@@ -68,11 +68,11 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <img src="images/club_B8-9-100530-lustre-01-2.jpg" alt="">
-                <div class="legendeTitre">
+                <div class="vertical"><img src="images/club_B8-9-100530-lustre-01-2.jpg" alt=""></div>
+                <div class="vertical legendeTitre">
                     <p>Dîner sous un lustre</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p></p>
                 </div>
 
