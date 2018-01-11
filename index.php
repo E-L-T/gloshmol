@@ -23,7 +23,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation dessin livret" id="8">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>dessins-erotiques.php">
                     <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
                     <div class="texteRealisation">
                         <p class="titre">Dessins érotiques</p>
@@ -45,7 +45,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation dessin livret" id="6">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>grades-verts.php">
                     <img src="images/grades_verts-livrets-13-w.jpg" alt="Grades verts"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Grades verts</strong></p>

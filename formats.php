@@ -64,18 +64,61 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <img src="images/s-FORMATS-04-120716-treille_armee-w.jpg" alt="">
+                <div class="vertical"><img src="images/s-FORMATS-06-120716-Chanot-w.JPG" alt=""></div>
+                <div class="vertical legendeTitre">
+                    <p>Portes dressées sous verrière</p>
+                </div>
+                <div class="vertical legendeDetails">
+                    <p></p>
+                </div>
+
+                <div class="vertical"><img src="images/s-FORMATS-07-120716-grade_vert-elice-w.JPG" alt=""></div>
+                <div class="vertical legendeTitre">
+                    <p>Grade vert et Elice</p>
+                </div>
+                <div class="vertical legendeDetails">
+                    <p></p>
+                </div>
+
+                <img src="images/s-FORMATS-08-120509-paysage_profond-maquette-w.jpg" alt="">
                 <div class="legendeTitre">
-                    <p><em>Treille et armée de carton</em></p>
+                    <p>Un paysage profond, maquette</p>
                 </div>
                 <div class="legendeDetails">
-                    <p></p>
+                    <p>18 x 24 x 6cm</p>
+                </div>
+
+                <img src="images/s-FORMATS-09-paysage_profond-120607-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Un paysage profond</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Sculpture filaire, trône et paysage</p>
+                </div>
+
+                <img src="images/s-FORMATS-10-120608-trone-perspective_profonde-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Trône et filaire, perspective</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>0,96 x 0,72 x 1,2 m.<br />
+                    500 pièces aggloméré peintes et rainurées<br />
+                    300 kg en 6 caisses de 50 kg<br />
+                    Photo Chloé Esdraffo </p>
+                </div>
+
+                <img src="images/s-FORMATS-11-120701-Chanot-performance-J_Attali-02-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Paysage</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Photo Jean Attali</p>
                 </div>
 
             </div>
 
             <div id ="presentationRealisation">
-                <h2>FORMAT, dessins et sculptures</h2>
+                <h2>Formats</h2>
                 <p>Exposition personnelle
                 <br />Du 9 juin au 15 juillet 2012
                 <br />Centre Albert Chanot, centre d'art à Clamart
