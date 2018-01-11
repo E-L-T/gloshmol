@@ -10,7 +10,7 @@ require_once('inc/header.realisation.inc.php');
 
 ?>
             <div id ="mediasRealisation">
-                <div class="videoWrapper">
+                <div class="videoWrapper tailleVideo1">
                     <iframe src="https://player.vimeo.com/video/238533119?color=FF008C&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
 

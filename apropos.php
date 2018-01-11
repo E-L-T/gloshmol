@@ -170,7 +170,7 @@ require_once('inc/header.realisation.inc.php');
 
                 <p>- février 2008, conférence à l’<a href="http://www.paris-malaquais.archi.fr/index.html?module=home" target="_blank">ENSAPM, école d’architecture Paris Malaquais</a>, dans le cycle concernant le dessin et la représentation sous le titre “OUARPO; limites de la représentation de l’espace habité”. Cette conférence a fait l'objet d'une publication.</p>
 
-                <div class="videoWrapper">
+                <div class="videoWrapper tailleVideo2">
                     <iframe src="https://player.vimeo.com/video/238533543?color=FF008C&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     
                 </div>
