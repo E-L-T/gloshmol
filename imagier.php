@@ -1,12 +1,11 @@
 <?php
+session_start();
 require_once('inc/init.inc.php');
-$page= 'Imagier';
+$page = 'Imagier';
 require_once('inc/haut.inc.php');
-$realisations_active = 'active'	;
-$achat_active = '';
-$a_propos_active = '';
-$contact_active = '';
+$imagier_active = 'active';
 require_once('inc/header.index.inc.php');
+
 
 ?>
     
@@ -24,30 +23,21 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation"></div>
+
+                <?php 
+                    if($_SESSION){
+                        $resultatImages = $_SESSION['resultatImages'];
+
+                        foreach ($resultatImages as $resultatImage) {
+                            echo "<div class='realisation'><img src='imagier/$resultatImage'/>
+                            </div> ";
+                        }
+                        var_dump($_SESSION['resultatImages']);
+                        
+                    }
+                ?>
                 
-                <div class="realisation">
-                    Image1
-                </div>
-
-                <div class="realisation">
-                    Image2
-                </div>
-
-                <div class="realisation">
-                    Image3
-                </div>
-
-                <div class="realisation">
-                    Image4
-                </div>
-
-                <div class="realisation">
-                    Image5
-                </div>
-
-                <div class="realisation">
-                    Image6
-                </div>
+                
 
             </div>    
         </section>

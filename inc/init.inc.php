@@ -2,6 +2,13 @@
 
 //definir $page 
 $page='';
+$resultatImages = [];
+$realisations_active = '';
+$achat_active = '';
+$a_propos_active = '';
+$contact_active = '';
+$imagier_active = '';
+
 
 //Chemins
 define('RACINE_SITE', '/gloshmol/');

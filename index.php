@@ -3,9 +3,6 @@ require_once('inc/init.inc.php');
 $page= 'Bertrand Segers';
 require_once('inc/haut.inc.php');
 $realisations_active = 'active'	;
-$achat_active = '';
-$a_propos_active = '';
-$contact_active = '';
 require_once('inc/header.index.inc.php');
 
 ?>
