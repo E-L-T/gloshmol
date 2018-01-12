@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?= RACINE_SITE ?>css/gloshmol_index.css" />   
     <link rel="shortcut icon" href="<?= RACINE_SITE ?>images/logo_soleil.ico">
     <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= RACINE_SITE ?>css/animate.css" /> 
     <!-- <script src="js/jquery.fullpage.js"></script> -->
 </head>
 

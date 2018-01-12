@@ -64,19 +64,19 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <div class="vertical"><img src="images/s-FORMATS-06-120716-Chanot-w.JPG" alt=""></div>
-                <div class="vertical legendeTitre">
+                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/s-FORMATS-06-120716-Chanot-w.JPG" alt=""></div>
+                <div class="vertical animated animatedFadeInUp fadeInUplegendeTitre">
                     <p>Portes dressées sous verrière</p>
                 </div>
-                <div class="vertical legendeDetails">
+                <div class="vertical animated animatedFadeInUp fadeInUplegendeDetails">
                     <p></p>
                 </div>
 
-                <div class="vertical"><img src="images/s-FORMATS-07-120716-grade_vert-elice-w.JPG" alt=""></div>
-                <div class="vertical legendeTitre">
+                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/s-FORMATS-07-120716-grade_vert-elice-w.JPG" alt=""></div>
+                <div class="vertical animated animatedFadeInUp fadeInUplegendeTitre">
                     <p>Grade vert et Elice</p>
                 </div>
-                <div class="vertical legendeDetails">
+                <div class="vertical animated animatedFadeInUp fadeInUplegendeDetails">
                     <p></p>
                 </div>
 
