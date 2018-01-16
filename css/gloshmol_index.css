@@ -389,12 +389,13 @@ h2{
 
 .realisation:hover img
 {
-    opacity: 0.6;
-/*     transform: scale(1.05);
- */    
+     opacity: 0.6;
+    /* transform: scale(1.05); */
+    
+}
 
-/*  -webkit-filter: pink(1);
- filter: pink(1); */
+.imagier:hover img {
+    opacity: 1;
 }
 
 .titre

@@ -29,16 +29,14 @@ require_once('inc/header.index.inc.php');
                         $resultatImages = $_SESSION['resultatImages'];
 
                         foreach ($resultatImages as $resultatImage) {
-                            echo "<div class='realisation'><img src='imagier/$resultatImage'/>
+                            echo "<div class='realisation imagier'><img src='imagier/$resultatImage'/>
                             </div> ";
                         }
-                        var_dump($_SESSION['resultatImages']);
+                        //var_dump($_SESSION['resultatImages']);
                         
                     }
                 ?>
                 
-                
-
             </div>    
         </section>
     </div>

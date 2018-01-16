@@ -12,7 +12,7 @@ $nomsImages = scandir($dirImagier);
 /* var_dump($nomsImages);
  */
 
-//
+//sélection des fichiers images contenant la requete
 if(isset($_POST)){
     $requete = $_POST;
 /*     var_dump($requete);
