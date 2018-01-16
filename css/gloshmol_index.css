@@ -424,6 +424,35 @@ h2{
     margin: 0;
 }
 
+/* Formulaire */
+
+.requeteImagier
+{
+    width: 50%;
+    border: none;
+    background-color: #F2F1F0;
+    
+}
+
+.inputImagier
+{
+    font-family: 'Muli', sans-serif;
+    
+}
+
+.submitImagier
+{
+/*     border-radius: 0.5;
+ */    box-shadow: 0;
+    margin: 0;
+    padding:0;
+}
+
+.resultatImagier
+{
+    
+}
+
 /***** FOOTER  *****/
 
 footer
