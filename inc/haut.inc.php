@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="css/col.css" media="all" />
 	<link rel="stylesheet" href="css/12cols.css" media="all" />  -->
     <link rel="stylesheet" href="<?= RACINE_SITE ?>css/gloshmol_index.css" />   
-    <link rel="shortcut icon" href="<?= RACINE_SITE ?>images/logo_soleil.ico">
+    <link rel="shortcut icon" href="<?= RACINE_SITE ?>images/soleil_rose-logo_web-1-bd.ico">
     <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
     <link rel="stylesheet" href="<?= RACINE_SITE ?>css/animate.css" /> 
     <!-- <script src="js/jquery.fullpage.js"></script> -->

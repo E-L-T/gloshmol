@@ -339,6 +339,47 @@ h2{
     position: relative;
 }
 
+#supRealisationsImagier{
+    width: 76.22%;
+    height: 100%;
+    min-height: 63.5vh;    
+    margin: 0;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start; */
+    position: relative;
+}
+
+#supRealisationsImagier > #presentationImagier{
+
+    font-size: 0.84em;
+    margin-bottom: 10px;
+    
+}
+
+#supRealisationsImagier > h2, #presentationImagier {
+    margin-left: 2.133%;  
+    width: 63%;
+    
+}
+
+
+#realisationsImagier{
+    width: 100%;
+    height: 100%;
+    min-height: 63.5vh;    
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    position: relative;
+
+}
+
 .realisation
 {
     display: block;
@@ -426,9 +467,15 @@ h2{
 
 /* Formulaire */
 
+.formulaire{
+    margin-bottom: 20px;
+    margin-left: 2.133%;
+    width: 100%;
+}
+
 .requeteImagier
 {
-    width: 50%;
+    width: 25%;
     border: none;
     background-color: #F2F1F0;
     
@@ -448,9 +495,15 @@ h2{
     padding:0;
 }
 
+.formImagier{
+    display: inline;
+}
+
 .resultatImagier
 {
-    
+    font-size: 0.84em;
+    display : inline;
+    margin-left : 40px;
 }
 
 /***** FOOTER  *****/
@@ -737,6 +790,16 @@ footer span {
     } */
 
     /*Realisations */
+    #supRealisationsImagier{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 70px;
+        padding: 0;
+        top: 0;
+        overflow: hidden;
+    }  
+    
     #realisations
     {
         display: block;
@@ -748,6 +811,33 @@ footer span {
         overflow: hidden;
     }
 
+    #realisationsImagier{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+/*         margin-top: 100px;
+ */        padding: 0;
+        top: 0;
+        overflow: hidden;
+    
+    }
+
+    #supRealisationsImagier > h2, form, #presentationImagier{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .resultatImagier{
+        display: block;
+        margin-top: 20px;;
+        margin-left: 5vw;
+    }
+
+    .formulaire{
+        margin-top: 20px;
+    }
+          
     .realisation
     {
         width: 90vw;
@@ -771,6 +861,12 @@ footer span {
     
     @media (min-width: 500px) and (max-width: 900px){
         .realisation{
+            width: 50vw;
+            margin-left: 25vw;
+            margin-right: 25vw;
+        }
+
+        #supRealisationsImagier > h2, form, #presentationImagier, .resultatImagier{
             width: 50vw;
             margin-left: 25vw;
             margin-right: 25vw;

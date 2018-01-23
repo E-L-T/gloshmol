@@ -11,7 +11,7 @@ $imagier_active = '';
 
 
 //Chemins
-define('RACINE_SITE', '/gloshmol/');
+define("RACINE_SITE", "/gloshmol/");
 //define('RACINE_SITE', 'http://www.gloshmol.com/gloshmolB/');
 
 // le chemin à partir de htdocs
