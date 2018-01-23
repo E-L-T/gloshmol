@@ -60,7 +60,7 @@ if(isset($_POST) && empty($_POST) == false) {
                         <?php 
                             if(isset($_POST)){
                                 foreach ($resultatImages as $resultatImage) {
-                                    echo "<div class='realisation imagier'><img src='imagier/$resultatImage'/>
+                                    echo "<div class='realisationImagier imagier'><img src='imagier/$resultatImage'/>
                                     </div> ";
                                 }
                                 //var_dump($_SESSION['resultatImages']);     

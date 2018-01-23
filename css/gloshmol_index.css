@@ -375,10 +375,49 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
-    position: relative;
+	align-items: baseline;
+/*     position: relative;
+ */}
 
+.realisationImagier
+{
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+    width: 31.15%;
+    margin-left: 2.133%;
+    margin-bottom: 20px;
+    margin-top: 0; 
+    outline: 1px solid black;
+/*     overflow: hidden;
+ */}
+
+ .realisationImagier:before{
+    content:'';
+    display: block;
+    padding-top: 100%;/* vertical value as  100% equals width 
+    display:inline-block;
+ float: left;   
+    vertical-align:middle; /* or whatever */
 }
+
+.realisationImagier img{
+    position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    /* display: inline-block;
+    position: relative;
+    width: 100%;   
+    vertical-align: middle; */ 
+    /* margin: auto;*/
+    /* justify-content: center;
+    align-items: center; */
+}
+
 
 .realisation
 {
@@ -389,19 +428,19 @@ h2{
     margin-bottom: 0;
     margin-top: 0;  
 }
-
 .realisation a:active, .realisation a:focus
 
 {
     outline: none;
 }
 
-.realisation img 
+.realisation img
 {
     
-    width: 100%;
-    margin-bottom: 0;
+   width: 100%;
+   margin: auto;
 }
+
 
 .texteRealisation
 {
