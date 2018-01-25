@@ -225,3 +225,56 @@ window.addEventListener("keydown", function() {
 //scrollBy 100vh
 //transition : 1s ease-in-out sur la div .realisation dans le css mobile */
 
+
+/* Récupération de la requête entrée dans le formulaire de l'imagier et envoi au serveur en Ajax */
+
+var formulaireImagierElt = document.getElementById("formulaireImagier");
+console.log(formulaireImagierElt);
+
+var inputFormulaireImagierElt = document.getElementById("inputFormulaireImagier");
+
+formulaireImagierElt.addEventListener("submit", function(e){
+    e.preventDefault();
+    console.log("eventListener sur formulaire imagier lancé");
+    
+    var requete = inputFormulaireImagierElt.value;
+    var param = "requete=" + requete;
+    console.log(param);
+
+    monAjax(param);
+});
+
+/* Fonction Ajax */
+
+function monAjax(arg){
+    //e.preventDefault();
+    var file = 'imagierTraitement.php'; 
+
+    if(window.XMLHttpRequest) //car certains nav comme IE n'ont pas ça.
+        var xhttp = new XMLHttpRequest();
+    else // pour IE
+        var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    //lorsqu'il y a une seule instruction , on est pas obligé de mettre les accolades
+    
+    console.log(arg);
+
+    xhttp.open("POST", file, true); // on écrit la demande envoyée au serveur, ie envoie de la variable file (fichier.php)
+    //la ligne suivante est obligatoire en methode POST
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    xhttp.onreadystatechange = function () {
+        if(xhttp.status == 200 && xhttp.readyState == 4){
+            
+            console.log("bonne réponse");
+            console.log(xhttp.responseText);
+            
+
+            var result = xhttp.responseText;//je stocke le résultat de la requête dans une variable
+
+            document.getElementById('divFormulaire').innerHTML += result;//place le résultat de la requete ajax (les produits sélectionnés) dans la page d'accueil.
+        }
+        
+    }
+    xhttp.send(arg); //
+    
+}
