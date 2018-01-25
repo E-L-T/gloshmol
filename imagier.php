@@ -12,16 +12,36 @@ $dirImagier = "imagier";
 
 $nomsImages = scandir($dirImagier);
 
+//fonction pour éliminer les accents
+function wd_remove_accents($str, $charset='utf-8')
+{
+    $str = htmlentities($str, ENT_NOQUOTES, $charset);
+    
+    $str = preg_replace('#&([A-za-z])(?:acute|cedil|caron|circ|grave|orn|ring|slash|th|tilde|uml);#', '\1', $str);
+    $str = preg_replace('#&([A-za-z]{2})(?:lig);#', '\1', $str); // pour les ligatures e.g. '&oelig;'
+    $str = preg_replace('#&[^;]+;#', '', $str); // supprime les autres caractères
+    
+    return $str;
+}
+
 //sélection des fichiers images contenant la requete
 if(isset($_POST) && empty($_POST) == false) {
     $requete = $_POST;
     //var_dump($requete);
     $requeteString = $requete['the_search'];
     //echo $requeteString;
-    
+    //enlever accents et majuscules du nom de la requete
+    $requeteString = wd_remove_accents($requeteString);
+    $requeteString = strtolower($requeteString);
+/*     var_dump($requeteString);
+ */    
     foreach ($nomsImages as $nomImage) {
         //si le nom du fichier contient la requête, j'insère le nom du fichier dans un tableau
-        if (strpos($nomImage, $requeteString)) {
+        //enlever accents et majuscules du nom du fichier image
+        $nomImageFiltre = wd_remove_accents($nomImage);
+        $nomImageFiltre = strtolower($nomImageFiltre);
+
+        if (strpos($nomImageFiltre, $requeteString) !== false) {
             /* echo "Une correspondance pour " . $requeteString . " \n". " : " . $nomImage . " \n"; */
             array_push($resultatImages, $nomImage);
         }
@@ -63,6 +83,8 @@ if(isset($_POST) && empty($_POST) == false) {
                                 $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
                                 
                                 foreach ($resultatImages as $resultatImage) {
+                                    
+                                    //affichage du titre
                                     $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
                                     $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
                                     $resultatImageTitre = ucwords($resultatImageTitre);
