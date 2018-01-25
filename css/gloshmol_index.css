@@ -103,7 +103,7 @@ header a
     width: 35px;
     height: 35px;
     margin: 0;
-    padding: 0;
+    padding: 0;re
 } */
 
 
@@ -378,13 +378,27 @@ h2{
 	align-items: baseline;
 }
 
-.realisationImagier
+.blocImagier
 {
-    position: relative;
     width: 31.15%;
     margin-left: 2.133%;
     margin-bottom: 40px;
     margin-top: 0; 
+}
+
+.realisationImagier
+{
+    width: 100%;
+    position: relative;
+    
+}
+
+.titreImage
+{
+    font-size : 0.8em;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
 }
 
  .realisationImagier:before{
@@ -871,13 +885,10 @@ footer span {
         margin-right: 5vw;
     }
     
-    .realisationImagier
+
+
+    .blocImagier
     {
-        /* position: relative;
-        width: 31.15%;
-        margin-left: 2.133%;
-        margin-bottom: 40px;
-        margin-top: 0;  */
         width: 90vw;
         margin-left: 5vw;
         margin-right: 5vw;
@@ -905,7 +916,7 @@ footer span {
             margin-right: 25vw;
         }
 
-        .realisationImagier{
+        .blocImagier{
             width: 50vw;
             margin-left: 25vw;
             margin-right: 25vw;

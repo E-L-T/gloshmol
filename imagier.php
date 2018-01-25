@@ -59,9 +59,16 @@ if(isset($_POST) && empty($_POST) == false) {
 
                         <?php 
                             if(isset($_POST)){
+                                $tirets = array("-", "_");
+                                $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
+                                
                                 foreach ($resultatImages as $resultatImage) {
-                                    echo "<div class='realisationImagier imagier'><img src='imagier/$resultatImage'/>
-                                    </div> ";
+                                    $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
+                                    $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
+                                    $resultatImageTitre = ucwords($resultatImageTitre);
+
+                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><img src='imagier/$resultatImage'/>
+                                    </div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
                                 }
                                 //var_dump($_SESSION['resultatImages']);     
                             }
