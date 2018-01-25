@@ -227,6 +227,8 @@ window.addEventListener("keydown", function() {
 
 
 /* Récupération de la requête entrée dans le formulaire de l'imagier et envoi au serveur en Ajax */
+var param='';
+
 
 var formulaireImagierElt = document.getElementById("formulaireImagier");
 console.log(formulaireImagierElt);
@@ -272,6 +274,14 @@ function monAjax(arg){
             var result = xhttp.responseText;//je stocke le résultat de la requête dans une variable
 
             document.getElementById('divFormulaire').innerHTML += result;//place le résultat de la requete ajax (les produits sélectionnés) dans la page d'accueil.
+            //affichage progressif en JQuery 
+            $(".blocImagier").hide();
+            $(".blocImagier").slice(0, 15).show();
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    $(".blocImagier:hidden").slice(0, 15).show();
+                }
+             });
         }
         
     }
