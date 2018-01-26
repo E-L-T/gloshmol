@@ -6,10 +6,12 @@ require_once('inc/haut.inc.php');
  */
 //Enregistrement des noms des fichiers images dans un tableau
 //$dirImagier = "/var/www/html/gloshmol/imagier"; 
-$dirImagier = "imagier"; 
+$dirImagier = "imagierbd"; 
 ///RACINE_SITE . "imagier";
 
 $nomsImages = scandir($dirImagier);
+$nomsImagesInverses = array_reverse($nomsImages);
+
 
 //fonction pour éliminer les accents
 function wd_remove_accents($str, $charset='utf-8')
@@ -24,8 +26,8 @@ function wd_remove_accents($str, $charset='utf-8')
 }
 
 //sélection des fichiers images contenant la requete
-if(isset($_POST['requete']) && empty($_POST['requete']) == false) {
-    $requeteString = $_POST['requete'];
+if(isset($_POST['requete']) && empty($_POST['requete']) === false) {
+    $requeteString = htmlspecialchars($_POST['requete']);
     
     //echo $requeteString;
     //enlever accents et majuscules du nom de la requete
@@ -44,17 +46,14 @@ if(isset($_POST['requete']) && empty($_POST['requete']) == false) {
             array_push($resultatImages, $nomImage);
         }
     }
-/*     var_dump($resultatImages);
- */    
+    
+    if(isset($_POST) && empty($_POST) == false) {
+        echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteString . '"</div></div><div id="realisationsImagier">';
+    }
 }
 
-if(isset($_POST) && empty($_POST) == false) {
-    echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteString . '"</div></div><div id="realisationsImagier">';
-}
 
- 
-
-if(isset($_POST)){
+if(isset($_POST['requete']) && empty($_POST['requete']) === false) {
     $tirets = array("-", "_");
     $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
     
@@ -69,5 +68,12 @@ if(isset($_POST)){
         </div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
     }
     //var_dump($_SESSION['resultatImages']);     
-}
+}/*  else {
+    echo '<div id="realisationsImagier">';
+    foreach ($nomsImagesInverses as $nomImageInverse) {
+        echo "<div class='blocImagier'><div class='realisationImagier imagier'><img src='imagier/$nomImageInverse'/>
+        </div><div class='titreImage'>". $nomImageInverse . "</div></div>";
+    }
+    echo '</div>';
+} */
 ?>

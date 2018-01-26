@@ -227,7 +227,6 @@ window.addEventListener("keydown", function() {
 
 
 /* Récupération de la requête entrée dans le formulaire de l'imagier et envoi au serveur en Ajax */
-var param='';
 
 
 var formulaireImagierElt = document.getElementById("formulaireImagier");
@@ -235,16 +234,39 @@ console.log(formulaireImagierElt);
 
 var inputFormulaireImagierElt = document.getElementById("inputFormulaireImagier");
 
-formulaireImagierElt.addEventListener("submit", function(e){
-    e.preventDefault();
+
+//jQuery(document).on('click', '.submitImagier', function (event) {
+
+$("#formulaireImagier").submit(function(event){
+    event.preventDefault();
+    event.stopImmediatePropagation();
     console.log("eventListener sur formulaire imagier lancé");
+    var param='';
+    var requete = '';
+    var requete = inputFormulaireImagierElt.value;
+    var param = "requete=" + requete;
+    console.log(param);
+    
+    monAjax(param);
+    inputFormulaireImagierElt.value = '';
+    return false;
+    
+});
+
+/* formulaireImagierElt.addEventListener("submit", function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    console.log("eventListener sur formulaire imagier lancé");
+    var param='';
     
     var requete = inputFormulaireImagierElt.value;
     var param = "requete=" + requete;
     console.log(param);
 
     monAjax(param);
-});
+
+    return false;
+}); */
 
 /* Fonction Ajax */
 
@@ -270,6 +292,7 @@ function monAjax(arg){
             console.log("bonne réponse");
             console.log(xhttp.responseText);
             
+            //var result = '';
 
             var result = xhttp.responseText;//je stocke le résultat de la requête dans une variable
 
@@ -280,11 +303,28 @@ function monAjax(arg){
             $(window).scroll(function() {
                 if($(window).scrollTop() + $(window).height() == $(document).height()) {
                     $(".blocImagier:hidden").slice(0, 15).show();
+
                 }
-             });
+            });
         }
         
     }
     xhttp.send(arg); //
     
 }
+
+//affichage par défaut des images
+/* if(window.location === "localhost/gloshmol.com/imagier.php"){
+} */
+/* monAjax('');
+ */
+/* 
+$(".blocImagier").hide();
+$(".blocImagier").slice(0, 15).show();
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $(".blocImagier:hidden").slice(0, 15).show();
+
+    }
+}); */
+

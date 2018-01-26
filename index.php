@@ -8,17 +8,7 @@ require_once('inc/header.index.inc.php');
 ?>
     
             <div id="realisations">
-                <div class="realisation installation dessin" id="17">
-                    <a href="<?= RACINE_SITE ?>boulogne-ile-seguin.php">
-                    <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Boulogne Île Seguin</strong></p>
-                        <p class="motCle">Performance / Installation / Dessin</p>
-                        <p class="annee">2003-2004</p>
-                    </div>
-                    </a>
-                </div>
-
+                
                 <div class="realisation dessin livret" id="8">
                     <a href="<?= RACINE_SITE ?>dessins-erotiques.php">
                     <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
@@ -31,10 +21,10 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation exposition installation livret" id="7">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>faites-vos-jeux.php">
                     <img src="images/Gonesse-grade_rose-w.jpg" alt="Dégradé rose"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>Biennale</strong></p>
+                        <p class="titre"><strong>Faites vos jeux</strong></p>
                         <p class="motCle">Exposition / Installation / Livret</p>
                         <p class="annee">2014</p>
                     </div>
@@ -108,7 +98,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation exposition" id="1">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>bs-au-b8.php">
                     <img src="images/BSauB8-110702-general-w.jpg" alt="Exposition au B8"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>BS au B8</strong></p>
@@ -118,22 +108,22 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>              
                 
-                <!-- <div class="realisation sculpture livret" id="9">
-                    <a href="#">
-                    <img src="images/SERPENT-110329avion-w.jpg" alt="Serpent"/>
+                <div class="realisation sculpture livret" id="9">
+                    <a href="<?= RACINE_SITE ?>serpent.php">
+                    <img src="images/s-FORMATS-03-serpent-120607-w.jpg" alt="Serpent"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Serpent</strong></p>
                         <p class="motCle">Sculpture / Livret</p>
                         <p class="annee">2011</p>
                     </div>
                     </a>
-                </div>    -->
+                </div>
 
                 <div class="realisation sculpture" id="10">
-                    <a href="#">
-                    <img src="images/COLLIER-110307-ping_pong-w.jpg" alt="Ping-pong"/>
+                    <a href="<?= RACINE_SITE ?>collier.php">
+                    <img src="images/COLLIER-110307-ping_pong-w.JPG" alt="Ping-pong"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>Ping-pong</strong></p>
+                        <p class="titre"><strong>Collier</strong></p>
                         <p class="motCle">Sculpture</p>
                         <p class="annee">2011</p>
                     </div>
@@ -141,7 +131,7 @@ require_once('inc/header.index.inc.php');
                 </div> 
 
                 <div class="realisation sculpture" id="11">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>voute.php">
                     <img src="images/VOUTE-101103-ph4-w.jpg" alt="Voûte"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Voûte</strong></p>
@@ -152,8 +142,8 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation sculpture" id="12">
-                    <a href="#">
-                    <img src="images/ROUE-101014-onde-Velizy-Gasp_Remus_Mat_BS-056-2-w.jpg" alt="Roue"/>
+                    <a href="<?= RACINE_SITE ?>roue.php">
+                    <img src="images/ROUE-101014-onde-Velizy-Gasp_Remus_Mat_BS-056-2-w2.jpg" alt="Roue"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Roue</strong></p>
                         <p class="motCle">Sculpture</p>
@@ -163,7 +153,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation sculpture exposition" id="13">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>hz-expo.php">
                     <img src="images/HZ_expo-100712-HZ-photos-07-wlg.jpg" alt="HZ Expo"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>HZ Expo</strong></p>
@@ -174,7 +164,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation exposition" id="14">
-                    <a href="#">
+                    <a href="<?= RACINE_SITE ?>des-intrus-au-musee.php">
                     <img src="images/Chinon-BIS-boite_esther-w.jpg" alt="Des intrus au musée"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Des intrus au musée</strong></p>
@@ -185,8 +175,8 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation exposition" id="15">
-                    <a href="#">
-                    <img src="images/ondes-100115-ph-Idris-05-w.jpg" alt="Ondes"/>
+                    <a href="<?= RACINE_SITE ?>ondes.php">
+                    <img src="images/ondes-100115-ph-Idris-05-w2.jpg" alt="Ondes"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Ondes</strong></p>
                         <p class="motCle">Exposition</p>
@@ -195,13 +185,68 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation dessin" id="16">
+                <!-- <div class="realisation exposition installation dessin" id="16">
                     <a href="#">
                     <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="La Halle aux farines"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>La Halle aux farines</strong></p>
                         <p class="motCle">Exposition / Installation / Dessin</p>
                         <p class="annee">2002-2006</p>
+                    </div>
+                    </a>
+                </div> -->
+
+                <div class="realisation installation sculpture" id="16">
+                    <a href="<?= RACINE_SITE ?>paris-hopital-cochin-niches.php">
+                    <img src="images/PCN-060825-22-LG.jpg" alt="PCN"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Paris, Hôpital Cochin, Niches</strong></p>
+                        <p class="motCle">Installation / Sculpture</p>
+                        <p class="annee">2002</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation installation sculpture" id="16">
+                    <a href="<?= RACINE_SITE ?>image-braille.php">
+                    <img src="images/image_braille2.jpg" alt="image braille"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Image braille</strong></p>
+                        <p class="motCle">Installation / Sculpture</p>
+                        <p class="annee">2004</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation exposition installation sculpture" id="16">
+                    <a href="<?= RACINE_SITE ?>cri.php">
+                    <img src="images/CRI-PHF-071018-expo_CRI-ceh-W.jpg" alt="cri"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Cri</strong></p>
+                        <p class="motCle">Exposition / Installation / Sculpture</p>
+                        <p class="annee">2007</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin" id="16">
+                    <a href="<?= RACINE_SITE ?>beauvais-place-des-halles.php">
+                    <img src="images/BPH-04-GX30-BPH-w.jpg" alt="cri"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Beauvais Place des Halles</strong></p>
+                        <p class="motCle">Dessin</p>
+                        <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation installation dessin" id="17">
+                    <a href="<?= RACINE_SITE ?>boulogne-ile-seguin.php">
+                    <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Boulogne Île Seguin</strong></p>
+                        <p class="motCle">Performance / Installation / Dessin</p>
+                        <p class="annee">2003-2004</p>
                     </div>
                     </a>
                 </div>

@@ -235,6 +235,11 @@ a:hover, a:focus, .active
     line-height: 1.3;
 }
 
+#presentationRealisation a 
+{
+    text-decoration: underline;
+}
+
 #mediasRealisation .legendeTitre p
 {
     font-size: 1.15em;
@@ -508,7 +513,7 @@ h2{
 /* Formulaire */
 
 .formulaire{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 2.133%;
     width: 100%;
 }
