@@ -64,7 +64,7 @@ if(isset($_POST['requete']) && empty($_POST['requete']) === false) {
         $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
         $resultatImageTitre = ucwords($resultatImageTitre);
 
-        echo "<div class='blocImagier'><div class='realisationImagier imagier'><img src='imagier/$resultatImage'/>
+        echo "<div class='blocImagier'><div class='realisationImagier imagier'><img src='imagierbd/$resultatImage'/>
         </div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
     }
     //var_dump($_SESSION['resultatImages']);     
