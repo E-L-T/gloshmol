@@ -328,3 +328,4 @@ $(window).scroll(function() {
     }
 }); */
 
+$('.swipebox').swipebox();

@@ -5,12 +5,16 @@ require_once('inc/haut.inc.php');
 $imagier_active = 'active';
 require_once('inc/header.index.inc.php');
 
+
+
 //Enregistrement des noms des fichiers images dans un tableau
 //$dirImagier = "/var/www/html/gloshmol/imagier"; 
 $dirImagier = "imagierbd"; 
 ///RACINE_SITE . "imagier";
 
 $nomsImages = scandir($dirImagier);
+$nomsImagesInverses = array_reverse($nomsImages);
+$nomsImagesInverses = array_slice($nomsImagesInverses, 0, 1000);
 
 //fonction pour éliminer les accents
 function wd_remove_accents($str, $charset='utf-8')
@@ -68,7 +72,7 @@ if(isset($_POST) && empty($_POST) == false) {
                         <?php 
                             if(isset($_POST) && empty($_POST) == false) {
                                 echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteString . '"</div>';
-                        }
+                            } 
                         ?>
                     </div>
                     <div id="realisationsImagier">
@@ -77,10 +81,11 @@ if(isset($_POST) && empty($_POST) == false) {
                         <!-- <div class="realisation"></div>
                         <div class="realisation"></div> -->
 
-                        <?php 
-                            if(isset($_POST)){
-                                $tirets = array("-", "_");
-                                $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
+                        <?php                           
+                            $tirets = array("-", "_");
+                            $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
+
+                            if(isset($_POST) && empty($_POST) == false){  
                                 
                                 foreach ($resultatImages as $resultatImage) {
                                     
@@ -89,11 +94,32 @@ if(isset($_POST) && empty($_POST) == false) {
                                     $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
                                     $resultatImageTitre = ucwords($resultatImageTitre);
 
-                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><img data-src='imagierbd/$resultatImage' />
-                                    </div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+
+                                    
+
+                                    /* echo "<div class='blocImagier'><div class='realisationImagier imagier'><img data-src='imagierbd/$resultatImage' />
+                                    </div><div class='titreImage'>". $resultatImageTitre . "</div></div>"; */
+
                                 }
-                                //var_dump($_SESSION['resultatImages']);     
+                            }else if(empty($_POST) == true){
+                                //Affichage antechronologique par defaut
+
+                                foreach ($nomsImagesInverses as $nomImageInverse) {
+                                    
+                                    //affichage du titre
+                                    $nomImageInverseTitre = str_replace($tirets, " ", $nomImageInverse);
+                                    $nomImageInverseTitre = str_replace($extensions, "", $nomImageInverseTitre);
+                                    $nomImageInverseTitre = ucwords($nomImageInverseTitre);
+
+                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+
+                                    /* echo "<div class='blocImagier'><div class='realisationImagier imagier'><img data-src='imagierbd/$nomImageInverse' />
+                                    </div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>"; */
+                                }    
                             }
+                                //var_dump($_SESSION['resultatImages']);     
+                            
                         ?>
                     </div>     
                 </div>    

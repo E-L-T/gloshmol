@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="<?= RACINE_SITE ?>css/gloshmol_index.css" />   
     <link rel="shortcut icon" href="<?= RACINE_SITE ?>images/soleil_rose-logo_web-1-bd.ico">
     <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= RACINE_SITE ?>css/animate.css" /> 
-    <!-- <script src="js/jquery.fullpage.js"></script> -->
+    <link rel="stylesheet" href="<?= RACINE_SITE ?>src/css/swipebox.min.css">
+<!--     <link rel="stylesheet" href="<?= RACINE_SITE ?>css/animate.css" /> 
+ -->    <!-- <script src="js/jquery.fullpage.js"></script> -->
 </head>
 
 <body>
