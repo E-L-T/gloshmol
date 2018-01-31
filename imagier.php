@@ -104,7 +104,6 @@ if(isset($_POST) && empty($_POST) == false) {
                 </div>     
             </div>    
         </section>
-        <a href="#"><div class="arrowUp" ><img src="images/arrowUp5.jpg" /></div></a>
 
     </div>
 

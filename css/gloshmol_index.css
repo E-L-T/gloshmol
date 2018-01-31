@@ -580,11 +580,15 @@ footer span {
 .arrowUp{
     display: none;
     position: fixed;
-    bottom: 15px;
-    right: 5px;
+    bottom: 20px;
+    right: 10px;
     z-index: 4;
+}
+
+.arrowUp img{
     opacity: 0.7;
 }
+
 
 
 @media (max-width:900px){
