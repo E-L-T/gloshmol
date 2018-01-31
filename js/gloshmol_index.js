@@ -229,15 +229,15 @@ window.addEventListener("keydown", function() {
 /* Récupération de la requête entrée dans le formulaire de l'imagier et envoi au serveur en Ajax */
 
 
-var formulaireImagierElt = document.getElementById("formulaireImagier");
+/* var formulaireImagierElt = document.getElementById("formulaireImagier");
 console.log(formulaireImagierElt);
 
 var inputFormulaireImagierElt = document.getElementById("inputFormulaireImagier");
-
+ */
 
 //jQuery(document).on('click', '.submitImagier', function (event) {
 
-$("#formulaireImagier").submit(function(event){
+/* $("#formulaireImagier").submit(function(event){
     event.preventDefault();
     event.stopImmediatePropagation();
     console.log("eventListener sur formulaire imagier lancé");
@@ -251,7 +251,7 @@ $("#formulaireImagier").submit(function(event){
     inputFormulaireImagierElt.value = '';
     return false;
     
-});
+}); */
 
 /* formulaireImagierElt.addEventListener("submit", function(e){
     e.preventDefault();
@@ -270,7 +270,7 @@ $("#formulaireImagier").submit(function(event){
 
 /* Fonction Ajax */
 
-function monAjax(arg){
+/* function monAjax(arg){
     //e.preventDefault();
     var file = 'imagierTraitement.php'; 
 
@@ -312,7 +312,7 @@ function monAjax(arg){
     xhttp.send(arg); //
     
 }
-
+ */
 //affichage par défaut des images
 /* if(window.location === "localhost/gloshmol.com/imagier.php"){
 } */
