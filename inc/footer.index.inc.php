@@ -13,7 +13,8 @@
         </footer>
     </div>
     
-    <script src="<?= RACINE_SITE ?>js/jquery-3.2.1.js"></script>   
+    <script src="<?= RACINE_SITE ?>js/jquery-3.2.1.js"></script>
+    <script src="<?= RACINE_SITE ?>js/jquery.lazyloadxt.min.js"></script>   
     <script src="<?= RACINE_SITE ?>js/gloshmol_index.js"></script>
 <!-- <script>
     $('#realisations').fullpage();

@@ -7,7 +7,7 @@ require_once('inc/header.index.inc.php');
 
 //Enregistrement des noms des fichiers images dans un tableau
 //$dirImagier = "/var/www/html/gloshmol/imagier"; 
-$dirImagier = "imagier"; 
+$dirImagier = "imagierbd"; 
 ///RACINE_SITE . "imagier";
 
 $nomsImages = scandir($dirImagier);
@@ -89,7 +89,7 @@ if(isset($_POST) && empty($_POST) == false) {
                                     $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
                                     $resultatImageTitre = ucwords($resultatImageTitre);
 
-                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><img src='imagier/$resultatImage'/>
+                                    echo "<div class='blocImagier'><div class='realisationImagier imagier'><img data-src='imagierbd/$resultatImage' />
                                     </div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
                                 }
                                 //var_dump($_SESSION['resultatImages']);     
