@@ -8,17 +8,6 @@ require_once('inc/header.index.inc.php');
 ?>
     
             <div id="realisations">
-                
-                <div class="realisation dessin livret" id="8">
-                    <a href="<?= RACINE_SITE ?>dessins-erotiques.php">
-                    <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
-                    <div class="texteRealisation">
-                        <p class="titre">Dessins érotiques</p>
-                        <p class="motCle">Dessin / Livret</p>
-                        <p class="annee">2013</p>
-                    </div>
-                    </a>
-                </div>
 
                 <div class="realisation exposition installation livret" id="7">
                     <a href="<?= RACINE_SITE ?>faites-vos-jeux.php">
@@ -41,6 +30,17 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>    
+
+                <div class="realisation dessin livret" id="8">
+                    <a href="<?= RACINE_SITE ?>dessins-erotiques.php">
+                    <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
+                    <div class="texteRealisation">
+                        <p class="titre">Dessins érotiques</p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2013</p>
+                    </div>
+                    </a>
+                </div>
 
                 <div class="realisation installation" id="5">
                     <a href="<?= RACINE_SITE ?>soleil-rose.php">
@@ -185,6 +185,17 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
+                <div class="realisation exposition installation sculpture">
+                    <a href="<?= RACINE_SITE ?>cri.php">
+                    <img src="images/CRI-PHF-071018-expo_CRI-ceh-W.jpg" alt="cri"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Cri</strong></p>
+                        <p class="motCle">Exposition / Installation / Sculpture</p>
+                        <p class="annee">2007</p>
+                    </div>
+                    </a>
+                </div>
+
                 <!-- <div class="realisation exposition installation dessin" id="16">
                     <a href="#">
                     <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="La Halle aux farines"/>
@@ -196,7 +207,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div> -->
 
-                <div class="realisation installation sculpture" id="16">
+                <div class="realisation installation sculpture">
                     <a href="<?= RACINE_SITE ?>paris-hopital-cochin-niches.php">
                     <img src="images/PCN-060825-22-LG.jpg" alt="PCN"/>
                     <div class="texteRealisation">
@@ -207,7 +218,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation sculpture" id="16">
+                <div class="realisation installation sculpture">
                     <a href="<?= RACINE_SITE ?>image-braille.php">
                     <img src="images/image_braille2.jpg" alt="image braille"/>
                     <div class="texteRealisation">
@@ -218,24 +229,35 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation sculpture" id="16">
-                    <a href="<?= RACINE_SITE ?>cri.php">
-                    <img src="images/CRI-PHF-071018-expo_CRI-ceh-W.jpg" alt="cri"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Cri</strong></p>
-                        <p class="motCle">Exposition / Installation / Sculpture</p>
-                        <p class="annee">2007</p>
-                    </div>
-                    </a>
-                </div>
-
-                <div class="realisation dessin" id="16">
+                <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>beauvais-place-des-halles.php">
                     <img src="images/BPH-04-GX30-BPH-w.jpg" alt="cri"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Beauvais Place des Halles</strong></p>
                         <p class="motCle">Dessin</p>
                         <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>lin-soupe.php">
+                    <img src="images/LIN_soupe-SudEst2esq.jpg" alt="cri"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Lin Soupe</strong></p>
+                        <p class="motCle">Installation / Dessin</p>
+                        <p class="annee">2002</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>oped.php">
+                    <img src="images/LIN_soupe-SudEst2esq.jpg" alt="cri"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Oped</strong></p>
+                        <p class="motCle">Installation / Dessin</p>
+                        <p class="annee">2002</p>
                     </div>
                     </a>
                 </div>
