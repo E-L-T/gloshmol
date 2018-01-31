@@ -577,6 +577,15 @@ footer span {
     color: rgb(143, 142, 142);
 }
 
+.arrowUp{
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    z-index: 4;
+    opacity: 0.7;
+}
+
 
 @media (max-width:900px){
     /* Main*/
@@ -642,7 +651,7 @@ footer span {
         position: fixed;
         top: 11px;/*20px;*/
         right: 6vw;/*20px;*/
-        z-index: 6;
+        z-index: 7;
     }
 
     #iconeMenu img
@@ -659,7 +668,7 @@ footer span {
         position: fixed;
         top: 13px;/*20px;*/
         right: 6vw;/*20px;*/
-        z-index: 5;
+        z-index: 6;
     }
     
     #iconeCroix img
@@ -695,7 +704,7 @@ footer span {
         width: 160px; /* changement vs 40% */
         /* max-width: 160px; */
         height: 100%;
-        z-index: 4;
+        z-index: 5;
         background-color:white; /* rgb(220,220,220); */
         padding-left: 5vw;
         padding-top: 70px;

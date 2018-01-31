@@ -329,3 +329,21 @@ $(window).scroll(function() {
 }); */
 
 $('.swipebox').swipebox();
+
+//retour en haut de la page imagier
+$('.arrowUp').on('click', function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+//Faire apparaître la flèche après un peu de scroll
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+      $('.arrowUp').fadeIn();
+    } else {
+      $('.arrowUp').fadeOut();
+    }
+  });
