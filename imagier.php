@@ -8,10 +8,12 @@ require_once('inc/header.index.inc.php');
 //Enregistrement des noms des fichiers images dans un tableau
 $dirImagier = "imagierbd"; 
 $nomsImages = scandir($dirImagier);
+
+//Tableau antechronologique pour affichage par défaut
 $nomsImagesInverses = array_reverse($nomsImages);
 $nomsImagesInverses = array_slice($nomsImagesInverses, 0, 1000);
 
-//fonction pour éliminer les accents
+//fonction pour éliminer les accents de la requête
 function wd_remove_accents($str, $charset='utf-8')
 {
     $str = htmlentities($str, ENT_NOQUOTES, $charset);
@@ -23,89 +25,109 @@ function wd_remove_accents($str, $charset='utf-8')
     return $str;
 }
 
-//sélection des fichiers images contenant la requete
-$requeteString = '';
+//sélection des fichiers images correspondant la requete
+$requeteBrute = '';
 if(isset($_POST) && empty($_POST) == false) {
-    $requeteString = htmlspecialchars($_POST['the_search']);
+    $requeteBrute = htmlspecialchars($_POST['the_search']);
     
+    //traitement de la requête entrée par l'internaute
     //enlever accents et majuscules du nom de la requete
-    $requeteString = wd_remove_accents($requeteString);
-    $requeteString = strtolower($requeteString);
+    $requete = wd_remove_accents($requeteBrute);
+    $requete = strtolower($requete);
 
-    if(strlen($requeteString) >= 2) {
+    //créer un tableau $requeteArray contenant chaque mot clé
+    //cas d'une requête où les termes sont séparés par espace , +
+    $requeteArray = preg_split("/[\s,+]/", $requete);
+    
+    $requeteArray = array_filter($requeteArray);
+    
+    $requeteArray = array_values($requeteArray);
+
+    if(strlen($requete) >= 2) {
         foreach ($nomsImages as $nomImage) {
-            //si le nom du fichier contient la requête, j'insère le nom du fichier dans un tableau
             //enlever accents et majuscules du nom du fichier image
             $nomImageFiltre = wd_remove_accents($nomImage);
             $nomImageFiltre = strtolower($nomImageFiltre);
-    
-            if (strpos($nomImageFiltre, $requeteString) !== false) {
-                array_push($resultatImages, $nomImage);
+            
+            //si le nom du fichier contient la ou les requête(s), j'insère le nom du fichier dans un tableau
+            $counter = 0;
+            for ($i=0; $i <count($requeteArray) ; $i++) { 
+                if (strpos($nomImageFiltre, $requeteArray[$i]) !== false) {
+                $counter++;
+            }
+                if($counter == count($requeteArray)){
+                    array_push($resultatImages, $nomImage);   
+                }
             }
         }
     }   
 }
 
 ?>                 
-            <div id="supRealisationsImagier">
-                <h2>Imagier</h2>
+        <div id="supRealisationsImagier">
+            <h2>Imagier</h2>
 
-                <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le dossier rassemble plus de 13000 dessins, il est mis à jour au fur et à mesure des numérisations.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..</div>
-                <div class="formulaire">
-                    
-                    <form action="imagier.php" method="post" class="formImagier">
-                        <input class="inputImagier requeteImagier" type="search" placeholder="Mot-clé" name="the_search">
-                        <input class="inputImagier submitImagier" type="submit" value="Rechercher" />
+            <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le dossier rassemble plus de 13000 dessins, il est mis à jour au fur et à mesure des numérisations.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..</div>
+            <div class="formulaire">
+                
+                <form action="imagier.php" method="post" class="formImagier">
+                    <input class="inputImagier requeteImagier" type="search" placeholder="Mot-clé" name="the_search">
+                    <input class="inputImagier submitImagier" type="submit" value="Rechercher" />
 
-                    </form>
-                    <?php 
-                        if(isset($_POST) && empty($_POST) == false) {
-                            if(strlen($requeteString) >= 2) {
-                                echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteString . '"</div>';
+                </form>
+                <?php 
+                    if(isset($_POST) && empty($_POST) == false) {
+                        if(strlen($requete) >= 2) {
+                            if(count($resultatImages) < 2){
+                                echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultat pour "' . $requeteBrute . '"</div>';
                             } else {
-                                echo '<div class="resultatImagier" >Entrez au moins deux caractères</div>';
+                                echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteBrute . '"</div>';
                             } 
-                        }
-                    ?>
-                </div>
-                <div id="realisationsImagier">
-                    
-                    <?php                           
-                        $tirets = array("-", "_");
-                        $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
+                        } else {
+                            echo '<div class="resultatImagier" >Entrez au moins deux caractères</div>';
+                        } 
+                    }
+                ?>
+            </div>
+            <div id="realisationsImagier">
+                
+                <?php                           
+                    //ré-écriture du titre du fichier image sans tirets ni extensions
+                    $tirets = array("-", "_");
+                    $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
 
-                        if(isset($_POST) && empty($_POST) == false && strlen($requeteString) >= 2){  
+                    if(isset($_POST) && empty($_POST) == false && strlen($requete) >= 2){  
+                        
+                        foreach ($resultatImages as $resultatImage) {
                             
-                            foreach ($resultatImages as $resultatImage) {
-                                
-                                //affichage du titre
-                                $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
-                                $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
-                                $resultatImageTitre = ucwords($resultatImageTitre);
+                            //affichage du titre
+                            $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
+                            $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
+                            $resultatImageTitre = ucwords($resultatImageTitre);
 
-                                echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                            //affichage de l'image
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
 
-                            }
-                        }else if(empty($_POST) == true){
-                            //Affichage antechronologique par defaut
+                        }
+                    }else if(empty($_POST) == true){
+                        //Affichage antechronologique par defaut
 
-                            foreach ($nomsImagesInverses as $nomImageInverse) {
-                                
-                                //affichage du titre
-                                $nomImageInverseTitre = str_replace($tirets, " ", $nomImageInverse);
-                                $nomImageInverseTitre = str_replace($extensions, "", $nomImageInverseTitre);
-                                $nomImageInverseTitre = ucwords($nomImageInverseTitre);
+                        foreach ($nomsImagesInverses as $nomImageInverse) {
+                            
+                            //affichage du titre
+                            $nomImageInverseTitre = str_replace($tirets, " ", $nomImageInverse);
+                            $nomImageInverseTitre = str_replace($extensions, "", $nomImageInverseTitre);
+                            $nomImageInverseTitre = ucwords($nomImageInverseTitre);
 
-                                echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
-
-                            }    
-                        }                            
-                    ?>
-                </div>     
-            </div>    
-        </section>
-
-    </div>
+                            //affichage de l'image
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+                        }    
+                    }                            
+                ?>
+            </div>     
+        </div>    
+    </section>
+</div>
 
 <?php
 require_once('inc/footer.index.inc.php');
