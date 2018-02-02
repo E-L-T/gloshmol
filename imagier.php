@@ -17,7 +17,6 @@ $nomsImagesInverses = array_slice($nomsImagesInverses, 0, 1000);
 function wd_remove_accents($str, $charset='utf-8')
 {
     $str = htmlentities($str, ENT_NOQUOTES, $charset);
-    
     $str = preg_replace('#&([A-za-z])(?:acute|cedil|caron|circ|grave|orn|ring|slash|th|tilde|uml);#', '\1', $str);
     $str = preg_replace('#&([A-za-z]{2})(?:lig);#', '\1', $str); // pour les ligatures e.g. '&oelig;'
     $str = preg_replace('#&[^;]+;#', '', $str); // supprime les autres caractères
@@ -35,12 +34,14 @@ if(isset($_POST) && empty($_POST) == false) {
     $requete = wd_remove_accents($requeteBrute);
     $requete = strtolower($requete);
 
-    //créer un tableau $requeteArray contenant chaque mot clé
-    //cas d'une requête où les termes sont séparés par espace , +
+    //Si la requête est constituée de plusieurs termes séparés par un espace ou un +, je crée un tableau $requeteArray contenant chaque mot clé
+    
     $requeteArray = preg_split("/[\s,+]/", $requete);
     
+    //J'enlève les éléments vides du tableau
     $requeteArray = array_filter($requeteArray);
     
+    //Je réindexe le tableau à partir de 0
     $requeteArray = array_values($requeteArray);
 
     if(strlen($requete) >= 2) {
@@ -49,7 +50,7 @@ if(isset($_POST) && empty($_POST) == false) {
             $nomImageFiltre = wd_remove_accents($nomImage);
             $nomImageFiltre = strtolower($nomImageFiltre);
             
-            //si le nom du fichier contient la ou les requête(s), j'insère le nom du fichier dans un tableau
+            //si le nom du fichier contient la ou les requête(s), j'insère le nom du fichier dans le tableau $resultatImages
             $counter = 0;
             for ($i=0; $i <count($requeteArray) ; $i++) { 
                 if (strpos($nomImageFiltre, $requeteArray[$i]) !== false) {
@@ -106,11 +107,11 @@ if(isset($_POST) && empty($_POST) == false) {
                             $resultatImageTitre = ucwords($resultatImageTitre);
 
                             //affichage de l'image
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
 
                         }
                     }else if(empty($_POST) == true){
-                        //Affichage antechronologique par defaut
+                        //Affichage antechronologique par défaut
 
                         foreach ($nomsImagesInverses as $nomImageInverse) {
                             
@@ -120,7 +121,7 @@ if(isset($_POST) && empty($_POST) == false) {
                             $nomImageInverseTitre = ucwords($nomImageInverseTitre);
 
                             //affichage de l'image
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
                         }    
                     }                            
                 ?>
