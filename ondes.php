@@ -29,7 +29,7 @@ require_once('inc/header.realisation.inc.php');
                     </p>
                 </div>
 
-                <img src="images/Chinon-IE19-Mu_Chinon-plaque-acier-animal-w.jpg" alt="">
+                <img src="images/ondes-MQ-100116-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Maquette de l'installation</p>
                 </div>
