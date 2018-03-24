@@ -298,6 +298,15 @@ a:hover, a:focus, .active
     width: 49.16%;
 }
 
+.class-404 {
+    min-height: 60vh;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
 h2{
     margin-top: 0;
     font-weight: normal;

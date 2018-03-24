@@ -22,40 +22,24 @@ $images = [
 
 ?>
             <div id ="mediasRealisation">
-
 <?php
     AffichageImages($images);
 ?>
-                    
             </div>
-
-            
-
             <div id ="presentationRealisation">
                 <h2>Oped</h2>
                 <p>Diplôme d'architecture<br />
-
                 2001<br />
-
                 Ecole d'architecture Paris Malaquais<br />
-
-                Félicitations du jury : Djamel Klouche, Jean Attali, Finn Geipel<br />              
-
+                Félicitations du jury : Djamel Klouche, Jean Attali, Finn Geipel<br />
                 Diplôme d'urbanisme théorique<br />
-
                 Site : au bord des piste de l'aéroport de Roissy<br />
-
                 Colportage<br />
-
                 Exposé à Shanghai et Berlin dans le cadre de "Architectures émergentes" et sous forme performative au Palais de Tokyo<br />
-
                </p>
-                
             </div>
-
         </section>
-    </div>
-                
+    </div>          
 <?php
 require_once('inc/footer.realisation.inc.php');	
 ?>
