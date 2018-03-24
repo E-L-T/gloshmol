@@ -8,67 +8,25 @@ $a_propos_active = '';
 $contact_active = '';
 require_once('inc/header.realisation.inc.php');	
 
+$images = [
+    ['OPED-1-110523-caddie_OPED.jpg', 'vertical', 'Caddie', ''],
+    ['OPED-2-cartouche.jpg', '', 'Cartouche', ''],
+    ['OPED-3-croix.jpg', 'vertical', 'Croix', 'Installation'],
+    ['OPED-4-maquette dilatation.jpg', '', 'Dilatation', ''],
+    ['OPED-5-depression.gif', 'vertical', 'Dépression', ''],
+    ['OPED-6-ter.jpg', '', 'Colportage Roissy terminal 1', ''],
+    ['OPED-7-colportages-OPED-01-Callot.jpg', '', 'Exposition, galerie Callot, Paris 2001', ''],
+    ['OPED-8-+10ans-Gabriel.jpg', '', 'Exposition, galerie Callot, Paris 2011', ''],
+    ['OPED-9-col_OPED-pdtokyo-4.jpg', '', 'Performance Palais de Tokyo, 2002', '']
+];
+
 ?>
             <div id ="mediasRealisation">
-                
-                
-                <img src="images/VOUTE-101103-ph4-w.jpg" alt="">
-                <div class="legendeTitre">
-                    <p>Premier montage de la voûte à l'atelier</p>
-                </div>
-                <div class="legendeDetails">
-                    <p>
-                    </p>
-                </div>
 
-                <div class="vertical"><img src="images/VOUTE-HZ-bleu_maison-toit_rond_cylindre-090301-w.jpg" alt=""></div>
-                <div class="vertical legendeTitre">
-                    <p>HZ Bleu Maison Toit Rond Cylindre</p>
-                </div>
-                <div class="vertical legendeDetails">
-                    <p>Aquarelle 18x24 cm
-                    </p>
-                </div>
-
-
-                <img src="images/VOUTE-101123-ANMA_10ans-VOUTE_ROUE-Jessica_Boubetra-13-2-w.jpg" alt="">
-                <div class="legendeTitre">
-                    <p> Exposition "les 10ANMA", novembre 2010</p>
-                </div>
-                <div class="legendeDetails">
-                    <p> Photo Jessica Boubetra pour ANMA<br />
-                    1,85 x 1,65 x 1,65 m<br />
-                    avec l'aide de Christophe Chabbert<br />
-                    </p>
-                </div>
-
-                <div class="vertical"><img src="images/VOUTE-18x24-peinture-w.jpg" alt=""></div>
-                <div class="vertical legendeTitre">
-                    <p>Fabrique de la voûte</p>
-                </div>
-                <div class="vertical legendeDetails">
-                    <p>Séchage de la peinture
-                    </p>
-                </div>
-
-                <img src="images/VOUTE-101116-poncage-w.JPG" alt="">
-                <div class="legendeTitre">
-                    <p> Fabrique de la voûte</p>
-                </div>
-                <div class="legendeDetails">
-                    <p>Le ponçage<br />
-                    </p>
-                </div>
-
-                <div class="vertical"><img src="images/VOUTE-18x24-grad-w.jpg" alt=""></div>
-                <div class="vertical legendeTitre">
-                    <p>Voûte et grade</p>
-                </div>
-                <div class="vertical legendeDetails">
-                    <p>Modélisation Christophe Chabbert
-                    </p>
-                </div>
-
+<?php
+    AffichageImages($images);
+?>
+                    
             </div>
 
             

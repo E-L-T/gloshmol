@@ -231,7 +231,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>beauvais-place-des-halles.php">
-                    <img src="images/BPH-04-GX30-BPH-w.jpg" alt="cri"/>
+                    <img src="images/BPH-04-GX30-BPH-w.jpg" alt="Beauvais Place des Halles"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Beauvais Place des Halles</strong></p>
                         <p class="motCle">Dessin</p>
@@ -242,7 +242,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>lin-soupe.php">
-                    <img src="images/LIN_soupe-SudEst2esq.jpg" alt="cri"/>
+                    <img src="images/LIN_soupe-SudEst2esq.jpg" alt="Lin Soupe"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Lin Soupe</strong></p>
                         <p class="motCle">Installation / Dessin</p>
@@ -253,7 +253,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>oped.php">
-                    <img src="images/LIN_soupe-SudEst2esq.jpg" alt="cri"/>
+                    <img src="images/OPED-4-maquette dilatation.jpg" alt="Oped"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Oped</strong></p>
                         <p class="motCle">Installation / Dessin</p>
@@ -264,7 +264,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>somme-roux-plu.php">
-                    <img src="images/FH39-BlV-percee.jpg" alt=""/>
+                    <img src="images/FH39-BlV-percee.jpg" alt="Somme Roux PLU"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Somme Roux PLU</strong></p>
                         <p class="motCle">Dessin</p>
