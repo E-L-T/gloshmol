@@ -262,7 +262,18 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation dessin" id="17">
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>somme-roux-plu.php">
+                    <img src="images/FH39-BlV-percee.jpg" alt=""/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Somme Roux PLU</strong></p>
+                        <p class="motCle">Dessin</p>
+                        <p class="annee">2003</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation installation dessin">
                     <a href="<?= RACINE_SITE ?>boulogne-ile-seguin.php">
                     <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
                     <div class="texteRealisation">

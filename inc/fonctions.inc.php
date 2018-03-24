@@ -16,3 +16,17 @@ function debug($tab) {
     echo '</div>';
 
 }
+
+function AffichageImages($images) {
+    foreach ($images as $image) {
+        if ($image[1] == 'vertical') {
+            echo "<div class='vertical'><img src='images/" . $image[0] . "'  alt=''></div>
+            <div class='vertical legendeTitre'><p>" . $image[2] . "</p></div><div class='vertical legendeDetails'><p>" . $image[3] . "</p></div>";
+        } else {
+            echo "<img src='images/" . $image[0] . "' alt=''>
+            <div class='legendeTitre'><p>" . $image[2] . "</p></div><div class='legendeDetails'><p>" . $image[3] . "</p></div>";
+        }       
+    }
+}
+
+//ecrire fonction AffichageVignettesSommaire()

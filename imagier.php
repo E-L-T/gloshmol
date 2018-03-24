@@ -107,7 +107,7 @@ if(isset($_POST) && empty($_POST) == false) {
                             $resultatImageTitre = ucwords($resultatImageTitre);
 
                             //affichage de l'image
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagier/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
 
                         }
                     }else if(empty($_POST) == true){
@@ -121,7 +121,12 @@ if(isset($_POST) && empty($_POST) == false) {
                             $nomImageInverseTitre = ucwords($nomImageInverseTitre);
 
                             //affichage de l'image
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagier/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+                            //là, imagesbd de 450 de w et images hd de 900 de w
+                            //ajouter un srcset imagierbd-350
+                            //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
+                            //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
+                            //En JS , transformer le img src = en img srcset = 
+                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
                         }    
                     }                            
                 ?>
