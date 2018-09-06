@@ -328,7 +328,9 @@ $(window).scroll(function() {
     }
 }); */
 //gestion de la swipebox
-$('.swipebox').swipebox();
+$('.swipebox').swipebox({
+    removeBarsOnMobile : false
+});
 //ajouter un srcset imagierbd-350
 //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
 //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
