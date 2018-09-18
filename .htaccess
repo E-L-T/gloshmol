@@ -31,4 +31,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*?)/?$ $1.php [L]
 </IfModule>
+
+Options -Indexes
 ErrorDocument 404 http://www.gloshmol.com/gloshmolB/gloshmol-page-404.php
+ErrorDocument 403 http://www.gloshmol.com/gloshmolB/gloshmol-page-403.php
+# IndexIgnore *

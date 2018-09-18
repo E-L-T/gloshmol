@@ -18,7 +18,7 @@ require_once('inc/header.realisation.inc.php');
                 <br>
                 
                 <div >
-                    <p>Erreur 404. La page demandée n'existe pas -> <a href="<?= RACINE_SITE ?>index.php">retour à la page d'accueil</a></p>
+                    <p>Erreur 403. Accès interdit -> <a href="<?= RACINE_SITE ?>index.php">retour à la page d'accueil</a></p>
                 </div>
             </div>
         </section>

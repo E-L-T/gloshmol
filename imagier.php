@@ -71,7 +71,7 @@ if(isset($_POST) && empty($_POST) == false) {
             <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le dossier rassemble plus de 13000 dessins, il est mis à jour au fur et à mesure des numérisations.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..</div>
             <div class="formulaire">
                 
-                <form action="imagier.php" method="post" class="formImagier">
+                <form action="" method="post" class="formImagier">
                     <input class="inputImagier requeteImagier" type="search" placeholder="Mot-clé" name="the_search">
                     <input class="inputImagier submitImagier" type="submit" value="Rechercher" />
 
@@ -107,6 +107,7 @@ if(isset($_POST) && empty($_POST) == false) {
                             $resultatImageTitre = ucwords($resultatImageTitre);
 
                             //affichage de l'image
+                            
                             echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
 
                         }
@@ -126,6 +127,7 @@ if(isset($_POST) && empty($_POST) == false) {
                             //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
                             //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
                             //En JS , transformer le img src = en img srcset = 
+
                             echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
                         }    
                     }                            
