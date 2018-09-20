@@ -560,6 +560,16 @@ h2{
     margin-left : 40px;
 }
 
+.blocImagierDesktop
+{
+    display: block;
+}
+
+.blocImagierMobile
+{
+    display: none;
+}
+
 /***** FOOTER  *****/
 
 footer
@@ -922,6 +932,16 @@ footer span {
         
     }
 
+    .blocImagierDesktop
+    {
+        display: none;
+    }
+
+    .blocImagierMobile
+    {
+        display: block;
+    }
+
     footer{
         flex-direction: column;
         align-items: center;
@@ -1051,4 +1071,6 @@ footer span {
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
+
+
 /** { border: 1px solid #f00; }*/

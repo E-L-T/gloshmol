@@ -128,7 +128,9 @@ if(isset($_POST) && empty($_POST) == false) {
                             //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
                             //En JS , transformer le img src = en img srcset = 
 
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$nomImageInverse' class='swipebox' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+                            echo "<div class='blocImagier blocImagierDesktop'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$nomImageInverse' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
+
+                            echo "<div class='blocImagier blocImagierMobile'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierbd/$nomImageInverse' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
                         }    
                     }                            
                 ?>

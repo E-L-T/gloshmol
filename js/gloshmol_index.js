@@ -336,15 +336,6 @@ $('.swipebox').swipebox({
 //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
 //En JS , transformer le img src = en img srcset = 
 
-$('body').on('DOMContentLoaded', function () {//je ne trouve pas l'evt approprié
-    console.log('evt detecte');
-    console.log($('.current img'));
-    var src = $('.current img').attr('src');
-    console.log(src);
-    var nouveauSrc = src + ' 900w, ' + 'imagierbd' + src.substr(9) + ' 450w';
-    console.log(nouveauSrc);
-    $('.current img').attr('srcset', nouveauSrc); // <-- changing srcset attribute
-});
 
 //retour en haut de la page imagier
 $('.arrowUp').on('click', function () {
@@ -364,3 +355,21 @@ $(document).scroll(function() {
     }
   });
 
+
+$('.realisationImagier').click(function (event) {
+    event.preventDefault();
+    if (window.innerWidth < mediaLimitSize) {
+        $('.blocImagierMobile .realisationImagier a').addClass('swipebox');
+        $('.blocImagierDesktop .realisationImagier a').removeClass('swipebox');
+        
+    } else {
+        $('.blocImagierDesktop .realisationImagier a').addClass('swipebox');
+        $('.blocImagierMobile .realisationImagier a').removeClass('swipebox');
+        
+    }
+    // setTimeout(function(){
+    //     console.log(event.target);
+    //     console.log(event.target.parentNode);
+    //     event.target.parentNode.trigger( "click" );
+    // }, 200);
+});
