@@ -8,6 +8,17 @@ require_once('inc/header.index.inc.php');
 ?>
     
             <div id="realisations">
+            
+               <div class="realisation installation dessin">
+                    <a href="<?= RACINE_SITE ?>dcpa.php">
+                    <img src="images/01-180521-DCPA_Bedier-scenarios-bestiaire-04-w.jpg" alt="DCPA"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>DCPA</strong></p>
+                        <p class="motCle">Installation / Dessin</p>
+                        <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
 
                 <div class="realisation exposition installation livret" id="7">
                     <a href="<?= RACINE_SITE ?>faites-vos-jeux.php">
@@ -283,7 +294,7 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
-
+    
             </div>    
         </section>
     </div>
