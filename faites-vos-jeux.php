@@ -53,11 +53,11 @@ require_once('inc/header.realisation.inc.php');
                     </p>
                 </div>
 
-                <img src="images/Gonesse_periodiques-w.jpg" alt="">
-                <div class="legendeTitre">
+                <div class="vertical"><img src="images/Gonesse_periodiques-w.JPG" alt=""></div>
+                <div class="vertical legendeTitre">
                     <p>Périodiques</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>Les livrets
                     </p>
                 </div>
