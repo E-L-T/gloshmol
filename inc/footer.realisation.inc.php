@@ -2,11 +2,11 @@
         <footer>
             <span>&copy;Bertrand Segers - <?php echo date('Y'); ?></span>
             <a href="<?= RACINE_SITE ?>contact.php">Contact</a>
-            <a href="#">Mentions légales</a>
+            <a href="<?= RACINE_SITE ?>mentions-legales.php">Mentions légales</a>
             <a href="#">Plan du site</a>
-            <a href="http://www.gloshmol.com" target="_blank">Ancienne version du site</a>
+<!--            <a href="http://www.gloshmol.com" target="_blank">Ancienne version du site</a> -->
             <div>
-                <a href="https://www.facebook.com/pg/BertrandSegersGloshmol/" target="_blank"><img src="images/iconeFB.png"/></a>
+             <a href="https://www.facebook.com/pg/BertrandSegersGloshmol/" target="_blank"><img src="images/iconeFB.png"/></a>
                 <a href="https://vimeo.com/user71683044" target="_blank"><img src="images/vimeo2.png"/></a>
             </div>
     
