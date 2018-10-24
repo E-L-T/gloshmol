@@ -328,7 +328,7 @@ h2{
 }
 
 #identificationContenu p a{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #identificationContenu h4{
