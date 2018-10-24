@@ -482,10 +482,6 @@ h2{
     position: relative;
 }
 
-.realisationSection {
-    min-height: 67vh;
-}
-
 .realisation:hover img
 {
      opacity: 0.6;
@@ -1076,5 +1072,10 @@ footer span {
     -webkit-animation-name: fadeInUp;
 }
 
+@media (min-width: 900px) {
+    .realisationSection {
+        min-height: 67vh;
+    }
+}
 
 /** { border: 1px solid #f00; }*/
