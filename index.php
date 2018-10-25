@@ -305,6 +305,17 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-visiteur.php">
+                    <img src="images/GI211-PHFD-040908-W.jpg" alt="Paris Halle aux Farines - Visiteur">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Paris Halle aux Farines - Visiteur</strong></p>
+                        <p class="motCle">Dessin</p>
+                        <p class="annee">2002-2006</p>
+                    </div>
+                    </a>
+                </div>
     
             </div>    
         </section>
