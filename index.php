@@ -316,6 +316,17 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-surface-vivante.php">
+                    <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="Paris Halle aux Farines - Surface vivante">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Paris Halle aux Farines - Surface vivante</strong></p>
+                        <p class="motCle">Installation / Sculpture</p>
+                        <p class="annee">2002-2008</p>
+                    </div>
+                    </a>
+                </div>
     
             </div>    
         </section>

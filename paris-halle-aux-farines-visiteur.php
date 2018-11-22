@@ -113,6 +113,7 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>Paris Halle aux farines - Visiteur</h2>
+                <p><em>Voir également la réalisation associée :  <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-surface-vivante.php">Paris Halle aux farines - Surface vivante</a></em></p>
                 <h3>Commande</h3>
                     <p>Dessins, suivi de chantier de la Halle aux farines.<br>
                     2002 - 2006<br>
@@ -123,6 +124,7 @@ $images = [
                     maître d'oeuvre : Nicolas MICHELIN, ANMA<br>
                     période : 2003 - 2005<br>
                     fonds : 1000 dessins - 40 textes - 50 peintures</p>
+
                 <h3>Carnets</h3>
                     <p>Les dessins sont répartis dans 15 carnets. Ci-contre une sélection de 49 parmis plusieurs centaines. <br />
                     Les peintures au format 18x24 cm, réalisées sur du bois ou du carto, sont rangées dans une boîte. Ci-contre une sélection de 30 de ces peintures.<br />
