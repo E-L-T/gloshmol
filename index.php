@@ -251,7 +251,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation installation dessin">
                     <a href="<?= RACINE_SITE ?>lin-soupe.php">
                     <img src="images/LIN_soupe-SudEst2esq.jpg" alt="Lin Soupe"/>
                     <div class="texteRealisation">
@@ -262,7 +262,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation installation dessin">
                     <a href="<?= RACINE_SITE ?>oped.php">
                     <img src="images/OPED-4-maquette dilatation.jpg" alt="Oped"/>
                     <div class="texteRealisation">
@@ -317,13 +317,35 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation installation sculpture">
                     <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-surface-vivante.php">
                     <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="Paris Halle aux Farines - Surface vivante">
                     <div class="texteRealisation">
                         <p class="titre"><strong>Paris Halle aux Farines - Surface vivante</strong></p>
                         <p class="motCle">Installation / Sculpture</p>
                         <p class="annee">2002-2008</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation">
+                    <a href="<?= RACINE_SITE ?>je-suis-ici.php">
+                    <img src="images/JSI-equipe.jpg" alt="Je suis ici">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Je suis ici</strong></p>
+                        <p class="motCle">Projet urbain</p>
+                        <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>la-maison-qui-parle.php">
+                    <img src="images/LMQP-dalle-st_cyr-w.jpg" alt="LMQP">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>La maison qui parle</strong></p>
+                        <p class="motCle">Recherche</p>
+                        <p class="annee">2007</p>
                     </div>
                     </a>
                 </div>
