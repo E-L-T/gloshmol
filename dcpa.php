@@ -38,21 +38,21 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>DCPA</h2>
-                    <p>maître d'ouvrage<br />
+                    <p>Maître d'ouvrage<br />
                     DCPA Bédier Est - 6-8, avenue de la Porte d'Ivry – 75  013 Paris<br />
                     l'équipe<br />
-                    - atelier martel, architecte mandataire, Stéphane Cachat<br />
+                    - Atelier martel, architecte mandataire, Stéphane Cachat<br />
                     - Construire, Denis Favret architecte<br /> 
                     - Bertrand Segers / gloshmol, artiste<br />
                     - Camille Ferry et Armelle Cuny toutes deux stagiaires</p>
 
-                <h3>mission</h3>
-                    <p>conception et suivi de réalisation de l'aménagement circulaire des 7 halls de 60m² et d'un espace partagé de100 m²</p>              
-                <h3>triple diagnostique</h3>
-                    <p>- diagnostique des besoins des usagers de ces nouveaux bureaux<br />
-                    - diagnostique des compétences et expertises des ateliers municipaux porte d'Aubervilliers (menuiserie, serrurerie, tapisserie...)<br />
-                    - diagnostique des matériaux stockés pouvant être utilisés dans le mobilier circulaire</p>
-                <h3>un système modulaire</h3>
+                <h3>Mission</h3>
+                    <p>Conception et suivi de réalisation de l'aménagement circulaire des 7 halls de 60m² et d'un espace partagé de 100 m²</p>              
+                <h3>Triple diagnostic</h3>
+                    <p>-Diagnostic des besoins des usagers de ces nouveaux bureaux<br />
+                    - Diagnostic des compétences et expertises des ateliers municipaux porte d'Aubervilliers (menuiserie, serrurerie, tapisserie...)<br />
+                    - Diagnostic des matériaux stockés pouvant être utilisés dans le mobilier circulaire</p>
+                <h3>Un système modulaire</h3>
                     <p>Nous choisissons un système modulaire développé depuis 20 ans par Bertrand Segers. Un cube de 37 cm d'arête se transforme en différents meubles (rangements, assises, murs...). Cette dimension réduite présente de nombreux avantages en terme de recyclage et fabrication.</p>
             </div>
 

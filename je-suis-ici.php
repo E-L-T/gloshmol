@@ -11,8 +11,15 @@ require_once('inc/header.realisation.inc.php');
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
     [ 'JSI-equipe.jpg', 'horizontal', "L'équipe", "Bertrand Segers, architecte <br> Charles Edmond Henry, étudiant en architecture <br> Christophe Chabbert, vidéaste <br> Frank-David Barbier, étudiant en architecture"],
-    ['GT010-EP8-JSI.jpg', 'horizontal','', ''],
-    ['JSI-PA3-workshop-LG.jpg', 'vertical', '', '']
+    [ 'JSI-050827-ph 044.jpg', 'horizontal', 'ph 044', ''],
+    [ 'JSI-050827-ph 230-A3.jpg', 'horizontal', 'ph 230 A3', ''],
+    [ 'JSI-axo_programme.jpg', 'vertical', 'axo programme', ''],
+    [ 'JSI-GO46-EP8-050913-Mt_Fuji-02.jpg', 'horizontal', 'Mt Fuji 02', ''],
+    [ 'JSI-panorama.jpg', 'horizontal', 'panorama', ''],
+    [ 'JSI-p├йpini├иre-3.jpg', 'vertical', 'pépinière 3', ''],
+    [ 'JSI-recif_artificiel-LG.jpg', 'horizontal', 'Récif artificiel LG', ''],
+    [ 'JSI-section_programme-LG.jpg', 'horizontal', 'Section programme LG', ''],
+    [ 'x-EP8-050827-ph 008.jpg', 'horizontal', 'ph 008', ''],
 ];
 ?>
             <div id ="mediasRealisation">

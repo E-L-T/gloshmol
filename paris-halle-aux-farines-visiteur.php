@@ -13,7 +13,6 @@ $images = [
     [ 'FC71-PHF-voute-W.jpg', 'horizontal', 'FC71 PHF voute W', ''],
     [ 'FC72-PHF-voute-W.jpg', 'horizontal', 'FC72 PHF voute W', ''],
     [ 'FZ47-PHFD-040701-W.jpg', 'vertical', 'FZ47 PHFD 040701 W', ''],
-    [ 'GD001-Che-Monchaux_logt_social-maison_noir-W.jpg', 'horizontal', 'GD001 Che Monchaux logt social maison noir W', ''],
     [ 'GD00-couv-W.JPG', 'horizontal', 'GD00 couv W', ''],
     [ 'GD041-PHFD-040709-W.jpg', 'horizontal', 'GD041 PHFD 040709 W', ''],
     [ 'GD046-PHFD-040709-W.jpg', 'horizontal', 'GD046 PHFD 040709 W', ''],

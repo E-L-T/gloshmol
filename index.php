@@ -9,6 +9,17 @@ require_once('inc/header.index.inc.php');
     
             <div id="realisations">
             
+               <div class="realisation exposition installation dessin sculpture livret">
+                    <a href="<?= RACINE_SITE ?>un-escalier-dans-la-vitrine.php">
+                    <img src="images/01-KZ180819-escaliers_Chatellerault.jpg" alt="Escalier"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Un escalier dans la vitrine</strong></p>
+                        <p class="motCle">Installation / Dessin / Sculpture / Livret</p>
+                        <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
+
                <div class="realisation installation dessin">
                     <a href="<?= RACINE_SITE ?>dcpa.php">
                     <img src="images/01-180521-DCPA_Bedier-scenarios-bestiaire-04-w.jpg" alt="DCPA"/>
@@ -16,6 +27,17 @@ require_once('inc/header.index.inc.php');
                         <p class="titre"><strong>DCPA</strong></p>
                         <p class="motCle">Installation / Dessin</p>
                         <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
+
+               <div class="realisation dessin exposition">
+                    <a href="<?= RACINE_SITE ?>motifs-01.php">
+                    <img src="images/151130-motifs-01-livret.JPG" alt="DCPA"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Motifs 01</strong></p>
+                        <p class="motCle">Dessin / Exposition</p>
+                        <p class="annee">2015</p>
                     </div>
                     </a>
                 </div>
@@ -196,6 +218,17 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
+                <div class="realisation installation">
+                    <a href="<?= RACINE_SITE ?>lmqp.php">
+                    <img src="images/LMQP-angle-090405-St_Cyr-04-w.JPG" alt="LMQP"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>LMQP</strong></p>
+                        <p class="motCle">Installation</p>
+                        <p class="annee">2009</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation exposition installation sculpture">
                     <a href="<?= RACINE_SITE ?>cri.php">
                     <img src="images/CRI-PHF-071018-expo_CRI-ceh-W.jpg" alt="cri"/>
@@ -206,17 +239,6 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
-
-                <!-- <div class="realisation exposition installation dessin" id="16">
-                    <a href="#">
-                    <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="La Halle aux farines"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>La Halle aux farines</strong></p>
-                        <p class="motCle">Exposition / Installation / Dessin</p>
-                        <p class="annee">2002-2006</p>
-                    </div>
-                    </a>
-                </div> -->
 
                 <div class="realisation installation sculpture">
                     <a href="<?= RACINE_SITE ?>paris-hopital-cochin-niches.php">
