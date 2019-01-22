@@ -350,17 +350,6 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation">
-                    <a href="<?= RACINE_SITE ?>je-suis-ici.php">
-                    <img src="images/JSI-equipe.jpg" alt="Je suis ici">
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Je suis ici</strong></p>
-                        <p class="motCle">Projet urbain</p>
-                        <p class="annee">2006</p>
-                    </div>
-                    </a>
-                </div>
-
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>la-maison-qui-parle.php">
                     <img src="images/LMQP-dalle-st_cyr-w.jpg" alt="LMQP">
@@ -372,9 +361,42 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>ville-dense-ville-haute.php">
+                    <img src="images/HZ-bleu-maison-famille_1-070817-W.jpg" alt="VDVH">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Ville dense - Ville haute</strong></p>
+                        <p class="motCle">Performance/ Dessin</p>
+                        <p class="annee">2007</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation exposition">
+                    <a href="<?= RACINE_SITE ?>aventure.php">
+                    <img src="images/ERCO-070621-Erco-Michelin-04.jpg" alt="Aventure">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>L'aventure</strong></p>
+                        <p class="motCle">Exposition</p>
+                        <p class="annee">2007</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation">
+                    <a href="<?= RACINE_SITE ?>je-suis-ici.php">
+                    <img src="images/JSI-equipe.jpg" alt="Je suis ici">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Je suis ici</strong></p>
+                        <p class="motCle">Projet urbain</p>
+                        <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation">
                     <a href="<?= RACINE_SITE ?>cubes.php">
-                    <img src="images/12-130416-M-condiments-w.JPG" alt="LMQP">
+                    <img src="images/12-130416-M-condiments-w.JPG" alt="Cubes">
                     <div class="texteRealisation">
                         <p class="titre"><strong>Cubes</strong></p>
                         <p class="motCle">Meubles</p>
@@ -382,7 +404,28 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
-    
+
+                <div class="realisation exposition sculpture dessin">
+                    <a href="<?= RACINE_SITE ?>gonesse-ville-en-vues.php">
+                    <img src="images/GVV-060226-MQ2-w.jpg" alt="GVV">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Gonesse - Ville en vues</strong></p>
+                        <p class="motCle">Exposition / Sculpture / Dessin</p>
+                        <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation exposition">
+                    <a href="<?= RACINE_SITE ?>colportage-sacs.php">
+                    <img src="images/col_sacs-193-Wirtz-w.jpg" alt="Colportage">
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Colportage de sacs</strong></p>
+                        <p class="motCle">Exposition</p>
+                        <p class="annee">2006</p>
+                    </div>
+                    </a>
+                </div>
             </div>    
         </section>
     </div>

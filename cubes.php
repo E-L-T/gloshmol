@@ -35,12 +35,12 @@ $images = [
                 <h2>Cubes</h2>
                     <h3>Fiches techniques</h3>
                         <p>
-                            <a href="documents/M-cube_1tiroir.pdf">Cube à un tiroir</a><br/><br>
-                            <a href="documents/M-cube_2tiroir.pdf">Cube à deux tiroirs</a><br/><br>
-                            <a href="documents/M-cube-boite.pdf">Cube boîte</a><br/><br>
-                            <a href="documents/M-cube-elastiques.pdf">Cube élastiques</a><br/><br>
-                            <a href="documents/M-cube_papier1.pdf">Cube papier 1</a><br/><br>
-                            <a href="documents/M-cube_papier2.pdf">Cube papier 2</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube_1tiroir.pdf">Cube à un tiroir</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube_2tiroir.pdf">Cube à deux tiroirs</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube-boite.pdf">Cube boîte</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube-elastiques.pdf">Cube élastiques</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube_papier1.pdf">Cube papier 1</a><br/><br>
+                            <a href="<?= RACINE_SITE ?>documents/M-cube_papier2.pdf">Cube papier 2</a><br/><br>
                         </p>
             </div>
 
