@@ -14,7 +14,7 @@ require_once('inc/header.index.inc.php');
                     <img src="images/01-KZ180819-escaliers_Chatellerault.jpg" alt="Escalier"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Un escalier dans la vitrine</strong></p>
-                        <p class="motCle">Installation / Dessin / Sculpture / Livret</p>
+                        <p class="motCle">Exposition / Installation / Dessin / Sculpture / Livret</p>
                         <p class="annee">2018</p>
                     </div>
                     </a>
@@ -108,7 +108,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation archives">
+                <div class="realisation installation">
                     <a href="<?= RACINE_SITE ?>2_portes.php">
                     <img src="images/portes-121016-w.jpg" alt="2 portes"/>
                     <div class="texteRealisation">
@@ -190,7 +190,7 @@ require_once('inc/header.index.inc.php');
                     <img src="images/HZ_expo-100712-HZ-photos-07-wlg.jpg" alt="HZ Expo"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>HZ Expo</strong></p>
-                        <p class="motCle">Exposition / Sculptures</p>
+                        <p class="motCle">Exposition / Sculpture</p>
                         <p class="annee">2010</p>
                     </div>
                     </a>
@@ -350,7 +350,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>la-maison-qui-parle.php">
                     <img src="images/LMQP-dalle-st_cyr-w.jpg" alt="LMQP">
                     <div class="texteRealisation">

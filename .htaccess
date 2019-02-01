@@ -14,6 +14,8 @@ Options +FollowSymLinks -MultiViews
 # Turn mod_rewrite on
 RewriteEngine On
 RewriteBase /gloshmol
+# If in production
+# RewriteBase /
 
 # For LocalHost !.php
 #RewriteCond %{HTTP_HOST} !=localhost
@@ -35,4 +37,9 @@ RewriteRule ^(.*?)/?$ $1.php [L]
 Options -Indexes
 ErrorDocument 404 http://www.gloshmol.com/gloshmolB/gloshmol-page-404.php
 ErrorDocument 403 http://www.gloshmol.com/gloshmolB/gloshmol-page-403.php
+
+# If in production
+# ErrorDocument 404 http://www.gloshmol.com/gloshmol-page-404.php
+# ErrorDocument 403 http://www.gloshmol.com/gloshmol-page-403.php
+
 # IndexIgnore *
