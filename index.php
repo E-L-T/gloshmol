@@ -9,6 +9,17 @@ require_once('inc/header.index.inc.php');
     
             <div id="realisations">
             
+                <div class="realisation exposition installation dessin sculpture livret">
+                    <a href="http://www.gloshmol.com/caddie_livrets.php">
+                    <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livrets"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Caddie de livrets</strong></p>
+                        <p class="motCle">Exposition / Installation / Dessin / Sculpture / Livret</p>
+                        <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
+                
                <div class="realisation exposition installation dessin sculpture livret">
                     <a href="<?= RACINE_SITE ?>un-escalier-dans-la-vitrine.php">
                     <img src="images/01-KZ180819-escaliers_Chatellerault.jpg" alt="Escalier"/>
@@ -27,6 +38,17 @@ require_once('inc/header.index.inc.php');
                         <p class="titre"><strong>DCPA</strong></p>
                         <p class="motCle">Installation / Dessin</p>
                         <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin exposition livret">
+                    <a href="http://www.gloshmol.com/dessins-bleus.php">
+                    <img src="images/HZ-LMQP-bleu_maison_ombre-070416-w.jpg" alt="dessins bleus"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Dessins bleus - LMQP</strong></p>
+                        <p class="motCle">Dessin / Exposition / Livret</p>
+                        <p class="annee">2015</p>
                     </div>
                     </a>
                 </div>
