@@ -3,7 +3,8 @@ require_once('inc/init.inc.php');
 if ($_GET['run']) {
   # This code will run if ?run=true is set.
   echo "script lancé";
-  exec("/home/bertrand/gloshmol.com/imagier_processing/script.sh");
+
+  shell_exec("/home/bertrand/gloshmol.com/imagier_processing/script.sh");
 }
 ?>
 
