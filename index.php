@@ -10,7 +10,7 @@ require_once('inc/header.index.inc.php');
             <div id="realisations">
             
                 <div class="realisation exposition installation dessin sculpture livret">
-                    <a href="http://www.gloshmol.com/caddie_livrets.php">
+                    <a href="<?= RACINE_SITE ?>caddie_livrets.php">
                     <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livrets"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Caddie de livrets</strong></p>

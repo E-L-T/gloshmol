@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "script lancé"
+
 if [ ! -d imagier600px/ ]; then 
 mkdir imagier600px/
 fi
