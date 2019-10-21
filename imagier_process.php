@@ -1,5 +1,6 @@
 <?php
 require_once('inc/init.inc.php');
+set_time_limit(300);
 if ($_GET['run']) {
     # This code will run if ?run=true is set.
     $imagesBrutes = scandir("imagierbrut");
