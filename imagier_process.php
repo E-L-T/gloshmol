@@ -1,6 +1,6 @@
 <?php
 require_once('inc/init.inc.php');
-set_time_limit(300);
+set_time_limit(600);
 if ($_GET['run']) {
     # This code will run if ?run=true is set.
     $imagesBrutes = scandir("imagierbrut");
@@ -26,23 +26,23 @@ if ($_GET['run']) {
         }
         $imHD->resizeImage($newHDWidth,$newHDHeight, imagick::FILTER_LANCZOS, 0.9, true);
         $imBD->resizeImage($newBDWidth,$newBDHeight, imagick::FILTER_LANCZOS, 0.9, true);
-        $imHD->writeImage("imagierhdtest/$imageBrute");
-        $imBD->writeImage("imagierbdtest/$imageBrute");
-        $imHDResource = imagecreatefromjpeg("imagierhdtest/$imageBrute");
-        $imBDResource = imagecreatefromjpeg("imagierbdtest/$imageBrute");
+        $imHD->writeImage("imagierhd/$imageBrute");
+        $imBD->writeImage("imagierbd/$imageBrute");
+        $imHDResource = imagecreatefromjpeg("imagierhd/$imageBrute");
+        $imBDResource = imagecreatefromjpeg("imagierbd/$imageBrute");
         imageinterlace($imHDResource, 1);
         imageinterlace($imBDResource, 1);
-        imagejpeg($imHDResource, "imagierhdtest/$imageBrute", 75);
-        imagejpeg($imBDResource, "imagierbdtest/$imageBrute", 75);
+        imagejpeg($imHDResource, "imagierhd/$imageBrute", 75);
+        imagejpeg($imBDResource, "imagierbd/$imageBrute", 75);
 
         echo "photo $imageBrute convertie en 900px";
         echo "<br><br>";
-        echo '<img src="imagierhdtest/' . $imageBrute . '">';        
+        echo '<img src="imagierhd/' . $imageBrute . '">';        
         echo "<br><br><br><br>";
 
         echo "photo $imageBrute convertie en 600px";
         echo "<br><br>";
-        echo '<img src="imagierbdtest/' . $imageBrute . '">';        
+        echo '<img src="imagierbd/' . $imageBrute . '">';        
         echo "<br><br><br><br>";
     }
 
@@ -57,18 +57,3 @@ if ($_GET['run']) {
 
 <a href="?run=true">Clique pour convertir les photos</a>
 
-
-<!-- 
-Faire ça en php.
-recuperer dans un tableau contenu de imagier_brut
-boucler dans le tableau : convertir et déplacer dans imagierhdtest et imagierbd trait_exists
-loguer chaque photo traitée
-vider le dossier imagierbrut
-loguer que le dossier est vide
-Suite
-- attendre retours bertrand sur qualite. 70 ok
-- ajouter le interlace pour jpeg progressif ok
-- tester en ligne (penser aux chmod sur les dossiers)
-- rejouer le script pour toutes les images de l'imagier
-
-voir ce qu'on peut récupérer des meta données -->
