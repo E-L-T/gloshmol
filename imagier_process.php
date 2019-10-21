@@ -29,6 +29,8 @@ if ($_GET['run']) {
         $imBD->writeImage("imagierbdtest/$imageBrute");
         $imHDResource = imagecreatefromjpeg("imagierhdtest/$imageBrute");
         $imBDResource = imagecreatefromjpeg("imagierbdtest/$imageBrute");
+        imageinterlace($imHDResource, 1);
+        imageinterlace($imBDResource, 1);
         imagejpeg($imHDResource, "imagierhdtest/$imageBrute", 75);
         imagejpeg($imBDResource, "imagierbdtest/$imageBrute", 75);
 
@@ -43,12 +45,12 @@ if ($_GET['run']) {
         echo "<br><br><br><br>";
     }
 
-    // $files = glob('imagierbrut/*'); // get all file names
-    // foreach($files as $file){ // iterate files
-    //     if(is_file($file))
-    //         unlink($file); // delete file
-    // }
-    // echo "dossier imagierbrut vidé";
+    $files = glob('imagierbrut/*'); // get all file names
+    foreach($files as $file){ // iterate files
+        if(is_file($file))
+            unlink($file); // delete file
+    }
+    echo "dossier imagierbrut vidé";
 }
 ?>
 
@@ -62,4 +64,10 @@ boucler dans le tableau : convertir et déplacer dans imagierhdtest et imagierbd
 loguer chaque photo traitée
 vider le dossier imagierbrut
 loguer que le dossier est vide
+Suite
+- attendre retours bertrand sur qualite. 70 ok
+- ajouter le interlace pour jpeg progressif ok
+- tester en ligne (penser aux chmod sur les dossiers)
+- rejouer le script pour toutes les images de l'imagier
+
 voir ce qu'on peut récupérer des meta données -->
