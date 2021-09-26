@@ -113,7 +113,7 @@ if(isset($_POST) && empty($_POST) == false) {
                         //En JS , transformer le img src = en img srcset = 
                         $imageDirs = array("Desktop" => "imagierhd", "Mobile" => "imagierbd");
                         foreach ($imageDirs as $format => $imageDir) {
-                            echo "<div class='blocImagier blocImagier$format'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='$imageDir/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>".$resultatImageTitre . "</div></div>";
+                            echo "<div class='blocImagier blocImagier$format' id='$resultatImage-$format'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='$imageDir/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>".$resultatImageTitre . "<a href='#$resultatImage'>&nbsp;</a></div></div>";
                         }
                     }
                 ?>

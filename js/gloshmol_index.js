@@ -138,3 +138,11 @@ $('.realisationImagier').click(function (event) {
         $('.blocImagierMobile .realisationImagier a').removeClass('swipebox');
     }
 });
+
+$("document").ready(function() {
+    const anchor = $(location).attr('hash');
+    if (anchor) {
+        const id = decodeURIComponent(anchor).substring(1) + '-' + ((window.innerWidth < mediaLimitSize) ? 'Mobile' : 'Desktop');
+        $( document.getElementById(id) ).find('.realisationImagier a').click();
+    }
+});

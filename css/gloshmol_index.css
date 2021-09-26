@@ -404,7 +404,10 @@ h2{
 {
     width: 100%;
     position: relative;
-    
+    /* trying to deal with 
+    "Default inside passive event listener due to target being treated as passive. See https://www.chromestatus.com/features/5093566007214080"
+    but not sure it's working */
+    touch-action: none;
 }
 
 .titreImage
