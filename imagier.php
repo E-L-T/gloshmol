@@ -106,16 +106,15 @@ if(isset($_POST) && empty($_POST) == false) {
                         $resultatImageTitre = ucwords($resultatImageTitre);
 
                         //affichage de l'image
-                        //affichage de l'image
                         //là, imagesbd de 450 de w et images hd de 900 de w
                         //ajouter un srcset imagierbd-350
                         //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
                         //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
                         //En JS , transformer le img src = en img srcset = 
-
-                        echo "<div class='blocImagier blocImagierDesktop'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
-
-                        echo "<div class='blocImagier blocImagierMobile'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierbd/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                        $imageDirs = array("Desktop" => "imagierhd", "Mobile" => "imagierbd");
+                        foreach ($imageDirs as $format => $imageDir) {
+                            echo "<div class='blocImagier blocImagier$format'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='$imageDir/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>".$resultatImageTitre . "</div></div>";
+                        }
                     }
                 ?>
             </div>     
