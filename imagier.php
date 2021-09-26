@@ -62,6 +62,8 @@ if(isset($_POST) && empty($_POST) == false) {
             }
         }
     }   
+} else {
+    $resultatImages = $nomsImagesInverses;
 }
 
 ?>                 
@@ -97,42 +99,24 @@ if(isset($_POST) && empty($_POST) == false) {
                     $tirets = array("-", "_");
                     $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
 
-                    if(isset($_POST) && empty($_POST) == false && strlen($requete) >= 2){  
-                        
-                        foreach ($resultatImages as $resultatImage) {
-                            
-                            //affichage du titre
-                            $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
-                            $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
-                            $resultatImageTitre = ucwords($resultatImageTitre);
+                    foreach ($resultatImages as $resultatImage) {
+                        //affichage du titre
+                        $resultatImageTitre = str_replace($tirets, " ", $resultatImage);
+                        $resultatImageTitre = str_replace($extensions, "", $resultatImageTitre);
+                        $resultatImageTitre = ucwords($resultatImageTitre);
 
-                            //affichage de l'image
-                            
-                            echo "<div class='blocImagier'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$resultatImage' class='swipebox' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                        //affichage de l'image
+                        //affichage de l'image
+                        //là, imagesbd de 450 de w et images hd de 900 de w
+                        //ajouter un srcset imagierbd-350
+                        //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
+                        //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
+                        //En JS , transformer le img src = en img srcset = 
 
-                        }
-                    }else if(empty($_POST) == true){
-                        //Affichage antechronologique par défaut
+                        echo "<div class='blocImagier blocImagierDesktop'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
 
-                        foreach ($nomsImagesInverses as $nomImageInverse) {
-                            
-                            //affichage du titre
-                            $nomImageInverseTitre = str_replace($tirets, " ", $nomImageInverse);
-                            $nomImageInverseTitre = str_replace($extensions, "", $nomImageInverseTitre);
-                            $nomImageInverseTitre = ucwords($nomImageInverseTitre);
-
-                            //affichage de l'image
-                            //là, imagesbd de 450 de w et images hd de 900 de w
-                            //ajouter un srcset imagierbd-350
-                            //et faire en sorte que l'on aboutisse soit au 350, 450 ou 900.
-                            //ex : <img srcset="imagier/KF68-plage_Cros_Cagne-gros_ventre.jpg 900w, imagierbd/KF68-plage_Cros_Cagne-gros_ventre.jpg 450w" />
-                            //En JS , transformer le img src = en img srcset = 
-
-                            echo "<div class='blocImagier blocImagierDesktop'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierhd/$nomImageInverse' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
-
-                            echo "<div class='blocImagier blocImagierMobile'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierbd/$nomImageInverse' title='$nomImageInverseTitre'><img data-src='imagierbd/$nomImageInverse' alt=''></a></div><div class='titreImage'>". $nomImageInverseTitre . "</div></div>";
-                        }    
-                    }                            
+                        echo "<div class='blocImagier blocImagierMobile'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='imagierbd/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>". $resultatImageTitre . "</div></div>";
+                    }
                 ?>
             </div>     
         </div>    
