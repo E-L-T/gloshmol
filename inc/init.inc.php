@@ -11,13 +11,9 @@ $imagier_active = '';
 
 
 //Chemins
-define("RACINE_SITE", "/gloshmol/");
-// En production, remplacer par ci-dessous
-//define('RACINE_SITE', 'http://www.gloshmol.com/');
-
-// le chemin à partir de htdocs
-
-//htdocs nom du dossier en local. devient www sur le serveur (nom de l'url acheté)
+// la variable d'environment "RACINE_SITE" est definie dans .htacccess
+// (pas sur que ca soit utile... tout les chemins peuvent etre relatifs... a nettoyer)
+define('RACINE_SITE', getenv('RACINE_SITE'));
 
 //Autres inclusions
 require_once('fonctions.inc.php');
