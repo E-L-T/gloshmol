@@ -26,8 +26,8 @@ function wd_remove_accents($str, $charset='utf-8')
 
 //sélection des fichiers images correspondant la requete
 $requeteBrute = '';
-if(isset($_POST) && empty($_POST) == false) {
-    $requeteBrute = htmlspecialchars($_POST['the_search']);
+if(isset($_GET['q']) && $_GET['q']) {
+    $requeteBrute = htmlspecialchars($_GET['q']);
     
     //traitement de la requête entrée par l'internaute
     //enlever accents et majuscules du nom de la requete
@@ -73,13 +73,13 @@ if(isset($_POST) && empty($_POST) == false) {
             <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le dossier rassemble plus de 13000 dessins, il est mis à jour au fur et à mesure des numérisations.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..</div>
             <div class="formulaire">
                 
-                <form action="" method="post" class="formImagier">
-                    <input class="inputImagier requeteImagier" type="search" placeholder="Mot-clé" name="the_search">
+                <form action="" method="GET" class="formImagier">
+                    <input class="inputImagier requeteImagier" type="search" placeholder="Mot-clé" name="q" value="<?php echo $requeteBrute ?>"$>
                     <input class="inputImagier submitImagier" type="submit" value="Rechercher" />
 
                 </form>
                 <?php 
-                    if(isset($_POST) && empty($_POST) == false) {
+                    if($requeteBrute) {
                         if(strlen($requete) >= 2) {
                             if(count($resultatImages) < 2){
                                 echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultat pour "' . $requeteBrute . '"</div>';
