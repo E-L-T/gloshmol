@@ -38,6 +38,9 @@ $images = [
                 <p>Une attention particulière est prêtée au site. Le premier est une dalle bleue sur l’aérodrome de Saint-Cyr l’Ecole. Au-delà de mon penchant pour l’hétérotopie, qualité paysagère subjective et poétique d’un site pratiqué par les avions, un tel lieu répond, fait écho à l’actualité “grand Paris” : plaine de Versailles, autoroutes A86, A13, A14, pistes d’avions, nouvelle voie ferrée et grand projets urbains en chantier font les circonstances d’un territoire sur lequel reposent des enjeux lourds et actuels.
                 Ce premier site d’expérimentation donne une entrée dans ce projet par l’échelle domestique : les figures assemblées dans un premier temps sont celles de la maison.
                 Une fois ces figures éprouvées, d’autres assemblages contextuels seront déplacés.</p>
+
+                <h3>Livret</h3>
+                <p>Imprimé et façonné à l'atelier, Aubervilliers.<br>18x24 cm - 20 pages - 15 euros + fdp</p>
             </div>
 
         </section>
