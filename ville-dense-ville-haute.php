@@ -10,6 +10,12 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
+    [ 'HVD-070421-cercle_densite-W.jpg', 'horizontal', 'Cercle densité', "Le cercle a un rayon de 3,94 m, dessine le périmètre d'une surface de 48,55 m² soit la surface diponible pour chaque habitant de la ville de Paris dont la densité est de 90 000 hab/km²"],
+    [ 'ellipse-01.jpg', 'horizontal', 'Ellipse 1', ''],
+    [ 'ellipse-02.jpg', 'horizontal', 'Ellipse 2', ''],
+    [ 'ellipse-03.jpg', 'horizontal', 'Ellipse 3', ''],
+    [ 'ellipse-04.jpg', 'horizontal', 'Ellipse 4', ''],
+    [ 'densite_corde-W.jpg', 'horizontal', 'Densite corde', 'Le cercle de feu est réalisé au moyen de cette corde lestée à son extrémité. En déroulant ou en réduisant la longueur de la corde le cercle contient une surface plus ou moins importante, correspondant à la densité souhaitée.'],
     [ 'HZ-bleu-maison-pagode-070901-W.jpg', 'vertical', 'Pagode', 'Aquarelle sur arches'],
     [ 'HZ-bleu_maison-residentialisation-070826-W.jpg', 'vertical', 'Résidentialisation', 'Aquarelle sur arches'],
     [ 'HZ-bleu-maisons_porte_densite-070608-W.jpg', 'vertical', 'Densité', 'Aquarelle au bleu de pastel sur arches'],    
@@ -18,12 +24,7 @@ $images = [
     [ 'HZ-bleu-maisons-densite-070610-W.jpg', 'vertical', 'Densité 2', 'Aquarelle au bleu de pastel sur arches'],    
     [ 'HZ-la+haute_tour_du_monde-070808-W.jpg', 'vertical', 'La tour la plus haute du monde', 'Aquarelle et encre sur arches'],
     [ 'HZ-maison_arbre-070820-W.jpg', 'horizontal', 'Maison arbre', 'Encre de chine sur arches'],
-    [ 'ellipse-01.jpg', 'horizontal', 'Ellipse 1', ''],
-    [ 'ellipse-02.jpg', 'horizontal', 'Ellipse 2', ''],
-    [ 'ellipse-03.jpg', 'horizontal', 'Ellipse 3', ''],
-    [ 'ellipse-04.jpg', 'horizontal', 'Ellipse 4', ''],
-    [ 'HVD-070421-cercle_densite-W.jpg', 'horizontal', 'Cercle densité', "Le cercle a un rayon de 3,94 m, dessine le périmètre d'une surface de 48,55 m² soit la surface diponible pour chaque habitant de la ville de Paris dont la densité est de 90 000 hab/km²"],
-    [ 'densite_corde-W.jpg', 'horizontal', 'Densite corde', 'Le cercle de feu est réalisé au moyen de cette corde lestée à son extrémité. En déroulant ou en réduisant la longueur de la corde le cercle contient une surface plus ou moins importante, correspondant à la densité souhaitée.'],
+
     
     
 

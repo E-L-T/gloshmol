@@ -10,17 +10,15 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
-    [ '12-130416-M-condiments-w.JPG', 'horizontal', 'Meuble condiments', ''],
-    [ '10-M-papier_2-061214-w.jpg', 'horizontal', 'Meuble papier 2', ''],
-    [ '11-M-papier_3-061219-w.jpg', 'horizontal', 'Meuble papier 3', ''],
-    [ '03-cube_1tiroir-050518-4-w.JPG', 'horizontal', 'Cube 1 tiroir', ''],
-    [ '02-cube-2_tiroirs-ph_2-061130-3-w.jpg', 'horizontal', 'Cube 2 tiroirs', ''],
-    [ '04-cube-sac-52-w.jpg', 'horizontal', 'Cube sac', ''],
-    [ '05-meuble outil-w.JPG', 'vertical', 'Meuble outil', ''],
-    [ '06-cube_boite-2-w.jpg', 'horizontal', 'Cube boite', ''],
-    [ '07-121117-cubes_rouges-05-w.jpg', 'vertical', 'Cubes rouges', ''],
-    [ '08-meubles_cubes-caisses_boites-w.jpg', 'horizontal', 'Meubles cubes caisses boites', ''],
-    [ '09-meubles_cubes-double-portes_coulissantes-w.jpg', 'horizontal', 'Meubles cubes double portes coulissantes', '']
+
+    [ 'cubes-130416-M-condiments-w.JPG', 'horizontal', 'Meuble condiments', ''],
+    [ 'cube-2_tiroirs-ph_2-061130-3-w.jpg', 'horizontal', 'Cube 2 tiroirs', ''],
+    [ 'cube_boite-2-w.jpg', 'horizontal', 'Cube boite', ''],
+    [ 'cubes_rouges-121117-05-w.jpg', 'vertical', 'Cubes rouges', ''],
+    [ 'cubes-100420-poutre_caissons-test_2-saut-w-try.gif', 'horizontal', 'test de poutre pour le plancher à caisson avec Rémus', ''],
+    [ 'cubes_meubles-210321-livret-03.jpg', 'horizontal', 'livret, cube de sac et tabouret', ''],
+    [ 'cubes_meubles-210321-livret-09.jpg', 'horizontal', 'livret, établis à Saint Cyr', ''],
+    [ 'cubes_meubles-210321-livret-12.jpg', 'horizontal', 'livret, cubes à roulettes', ''],
 ];
 ?>
             <div id ="mediasRealisation">
@@ -32,7 +30,9 @@ $images = [
             </div>
 
             <div id ="presentationRealisation">
-                <h2>Cubes</h2>
+                <h2>Meubles cubes</h2>
+                    <h3></h3>
+                    <p>Les cubes mesurent 37 cm d'arrête. Ne me demandez pas pourquoi, je ne sais pas, je sais par contre que ça marche, qu'avec cette dimension on peut faire beaucoup de choses, mettre toutes sortes de choses dedans, combiner... <br /><br />Un livret réunit ces meubles en modèles. Près de 400 cubes on été réalisés. Ils sont parfois agglomérés en gros meubles, parfois en éléments architectoniques comme le plancher à caissons ou un mur, parfois encore en architecture comme dans le projet d'extension d'un pavillon en 2006.<br /><br />Livret 60 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2021<br />20 € + fdp </p>
                     <h3>Fiches techniques</h3>
                         <p>
                             <a href="<?= RACINE_SITE ?>documents/M-cube_1tiroir.pdf">Cube à un tiroir</a><br/><br>

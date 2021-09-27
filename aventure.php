@@ -12,8 +12,7 @@ require_once('inc/header.realisation.inc.php');
 $images = [
   [ 'ERCO-070621-Erco-Michelin-04.jpg', 'horizontal', '', ''],
   [ 'ERCO-carnets.jpg', 'horizontal', 'Carnets', ''],  
-  [ 'ERCO-070621-2.jpg', 'horizontal', 'Deux amis devant les peintures', ''],
-  [ 'ERCO-4-W.jpg', 'vertical', '', ''],
+  [ 'ERCO-070621-2.jpg', 'horizontal', 'Deux amis devant les peintures', '']
 ];
 ?>
             <div id ="mediasRealisation">

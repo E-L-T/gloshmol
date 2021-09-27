@@ -17,10 +17,9 @@ require_once('inc/header.realisation.inc.php');
 $images = [
     [ 'caddie_livrets-181031-w.JPG', 'horizontal', 'cadding in the rain', ''],
     [ 'caddie_livrets-ouvert-180928-w.jpg', 'vertical', 'le caddie ouvert', ''],
-    [ 'livrets-18x24-140210-w.jpg', 'vertical', 'le caddie ouvert', ''],
-    [ 'coffret_livrets-18x24-170607-w.jpg', 'horizontal', 'coffret de livrets, 2017', ''],
-    [ 'coffret_livrets-18x24-190404-w.jpg', 'horizontal', 'coffrets de livrets, vernis tampon', ''],
-    [ 'coffret_livrets-18x24-190404-w.jpg', 'vertical', 'coffret pour une petite trentaine de livrets', '']
+    [ 'coffret_livrets-18x24-170607-w.JPG', 'horizontal', 'coffret de livrets, 2017', ''],
+    [ 'coffret_livrets-18x24-190313-w.JPG', 'horizontal', 'coffrets de livrets, vernis tampon', ''],
+    [ 'coffret_livrets-18x24-190404-w.JPG', 'horizontal', 'coffret pour une petite trentaine de livrets', ''],
 ];
 ?>
             <div id ="mediasRealisation">
@@ -36,8 +35,7 @@ $images = [
                 <!-- Placer le titre à l'intérieur  des balises h2 ci-dessus-->
                 <p>Un nouveau caddie pour colporter des livrets. Pour les archiver en les gardant pressés.
                    <br> De nouveaux pneux tout blancs!
-                </p>
-            </div>
+            </div></p>
 
         </section>
     </div>
@@ -45,3 +43,4 @@ $images = [
 <?php
 require_once('inc/footer.realisation.inc.php');	
 ?>
+

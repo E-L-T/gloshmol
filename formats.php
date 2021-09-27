@@ -115,6 +115,14 @@ require_once('inc/header.realisation.inc.php');
                     <p>Photo Jean Attali</p>
                 </div>
 
+                <img src="images/Formats_exposition-210506-livret-2-w.jpg" alt="">
+                <div class="legendeTitre">
+                    <p>Paysage</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>livret</p>
+                </div>
+
             </div>
 
             <div id ="presentationRealisation">
@@ -126,7 +134,8 @@ require_once('inc/header.realisation.inc.php');
                 <br />92 140 Clamart
                 <br />Responsable Artistique : Madeleine Mathé
                 <br />avec l'aide deChloé Esdraffo, Gaspard Resve et Jérémy Nonotte, Romaric Fillette
-                </p>
+                </p><br />
+                <p>Livret 18x24 cm, 20 pages, 10 €, commande par mail.<br /><br />
                 <p>L'exposition est construite en 3 temps. Le premier est le seuil, un narthex généreusement lumineux. On commence par un résumé de l'exposition.<br />
                 - un tirage photographique de l'image qui fait l'affiche et le carton, « porte dressée »<br />
                 - une maquette de l'installation dans la grande salle<br />

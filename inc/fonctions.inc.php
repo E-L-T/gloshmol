@@ -28,3 +28,5 @@ function AffichageImages($images) {
         }       
     }
 }
+
+//ecrire fonction AffichageVignettesSommaire()

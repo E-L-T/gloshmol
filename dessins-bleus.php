@@ -14,13 +14,14 @@ require_once('inc/header.realisation.inc.php');
 // S'il n'y a pas de légendes, laisser tout de même les apostrophes vides.
 
 $images = [
-    [ 'HZ-LMQP-bleu_maison_ombre-070416-w.jpg', 'horizontal', 'La maison et on ombre', '18 x 24 cm'],
+    ['HZ-LMQP-bleu_maison_ombre-070416-w.jpg', 'horizontal', 'La maison et son ombre', '18 x 24 cm'],
     ['HZ-bleu-maison-pagode-070901-W.jpg', 'vertical', 'Pagode', '18 x 24 cm'],
     ['KZ170918-LMQP-bleu_maison-BADABOUM-2-Claire_Fretel-w.jpg', 'vertical', 'BADABOUM', '18 x 24 cm'],
     ['KZ170727-LMQP-bleu_maison-grand_telescope-w.jpg', 'vertical', 'Grand télescope', ''],
     ['KZ+170901-LMQP-bleu_maison-grade-w.jpg', 'horizontal', 'Grades', ''],
     ['JZ161126-LMQP-bleu_maison-motif_zig_zag-1-w.jpg', 'vertical', 'Serpent', ''],
     ['KZ+170323-LMQP-bleu_maison-scie_lame-roue-w.jpg', 'horizontal', 'Lame de scie', ''],
+    ['dessins_bleus-caddie-200430-LMQP-w.jpg', 'vertical', 'caddie de dessins bleus', ''],
 ];
 ?>
             <div id ="mediasRealisation">

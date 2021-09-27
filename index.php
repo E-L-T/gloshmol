@@ -2,13 +2,211 @@
 require_once('inc/init.inc.php');
 $page= 'Bertrand Segers';
 require_once('inc/haut.inc.php');
-$realisations_active = 'active'	;
+$realisations_active = 'active' ;
 require_once('inc/header.index.inc.php');
 
 ?>
     
             <div id="realisations">
             
+                <div class="realisation sculpture exposition livret">
+                    <a href="<?= RACINE_SITE ?>Strasbourg_lalala.php">
+                    <img src="images/Strasbourg-LU10-musee_oeuvre_notre_Dame-chapiteau-colonne_engagee-2-w.jpg" alt="caddie de lampes"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Strasbourg lalala</strong></p>
+                        <p class="motCle">Dessin</p>
+                        <p class="annee">2021</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation sculpture exposition livret">
+                    <a href="<?= RACINE_SITE ?>caddie_lampes.php">
+                    <img src="images/lampes_caddie-flexible_config-1-160311-w.JPG" alt="caddie de lampes"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Caddie de lampes</strong></p>
+                        <p class="motCle">Dessin / Exposition / Livret</p>
+                        <p class="annee">1998/1999</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation sculpture exposition livret">
+                    <a href="<?= RACINE_SITE ?>cubes.php">
+                    <img src="images/cubes-130416-M-condiments-w.JPG" alt="meubles cubes"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Meubles cubes</strong></p>
+                        <p class="motCle">Livret</p>
+                        <p class="annee">1996 à aujourd'hui</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin exposition">
+                    <a href="<?= RACINE_SITE ?>motifs.php">
+                    <img src="images/motifs_02-210506-livret-3-w.jpg" alt="motifs"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Motifs 01 et 02</strong></p>
+                        <p class="motCle">Dessin / Exposition / Livret</p>
+                        <p class="annee">2015/2021</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation livret">
+                    <a href="<?= RACINE_SITE ?>Musee_arts_decoratifs.php">
+                    <img src="images/MAD-210321-Musee_arts_decoratifs-livret_dessins-01-w.jpg" alt="musée des arts décoratifs, dessins"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée des arts décoratifs, dessins</strong></p>
+                        <p class="motCle">Livret</p>
+                        <p class="annee">2021</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation livret">
+                    <a href="<?= RACINE_SITE ?>small_design.php">
+                    <img src="images/small_design_II-201211-livret-w.jpg" alt="small design I et II"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Small design I et II</strong></p>
+                        <p class="motCle">Livret</p>
+                        <p class="annee">2021</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation livret">
+                    <a href="<?= RACINE_SITE ?>TGI-tribunal_de_grande_instance.php">
+                    <img src="images/TGI-dessins_livrets-191017-w.jpg" alt="TGI-tribunal_de_grande_instance"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>TGI dessins d'audiences</strong></p>
+                        <p class="motCle">Livret</p>
+                        <p class="annee">1996/2020</p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="realisation livret">
+                    <a href="<?= RACINE_SITE ?>allumettes.php">
+                    <img src="images/allumettes-livret-w.jpg" alt="allumettes"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Allumettes</strong></p>
+                        <p class="motCle">Livret</p>
+                        <p class="annee">1996/2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>musee_arts_et_metiers.php">
+                    <img src="images/musee_arts_metiers-191017-livret-6-w.jpg" alt="musée des arts et métiers, livret de dessins"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée des arts et métiers</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>musee_air_et_espace.php">
+                    <img src="images/musee_air_espace-200901-6-w.jpg" alt="musée de l'air et de l'espace"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée de l'air et de l'espace</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>musee_ceramique_Sevres.php">
+                    <img src="images/musee_ceramique_Sevres-200328-livret-w.jpg" alt="livret, musée de la céramique de Sèvres"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée de la céramique de Sèvres</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation sculpture exposition livret">
+                    <a href="<?= RACINE_SITE ?>fusee.php">
+                    <img src="images/fusee-190721-cerf_volant-Mers_les_bains-132-w.jpg" alt="Fusée"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Fusée</strong></p>
+                        <p class="motCle">Sculpture / Exposition / Livret</p>
+                        <p class="annee">2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>Rotterdam.php">
+                    <img src="images/Rotterdam-livret-200328-08-W.jpg" alt="Rotterdam, dessins"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Rotterdam, dessins</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2020</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>toile_de_jouy.php">
+                    <img src="images/Toile_Jouy-livret-191017-13-w.jpg" alt="musée de la Toile de Jouy"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée de la Toile de Jouy, livret</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2017</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>Cluny_Abbaye.php">
+                    <img src="images/Cluny-abbaye-livret-191017-10-w.jpg" alt="abbaye de Cluny"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Abbaye de Cluny, livret</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2018</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>caca_invasion.php">
+                    <img src="images/caca_invasion-livret-191017-03-w.jpg" alt="caca invasion"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Caca invasion, livret</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2019</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin livret">
+                    <a href="<?= RACINE_SITE ?>Lisbonne_dessins.php">
+                    <img src="images/Lisbonne_dessins-livret-191002-1-w.jpg" alt="Lisbonne dessins"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Lisbonne dessins, livret</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2019</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>carnets_de_dessin.php">
+                    <img src="images/carnets-dessin-190711-19-w.jpg" alt="carnets de dessin"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Carnets de dessin</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2019</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation exposition installation dessin sculpture livret">
                     <a href="<?= RACINE_SITE ?>caddie_livrets.php">
                     <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livrets"/>
@@ -19,8 +217,8 @@ require_once('inc/header.index.inc.php');
                     </div>
                     </a>
                 </div>
-                
-               <div class="realisation exposition installation dessin sculpture livret">
+
+                <div class="realisation exposition installation dessin sculpture livret">
                     <a href="<?= RACINE_SITE ?>un-escalier-dans-la-vitrine.php">
                     <img src="images/01-KZ180819-escaliers_Chatellerault.jpg" alt="Escalier"/>
                     <div class="texteRealisation">
@@ -32,7 +230,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                <div class="realisation installation dessin">
-                    <a href="<?= RACINE_SITE ?>dcpa.php">
+                    <a href="<?= RACINE_SITE ?>DCPA.php">
                     <img src="images/01-180521-DCPA_Bedier-scenarios-bestiaire-04-w.jpg" alt="DCPA"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>DCPA</strong></p>
@@ -42,23 +240,12 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin exposition livret">
-                    <a href="http://www.gloshmol.com/dessins-bleus.php">
+               <div class="realisation dessin exposition">
+                    <a href="<?= RACINE_SITE ?>dessins-bleus.php">
                     <img src="images/HZ-LMQP-bleu_maison_ombre-070416-w.jpg" alt="dessins bleus"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Dessins bleus - LMQP</strong></p>
                         <p class="motCle">Dessin / Exposition / Livret</p>
-                        <p class="annee">2015</p>
-                    </div>
-                    </a>
-                </div>
-
-               <div class="realisation dessin exposition">
-                    <a href="<?= RACINE_SITE ?>motifs-01.php">
-                    <img src="images/151130-motifs-01-livret.JPG" alt="DCPA"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Motifs 01</strong></p>
-                        <p class="motCle">Dessin / Exposition</p>
                         <p class="annee">2015</p>
                     </div>
                     </a>
@@ -208,7 +395,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation sculpture exposition" id="13">
-                    <a href="<?= RACINE_SITE ?>hz-expo.php">
+                    <a href="<?= RACINE_SITE ?>HZ_expo.php">
                     <img src="images/HZ_expo-100712-HZ-photos-07-wlg.jpg" alt="HZ Expo"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>HZ Expo</strong></p>
@@ -241,7 +428,7 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation installation">
-                    <a href="<?= RACINE_SITE ?>lmqp.php">
+                    <a href="<?= RACINE_SITE ?>LMQP.php">
                     <img src="images/LMQP-angle-090405-St_Cyr-04-w.JPG" alt="LMQP"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>LMQP</strong></p>
@@ -307,10 +494,10 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation installation dessin">
-                    <a href="<?= RACINE_SITE ?>oped.php">
+                    <a href="<?= RACINE_SITE ?>OPED.php">
                     <img src="images/OPED-4-maquette dilatation.jpg" alt="Oped"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>Oped</strong></p>
+                        <p class="titre"><strong>OPED</strong></p>
                         <p class="motCle">Installation / Dessin</p>
                         <p class="annee">2002</p>
                     </div>
@@ -372,20 +559,9 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation">
-                    <a href="<?= RACINE_SITE ?>la-maison-qui-parle.php">
-                    <img src="images/LMQP-dalle-st_cyr-w.jpg" alt="LMQP">
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>La maison qui parle</strong></p>
-                        <p class="motCle">Recherche</p>
-                        <p class="annee">2007</p>
-                    </div>
-                    </a>
-                </div>
-
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>ville-dense-ville-haute.php">
-                    <img src="images/HZ-bleu-maison-famille_1-070817-W.jpg" alt="VDVH">
+                    <img src="images/HVD-070421-cercle_densite-W.jpg" alt="VDVH">
                     <div class="texteRealisation">
                         <p class="titre"><strong>Ville dense - Ville haute</strong></p>
                         <p class="motCle">Performance/ Dessin</p>
@@ -411,17 +587,6 @@ require_once('inc/header.index.inc.php');
                     <div class="texteRealisation">
                         <p class="titre"><strong>Je suis ici</strong></p>
                         <p class="motCle">Projet urbain</p>
-                        <p class="annee">2006</p>
-                    </div>
-                    </a>
-                </div>
-
-                <div class="realisation">
-                    <a href="<?= RACINE_SITE ?>cubes.php">
-                    <img src="images/12-130416-M-condiments-w.JPG" alt="Cubes">
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Cubes</strong></p>
-                        <p class="motCle">Meubles</p>
                         <p class="annee">2006</p>
                     </div>
                     </a>
