@@ -28,6 +28,7 @@ function filtrerSommaire(filtre, realisationChoix) {
                 texteRealisationsElts[j].style.display = "block";
              }
         }
+	window.onload(); // hack... j'ai casse le chargement des fitres, probablement dan le htacces. Tout ce code est tre complique et pourrait etre simplifie
     });
 }
 
