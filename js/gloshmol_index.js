@@ -147,3 +147,28 @@ $("document").ready(function() {
         $( document.getElementById(id) ).find('.realisationImagier a').click();
     }
 });
+
+$(window).scroll(function() {
+    // TODO: only apply this to the imagier page, lol
+    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+	if ($('#end').length) {
+	    return;
+	}
+	const urlParams = new URLSearchParams(window.location.search);
+	const query = urlParams.get('q');
+	const lastId = $(".blocImagierMobile:last").attr('id');
+	$.ajax({
+	    url: 'imagier.php?lid='+ encodeURI(lastId) + (query ? ("&q=" + encodeURI(query)) : ""),
+	    type: "GET",
+	    beforeSend: function() {
+		$('#loader-icon').show(); // TODO: add loader icon in page CSS
+	    },
+	    complete: function() {
+		$('#loader-icon').hide();
+	    },
+	    success: function(data) {
+		$("#realisationsImagier").append(data);
+	    }
+	});
+    }
+});

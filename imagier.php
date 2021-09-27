@@ -1,17 +1,20 @@
 <?php
+$lastId = isset($_GET['lid']) ? substr($_GET['lid'], 0, strrpos( $_GET['lid'], '-')) : '';
+
 require_once('inc/init.inc.php');
-$page = 'Imagier';
-require_once('inc/haut.inc.php');
-$imagier_active = 'active';
-require_once('inc/header.index.inc.php');
+
+if (empty($lastId)) {
+  // si il y a un lastId, c'est du Ajax pour scroller,
+  // ne sert pas une page HTML entiere, mais juste un snippet
+  $page = 'Imagier';
+  require_once('inc/haut.inc.php');
+  $imagier_active = 'active';
+  require_once('inc/header.index.inc.php');
+}
 
 //Enregistrement des noms des fichiers images dans un tableau
 $dirImagier = "imagierbd"; 
 $nomsImages = scandir($dirImagier);
-
-//Tableau antechronologique pour affichage par défaut
-$nomsImagesInverses = array_reverse($nomsImages);
-$nomsImagesInverses = array_slice($nomsImagesInverses, 0, 1000);
 
 //fonction pour éliminer les accents de la requête
 function wd_remove_accents($str, $charset='utf-8')
@@ -63,9 +66,16 @@ if(isset($_GET['q']) && $_GET['q']) {
         }
     }   
 } else {
-    $resultatImages = $nomsImagesInverses;
+    //Tableau antechronologique pour affichage par défaut
+    $resultatImages = array_reverse($nomsImages);
 }
 
+$count = count($resultatImages);
+$end = end($resultatImages);
+$firstIndex = empty($lastId) ? 0 : array_search($lastId, $resultatImages);
+$resultatImages = array_slice($resultatImages, $firstIndex, 1000);
+
+        if (empty($lastId)) {
 ?>                 
         <div id="supRealisationsImagier">
             <h2>Imagier</h2>
@@ -81,10 +91,10 @@ if(isset($_GET['q']) && $_GET['q']) {
                 <?php 
                     if($requeteBrute) {
                         if(strlen($requete) >= 2) {
-                            if(count($resultatImages) < 2){
-                                echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultat pour "' . $requeteBrute . '"</div>';
+                            if($count < 2){
+                                echo '<div class="resultatImagier" >' . $count . ' résultat pour "' . $requeteBrute . '"</div>';
                             } else {
-                                echo '<div class="resultatImagier" >' . count($resultatImages) . ' résultats pour "' . $requeteBrute . '"</div>';
+                                echo '<div class="resultatImagier" >' . $count . ' résultats pour "' . $requeteBrute . '"</div>';
                             } 
                         } else {
                             echo '<div class="resultatImagier" >Entrez au moins deux caractères</div>';
@@ -94,7 +104,9 @@ if(isset($_GET['q']) && $_GET['q']) {
             </div>
             <div id="realisationsImagier">
                 
-                <?php                           
+                <?php
+         } // if (empty($lastId))
+
                     //ré-écriture du titre du fichier image sans tirets ni extensions
                     $tirets = array("-", "_");
                     $extensions = array(".jpg", ".JPG", ".png", ".PNG", ".gif", ".GIF");
@@ -113,10 +125,14 @@ if(isset($_GET['q']) && $_GET['q']) {
                         //En JS , transformer le img src = en img srcset = 
                         $imageDirs = array("Desktop" => "imagierhd", "Mobile" => "imagierbd");
                         foreach ($imageDirs as $format => $imageDir) {
-                            echo "<div class='blocImagier blocImagier$format' id='$resultatImage-$format'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='$imageDir/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>".$resultatImageTitre . "<a href='#$resultatImage'>&nbsp;</a></div></div>";
+                            echo "<div class='blocImagier blocImagier$format' id='$resultatImage-$format'><div class='realisationImagier imagier lazy-hidden lazy-loaded'><a href='$imageDir/$resultatImage' title='$resultatImageTitre'><img data-src='imagierbd/$resultatImage' alt=''></a></div><div class='titreImage'>".$resultatImageTitre . "<a href='#$resultatImage'>&nbsp;</a></div></div>\n";
                         }
                     }
-                ?>
+                    if (empty($resultatImages) || ($resultatImage == $end)) {
+                        echo "<div id='end'/>\n"; // to tell the client not to try to load again
+                    }
+        if (empty($lastId)) {
+        ?>
             </div>     
         </div>    
     </section>
@@ -124,4 +140,7 @@ if(isset($_GET['q']) && $_GET['q']) {
 
 <?php
 require_once('inc/footer.index.inc.php');
+
+         } // if (empty($lastId))
+
 ?>
