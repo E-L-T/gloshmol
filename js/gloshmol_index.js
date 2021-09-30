@@ -132,6 +132,10 @@ $(document).scroll(function() {
 
 // TODO tout le code ci-dessous dans son propre .js, et ne l'inclure que dans l'imagier
 
+function getClientFormat() {
+    return (window.innerWidth < mediaLimitSize) ? 'Mobile' : 'Desktop';
+}
+    
 //gestion de la swipebox
 $('.swipebox').swipebox({
     removeBarsOnMobile : false
@@ -141,13 +145,7 @@ $('.swipebox').swipebox({
 function addSwipebox() {
     $('.realisationImagier').click(function (event) {
         event.preventDefault();
-        if (window.innerWidth < mediaLimitSize) {
-            $('.blocImagierMobile .realisationImagier a').addClass('swipebox');
-            $('.blocImagierDesktop .realisationImagier a').removeClass('swipebox');       
-        } else {
-            $('.blocImagierDesktop .realisationImagier a').addClass('swipebox');
-            $('.blocImagierMobile .realisationImagier a').removeClass('swipebox');
-        }
+        $('.blocImagier' + getClientFormat() +' .realisationImagier a').addClass('swipebox');
     });
 }
 
@@ -156,29 +154,29 @@ addSwipebox();
 $("document").ready(function() {
     const anchor = $(location).attr('hash');
     if (anchor) {
-        const id = decodeURIComponent(anchor).substring(1) + '-' + ((window.innerWidth < mediaLimitSize) ? 'Mobile' : 'Desktop');
+        const id = decodeURIComponent(anchor).substring(1) + '-' + getClientFormat();
         $( document.getElementById(id) ).find('.realisationImagier a').click();
     }
 });
 
 $(window).scroll(function() {
-    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-        if ($('#end').length) {
-            return;
-        }
-        const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get('q');
-        const lastId = $(".blocImagierMobile:last").attr('id');
-        // TODO: add loader icon in page CSS
-        //$('#loader-icon').show();
-        $.get('imagier.php', {lid : lastId, q: (query ? query : "") },
-              function(data) {
-                $("#realisationsImagier").append(data);
-              })
-        /* TODO .always(function(data) {
-            $('#loader-icon').hide();
-        }) */;
+    if ($(window).scrollTop() < $(document).height() - $(window).height()) {
+        return;
     }
+    if ($('#end').length) {
+        return;
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    const lastId = $(".blocImagierMobile:last").attr('id');
+    $('#scroll-loader-icon').show();
+    $.get('imagier.php', {lid : lastId, q: (query ? query : "") },
+          function(data) {
+            $("#realisationsImagier").append(data);
+          })
+    .always(function(data) {
+        $('#scroll-loader-icon').hide();
+    });
 });
 
 $(window).on('ajaxComplete', function() {

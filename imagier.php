@@ -73,7 +73,7 @@ if(isset($_GET['q']) && $_GET['q']) {
 $count = count($resultatImages);
 $end = end($resultatImages);
 $firstIndex = empty($lastId) ? 0 : (array_search($lastId, $resultatImages) + 1);
-$resultatImages = array_slice($resultatImages, $firstIndex, 100);
+$resultatImages = array_slice($resultatImages, $firstIndex, 96);
 
         if (empty($lastId)) {
 ?>                 
@@ -134,8 +134,11 @@ $resultatImages = array_slice($resultatImages, $firstIndex, 100);
         if (empty($lastId)) {
         ?>
             </div>     
-        </div>    
+        </div>
     </section>
+    <div id="scroll-loader-icon">
+        <img src="images/loading.gif">
+    </div>
 </div>
 
 <?php

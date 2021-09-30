@@ -1082,3 +1082,14 @@ footer span {
 }
 
 /** { border: 1px solid #f00; }*/
+
+#scroll-loader-icon {
+    text-align: center;
+    display: none;
+}
+
+#scroll-loader-icon > img {
+    transform-origin: center;
+    transform: scale(1.5);
+    margin: 40px 0px 40px 0px;
+}
