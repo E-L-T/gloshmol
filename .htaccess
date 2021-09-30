@@ -40,6 +40,6 @@ RewriteRule ^(.*?)/?$ $1.php [L]
 
 
 Options -Indexes
-ErrorDocument 404 http://www.gloshmol.com/gloshmol-page-404.php
-ErrorDocument 403 http://www.gloshmol.com/gloshmol-page-403.php
+ErrorDocument 404 https://www.gloshmol.com/gloshmol-page-404.php
+ErrorDocument 403 https://www.gloshmol.com/gloshmol-page-403.php
 # IndexIgnore *
