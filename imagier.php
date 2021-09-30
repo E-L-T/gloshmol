@@ -14,7 +14,7 @@ if (empty($lastId)) {
 
 //Enregistrement des noms des fichiers images dans un tableau
 $dirImagier = "imagierbd"; 
-$nomsImages = scandir($dirImagier);
+$nomsImages = array_diff(scandir($dirImagier), array('..', '.'));
 
 //fonction pour éliminer les accents de la requête
 function wd_remove_accents($str, $charset='utf-8')
@@ -72,8 +72,8 @@ if(isset($_GET['q']) && $_GET['q']) {
 
 $count = count($resultatImages);
 $end = end($resultatImages);
-$firstIndex = empty($lastId) ? 0 : array_search($lastId, $resultatImages);
-$resultatImages = array_slice($resultatImages, $firstIndex, 1000);
+$firstIndex = empty($lastId) ? 0 : (array_search($lastId, $resultatImages) + 1);
+$resultatImages = array_slice($resultatImages, $firstIndex, 100);
 
         if (empty($lastId)) {
 ?>                 
