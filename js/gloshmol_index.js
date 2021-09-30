@@ -138,16 +138,20 @@ $('.swipebox').swipebox({
 });
 
 //ajoute la classe swipebox au dernier moment pour ne pas avoir les images en doublon dans la swipebox
-$('.realisationImagier').click(function (event) {
-    event.preventDefault();
-    if (window.innerWidth < mediaLimitSize) {
-        $('.blocImagierMobile .realisationImagier a').addClass('swipebox');
-        $('.blocImagierDesktop .realisationImagier a').removeClass('swipebox');       
-    } else {
-        $('.blocImagierDesktop .realisationImagier a').addClass('swipebox');
-        $('.blocImagierMobile .realisationImagier a').removeClass('swipebox');
-    }
-});
+function addSwipebox() {
+    $('.realisationImagier').click(function (event) {
+        event.preventDefault();
+        if (window.innerWidth < mediaLimitSize) {
+            $('.blocImagierMobile .realisationImagier a').addClass('swipebox');
+            $('.blocImagierDesktop .realisationImagier a').removeClass('swipebox');       
+        } else {
+            $('.blocImagierDesktop .realisationImagier a').addClass('swipebox');
+            $('.blocImagierMobile .realisationImagier a').removeClass('swipebox');
+        }
+    });
+}
+
+addSwipebox();
 
 $("document").ready(function() {
     const anchor = $(location).attr('hash');
@@ -179,6 +183,7 @@ $(window).scroll(function() {
 
 $(window).on('ajaxComplete', function() {
   setTimeout(function() {
-    $(window).lazyLoadXT();
-  }, 50);
+      $(window).lazyLoadXT();
+      addSwipebox();
+  }, 300);
 });
