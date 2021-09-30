@@ -18,15 +18,16 @@ RewriteEngine On
 
 Options +FollowSymLinks -MultiViews
 
-<If "%{SERVER_NAME} == 'www.gloshmol.com'">
+# Condition desactive parce que http://gloshmol.com/imagier_process ne marche plus !
+#<If "%{SERVER_NAME} == 'www.gloshmol.com'">
   RewriteBase /
   SetEnv RACINE_SITE https://www.gloshmol.com/
-</If>
-<Else>
-  # developement en local
-  RewriteBase /gloshmol
-  SetEnv RACINE_SITE /gloshmol/
-</Else>
+#</If>
+#<Else>
+#  # developement en local
+#  RewriteBase /gloshmol
+#  SetEnv RACINE_SITE /gloshmol/
+#</Else>
 
 ## hide .php extension
 # To externally redirect /dir/foo.php to /dir/foo
