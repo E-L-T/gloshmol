@@ -105,12 +105,8 @@ document.querySelector("nav").addEventListener("click", function(event) {
     } 
 });
 
-//gestion de la swipebox
-$('.swipebox').swipebox({
-    removeBarsOnMobile : false
-});
 
-//retour en haut de la page imagier
+// Retour en haut de la page
 $('.arrowUp').on('click', function () {
     $('body,html').animate({
         scrollTop: 0
@@ -118,15 +114,28 @@ $('.arrowUp').on('click', function () {
     return false;
 });
 
-//Faire apparaître la flèche après un peu de scroll
+// Faire apparaître la flèche après un peu de scroll
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 800) {
-      $('.arrowUp').fadeIn();
+        $('.arrowUp').fadeIn();
     } else {
-      $('.arrowUp').fadeOut();
+        $('.arrowUp').fadeOut();
     }
-  });
+});
+ 
+
+
+//
+// -- imagier --
+//
+
+// TODO tout le code ci-dessous dans son propre .js, et ne l'inclure que dans l'imagier
+
+//gestion de la swipebox
+$('.swipebox').swipebox({
+    removeBarsOnMobile : false
+});
 
 //ajoute la classe swipebox au dernier moment pour ne pas avoir les images en doublon dans la swipebox
 $('.realisationImagier').click(function (event) {
@@ -149,26 +158,27 @@ $("document").ready(function() {
 });
 
 $(window).scroll(function() {
-    // TODO: only apply this to the imagier page, lol
     if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-	if ($('#end').length) {
-	    return;
-	}
-	const urlParams = new URLSearchParams(window.location.search);
-	const query = urlParams.get('q');
-	const lastId = $(".blocImagierMobile:last").attr('id');
-	$.ajax({
-	    url: 'imagier.php?lid='+ encodeURI(lastId) + (query ? ("&q=" + encodeURI(query)) : ""),
-	    type: "GET",
-	    beforeSend: function() {
-		$('#loader-icon').show(); // TODO: add loader icon in page CSS
-	    },
-	    complete: function() {
-		$('#loader-icon').hide();
-	    },
-	    success: function(data) {
-		$("#realisationsImagier").append(data);
-	    }
-	});
+        if ($('#end').length) {
+            return;
+        }
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        const lastId = $(".blocImagierMobile:last").attr('id');
+        // TODO: add loader icon in page CSS
+        //$('#loader-icon').show();
+        $.get('imagier.php', {lid : lastId, q: (query ? query : "") },
+              function(data) {
+                $("#realisationsImagier").append(data);
+              })
+        /* TODO .always(function(data) {
+            $('#loader-icon').hide();
+        }) */;
     }
+});
+
+$(window).on('ajaxComplete', function() {
+  setTimeout(function() {
+    $(window).lazyLoadXT();
+  }, 50);
 });
