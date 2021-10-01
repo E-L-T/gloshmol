@@ -1,4 +1,4 @@
-<?php
+	<?php
 $lastId = isset($_GET['lid']) ? substr($_GET['lid'], 0, strrpos( $_GET['lid'], '-')) : '';
 
 require_once('inc/init.inc.php');
@@ -73,7 +73,7 @@ if(isset($_GET['q']) && $_GET['q']) {
 $count = count($resultatImages);
 $end = end($resultatImages);
 $firstIndex = empty($lastId) ? 0 : (array_search($lastId, $resultatImages) + 1);
-$resultatImages = array_slice($resultatImages, $firstIndex, 96);
+$resultatImages = array_slice($resultatImages, $firstIndex, 250);
 
         if (empty($lastId)) {
 ?>                 
