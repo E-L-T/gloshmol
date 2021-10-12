@@ -28,7 +28,7 @@ function filtrerSommaire(filtre, realisationChoix) {
                 texteRealisationsElts[j].style.display = "block";
              }
         }
-	window.onload(); // hack... j'ai casse le chargement des fitres, probablement dan le htacces. Tout ce code est tre complique et pourrait etre simplifie
+        window.onload(); // hack... j'ai casse le chargement des fitres, probablement dan le htacces. Tout ce code est tre complique et pourrait etre simplifie
     });
 }
 
@@ -159,29 +159,32 @@ $("document").ready(function() {
     }
 });
 
+var ajaxLoading = false;
 $(window).scroll(function() {
+    if (ajaxLoading) {
+        return;
+    }
+
     if ($(window).scrollTop() < $(document).height() - $(window).height()) {
         return;
     }
     if ($('#end').length) {
         return;
     }
+
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
     const lastId = $(".blocImagierMobile:last").attr('id');
     $('#scroll-loader-icon').show();
+    ajaxLoading = true;
     $.get('imagier.php', {lid : lastId, q: (query ? query : "") },
           function(data) {
             $("#realisationsImagier").append(data);
+            $(window).lazyLoadXT();
+            addSwipebox();
           })
     .always(function(data) {
         $('#scroll-loader-icon').hide();
+        ajaxLoading = false;
     });
-});
-
-$(window).on('ajaxComplete', function() {
-  setTimeout(function() {
-      $(window).lazyLoadXT();
-      addSwipebox();
-  }, 300);
 });
