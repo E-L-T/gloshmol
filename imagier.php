@@ -1,12 +1,16 @@
-	<?php
-$lastId = isset($_GET['lid']) ? substr($_GET['lid'], 0, strrpos( $_GET['lid'], '-')) : '';
-
+<?php
 require_once('inc/init.inc.php');
+
+$lastId = isset($_GET['lid']) ? substr($_GET['lid'], 0, strrpos( $_GET['lid'], '-')) : '';
+$requeteBrute = isset($_GET['q']) ?  htmlspecialchars($_GET['q']) : '';
 
 if (empty($lastId)) {
   // si il y a un lastId, c'est du Ajax pour scroller,
   // ne sert pas une page HTML entiere, mais juste un snippet
   $page = 'Imagier';
+  if ($requeteBrute) {
+     $page .= ' pour &quot;'. $requeteBrute . '&quot;';
+  }
   require_once('inc/haut.inc.php');
   $imagier_active = 'active';
   require_once('inc/header.index.inc.php');
@@ -28,10 +32,7 @@ function wd_remove_accents($str, $charset='utf-8')
 }
 
 //sélection des fichiers images correspondant la requete
-$requeteBrute = '';
-if(isset($_GET['q']) && $_GET['q']) {
-    $requeteBrute = htmlspecialchars($_GET['q']);
-    
+if ($requeteBrute) {
     //traitement de la requête entrée par l'internaute
     //enlever accents et majuscules du nom de la requete
     $requete = wd_remove_accents($requeteBrute);
@@ -134,11 +135,11 @@ $resultatImages = array_slice($resultatImages, $firstIndex, 250);
         if (empty($lastId)) {
         ?>
             </div>     
+            <div id="scroll-loader-icon">
+                <img src="images/loading.gif">
+            </div>
         </div>
     </section>
-    <div id="scroll-loader-icon">
-        <img src="images/loading.gif">
-    </div>
 </div>
 
 <?php
