@@ -165,7 +165,7 @@ $(window).scroll(function() {
         return;
     }
 
-    if ($(window).scrollTop() < $(document).height() - $(window).height()) {
+    if ($(window).scrollTop() < (($(document).height() - $(window).height()) * 0.99)) {
         return;
     }
     if ($('#end').length) {
