@@ -81,7 +81,7 @@ $resultatImages = array_slice($resultatImages, $firstIndex, 250);
         <div id="supRealisationsImagier">
             <h2>Imagier</h2>
 
-            <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..<br /> - mise à jour : 31/08/2021<br /> - dernier carnet : LW<br /> - nombre de fichiers : 15 525</div>
+            <div id="presentationImagier">L'imagier regroupe les dessins de mes carnets. Tous mes carnets ont été numérisés.<br />Le groupe de 2 lettres par lequel commence chaque nom de fichier désigne le carnet. Le premier carnet s'appelle AA,le deuxième AB, le 26° AZ, le 27° BA et ainsi de suite. Ils apparaissent donc en ordre antéchronologique, les derniers en haut.<br />Le moteur de recherche permet de trouver les dessins dont le nom comprend par exemple les mots : Louvre, bleu, portrait, Pasteur, TGI (pour tribunal de grande instance), pont, vélo, métro, vitrail, église..<br /> - mise à jour : 27/10/2021<br /> - dernier carnet : LX<br /> - nombre de fichiers : 15 577<div>
             <div class="formulaire">
                 
                 <form action="" method="GET" class="formImagier">

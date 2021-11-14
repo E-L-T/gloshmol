@@ -165,7 +165,7 @@ $(window).scroll(function() {
         return;
     }
 
-    if ($(window).scrollTop() < (($(document).height() - $(window).height()) * 0.99)) {
+    if ($(window).scrollTop() < (($(document).height() - $(window).height()) * 0.97)) {
         return;
     }
     if ($('#end').length) {
@@ -177,7 +177,7 @@ $(window).scroll(function() {
     const lastId = $(".blocImagierMobile:last").attr('id');
     $('#scroll-loader-icon').show();
     ajaxLoading = true;
-    $.get('imagier.php', {lid : lastId, q: (query ? query : "") },
+    $.get('imagier', {lid : lastId, q: (query ? query : "") },
           function(data) {
             $("#realisationsImagier").append(data);
             $(window).lazyLoadXT();
