@@ -14,8 +14,8 @@
     </div> -->
     
     <div class="conteneur">
-        <div id="iconeMenu"><a href="#"><img src="images/burger3.png" /></a></div>
-        <div id="iconeCroix"><a href="#"><img src="images/cross5.png" /></a></div>
+        <div id="iconeMenu"><a href="#"><img src="img/burger.png" /></a></div>
+        <div id="iconeCroix"><a href="#"><img src="img/cross.png" /></a></div>
         <header>
             <div id="logo"><a href="<?= RACINE_SITE ?>index.php" id="lienLogo">Bertrand Segers</a></div> <!--<span class="tiretsLogo">-:-:-:-</span>gloshmol<span class="tiretsLogo">-:-:-:-</span></a></div> -->
         </header>
