@@ -407,7 +407,8 @@ h2{
     /* trying to deal with 
     "Default inside passive event listener due to target being treated as passive. See https://www.chromestatus.com/features/5093566007214080"
     but not sure it's working */
-    touch-action: none;
+    /* ... it's causing other problems, see https://github.com/kenwheeler/slick/issues/3889#issuecomment-580328736 */
+    /* touch-action: none; */
 }
 
 .titreImage
