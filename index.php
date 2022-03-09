@@ -9,11 +9,33 @@ require_once('inc/header.index.inc.php');
     
             <div id="realisations">
             
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>carnets_de_dessin.php">
+                    <img src="images/carnets_dessin-bleu_rose-211218-hirizontal-w.JPG" alt="carnets de dessin"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Carnets de dessin</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2021</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation sculpture exposition livret">
                     <a href="<?= RACINE_SITE ?>fantomes.php">
                     <img src="images/fantomes_I-210409-sculpture-bonhomme_rose-yeux_rebond-paysage-w.jpg" alt="fantômes"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>fantômes</strong></p>
+                        <p class="motCle">Dessin / Sculpture</p>
+                        <p class="annee">2021</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation sculpture exposition livret">
+                    <a href="<?= RACINE_SITE ?>3_anneaux_notice.php">
+                    <img src="images/3_anneaux-211014-sculpture-3_trois_anneaux-3-w.JPG" alt="3 anneaux"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>3 anneaux</strong></p>
                         <p class="motCle">Dessin / Sculpture</p>
                         <p class="annee">2021</p>
                     </div>
@@ -207,17 +229,6 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
-                    <a href="<?= RACINE_SITE ?>carnets_de_dessin.php">
-                    <img src="images/carnets-dessin-190711-19-w.jpg" alt="carnets de dessin"/>
-                    <div class="texteRealisation">
-                        <p class="titre"><strong>Carnets de dessin</strong></p>
-                        <p class="motCle">Dessin / Livret</p>
-                        <p class="annee">2019</p>
-                    </div>
-                    </a>
-                </div>
-
                 <div class="realisation exposition installation dessin sculpture livret">
                     <a href="<?= RACINE_SITE ?>caddie_livrets.php">
                     <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livrets"/>
@@ -231,7 +242,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation exposition installation dessin sculpture livret">
                     <a href="<?= RACINE_SITE ?>un-escalier-dans-la-vitrine.php">
-                    <img src="images/01-KZ180819-escaliers_Chatellerault.jpg" alt="Escalier"/>
+                    <img src="images/Chatellerault-01-KZ180819-escaliers.jpg" alt="Escalier"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Un escalier dans la vitrine</strong></p>
                         <p class="motCle">Exposition / Installation / Dessin / Sculpture / Livret</p>
@@ -242,7 +253,7 @@ require_once('inc/header.index.inc.php');
 
                <div class="realisation installation dessin">
                     <a href="<?= RACINE_SITE ?>DCPA.php">
-                    <img src="images/01-180521-DCPA_Bedier-scenarios-bestiaire-04-w.jpg" alt="DCPA"/>
+                    <img src="images/DCPA_Bedier-scenarios-bestiaire-04-01-180521-w.jpg" alt="DCPA"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>DCPA</strong></p>
                         <p class="motCle">Installation / Dessin</p>
@@ -352,7 +363,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation exposition" id="1">
                     <a href="<?= RACINE_SITE ?>bs-au-b8.php">
-                    <img src="images/BSauB8-110702-general-w.jpg" alt="Exposition au B8"/>
+                    <img src="images/BSauB8-110702-general-w.JPG" alt="Exposition au B8"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>BS au B8</strong></p>
                         <p class="motCle">Exposition</p>

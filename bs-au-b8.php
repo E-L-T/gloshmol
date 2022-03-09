@@ -12,7 +12,7 @@ require_once('inc/header.realisation.inc.php');
             <div id ="mediasRealisation">
                 
                 
-                <img src="images/BSauB8-110702-general-w.jpg" alt="">
+                <img src="images/BSauB8-110702-general-w.JPG" alt="">
                 <div class="legendeTitre">
                     <p><em>Vue générale</em></p>
                 </div>

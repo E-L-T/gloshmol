@@ -10,14 +10,14 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
-    [ '00-180912-portrait-escalier.jpg', 'vertical', 'Portrait escalier', ''],
-    [ '01-KZ180819-escaliers_Chatellerault.jpg', 'horizontal', 'Escaliers Chatellerault', ''],
-    [ '02-180929-Chatellerault-escalier_dans_la_vitrine-photo.jpg', 'horizontal', 'Chatellerault escalier dans la vitrine photo', ''],
-    [ '03-180929-Chatellerault-dessins-accrochage-1.jpg', 'horizontal', 'Chatellerault dessins accrochage 1', ''],
-    [ '04-181016-Chatellerault-10.jpg', 'horizontal', 'Chatellerault 10', ''],
-    [ '05-KO10-Chatellerault-Vienne.jpg', 'horizontal', 'Chatellerault Vienne', ''],
-    [ '06-KO12-Chatellerault-Manu-gueuses.jpg', 'horizontal', 'Chatellerault Manu gueuses', ''],
-    [ '07-KP06-Chatellerault-vitrine.jpg', 'horizontal', 'Chatellerault vitrine', ''],
+    [ 'Chatellerault-00-180912-portrait-escalier.jpg', 'vertical', 'Portrait escalier', ''],
+    [ 'Chatellerault-01-KZ180819-escaliers.jpg', 'horizontal', 'Escaliers Chatellerault', ''],
+    [ 'Chatellerault-02-180929-escalier_dans_la_vitrine-photo.jpg', 'horizontal', 'Chatellerault escalier dans la vitrine photo', ''],
+    [ 'Chatellerault-03-180929-dessins-accrochage-1.jpg', 'horizontal', 'Chatellerault dessins accrochage 1', ''],
+    [ 'Chatellerault-04-181016-10.jpg', 'horizontal', 'Chatellerault 10', ''],
+    [ 'Chatellerault-05-KO10-Vienne.jpg', 'horizontal', 'Chatellerault Vienne', ''],
+    [ 'Chatellerault-06-KO12-Manu-gueuses.jpg', 'horizontal', 'Chatellerault Manu gueuses', ''],
+    [ 'Chatellerault-07-KP06-vitrine.jpg', 'horizontal', 'Chatellerault vitrine', ''],
 ];
 ?>
             <div id ="mediasRealisation">

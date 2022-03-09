@@ -14,7 +14,8 @@ require_once('inc/header.realisation.inc.php');
 // S'il n'y a pas de légendes, laisser tout de même les apostrophes vides.
 
 $images = [
-    [ 'carnets_dessin_bleus-200220-04-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu gris, papier crème', ''],
+    [ 'carnets_dessin-bleu_rose-211218-hirizontal-w.JPG', 'horizontal', 'carnets agrafés, cuir rose, papier bleu Vadebourg 80g, 80 feuilles', ''],
+    [ 'carnets_dessin_bleus-200220-04-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu gris, papier crème 160g, 40 feuilles', ''],
     [ 'carnets_dessin_bleus-200220-09-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu gris et marron, papier crème', ''],
     [ 'carnets_agrafes-191219-w.jpg', 'horizontal', 'carnets agrafés, cuir demi peau, papier crème', ''],
     [ 'carnets-agrafe-191119-w.jpg', 'horizontal', 'carnets agrafés', ''],
@@ -38,14 +39,14 @@ $images = [
             <div id ="presentationRealisation">
                 <h2>Des carnets de dessin</h2>
                 <!-- Placer le titre à l'intérieur  des balises h2 ci-dessus-->
-                <p>Mon stock de carnets touche à sa fin, je dois le renouveler.<br>Je réalise des carnets boulonnés qui me sont bien pratiques avec leur dos rigide et la possibilité de les défaire pour numériser, ou extraire sans que le pli apparaisse au scan ni que la reliure souffre du décrochage d'un dessin.<br>Le papier est un bon papier 90 g polyvalent et souple. Chaque carnet contient 55 pages numérotées au dos. Le bois utilisé pour le dos est récupéré des poubelles et traité. Le cuir est taillé dans des chutes, peut comporter parfois tâches ou griffures.<p>
+                <p>Je fabrique mes carnets de dessins parce que je ne trouve pas dans le commerce ni le format ni le modèle qui me conviennent. Je fabrique et utilise 2 types de carnets, les boulonnés et les agrafés.<br><p>
                 <!--Placer le texte dans des balises <p>, comme ci-dessus. la balise <br> indique un retour à la ligne   -->
                 <h3>18x24cm, agrafé</h3>
-                <p>Papier blanc ou crème, couverture cuir<br>20€ + fdp</p>
+                <p>Le modèle agrafé permet la double page, il s'utilise sans pince. Il peut être plus ou moins souple en fonction du grammage du papier, c'est une sorte de cahier. En terme d'objet il est simple. La couverture est en cuir, il peut être monté avec différents papiers, peut comporter en fonction du grammage un nombre de pages variable.<br>25€ + fdp</p>
 
-                <h3>18x24cm, dos bois vernis</h3>
+                <h3>18x24cm, boulonnédos bois vernis</h3>
                 <!-- Placer les intertitres dans des balises <h3> -->
-                <p>60 pages numérotées, papier dessin 90 g, couverture cuir, dos contreplaqué fin vernis<br>30€ + fdp</p>
+                <p>Les carnets boulonnés sont bien pratiques avec leur dos rigide, on peut dessiner debout, sans table. On peut les défaire, les démonter pour les travailler et les numériser, extraire un dessin sans détruire le folio, scanner sans que le pli du livre n'apparaisse.<br>Le papier est un papier dessin 90 g polyvalent et souple, le carnet compte 60 pages. Les pages sont numérotées au dos ce qui permet de remonter le carnet dans l'ordre. Le bois utilisé pour le dos est récupéré, traité, vernis au tampon. La couverture est en cuir. A la fin du carnet une note raconte comment je m'en sers.<br>35€ + fdp</p>
 
                 <h3>Format 9,5x16 cm dos bois</h3>
                 <p>id. 15 € + fdp</p>

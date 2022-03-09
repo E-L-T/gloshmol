@@ -25,7 +25,7 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>"Tremblez tremblez !<br />C'est l'invasion du caca!"</h2>
-                <p>Livret 44 pages, 18x24 cm, peintures ech. 1, imprimé / façonné à l'atelier, Aubervilliers 2019 <br /><br />15 € + fdp (sans la mouche)</p>
+                <p>Livret 52 pages, 18x24 cm, peintures ech. 1, imprimé / façonné à l'atelier, Aubervilliers 2019 <br /><br />20 € + fdp (sans la mouche)</p>
             </div>
 
         </section>

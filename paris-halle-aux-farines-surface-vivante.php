@@ -10,13 +10,13 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
-  ['PHF-corps_braille.jpg', '', 'PHF Corps Braille', "J'ai couché ma femme sous la voûte et l'ai coupée en 4 morceaux, autant qu'il y a d'amphis. J'ai attribué à chaque type d'accident de la peau un caractère."],    
-  ['PHF-tableau.gif', '', 'PHF Tableau', "Une fois les accidents répertoriés, ils sont mis au tableau en autant de lignes qu'il y a de niveaux decirculation.Puis ils sont reportés sur les voiles dans une première maquette au 1/40."],    
+  ['Surface_vivante-PHF-corps_braille.jpg', '', 'PHF Corps Braille', "J'ai couché ma femme sous la voûte et l'ai coupée en 4 morceaux, autant qu'il y a d'amphis. J'ai attribué à chaque type d'accident de la peau un caractère."],    
+  ['Surface_vivante-PHF-tableau.gif', '', 'PHF Tableau', "Une fois les accidents répertoriés, ils sont mis au tableau en autant de lignes qu'il y a de niveaux decirculation.Puis ils sont reportés sur les voiles dans une première maquette au 1/40."],    
   ['surface_vivante-nord.jpg', '', 'Répertoire général', "Façade Nord"],    
   ['surface_vivante-sud.jpg', '', 'Répertoire général', "Façade Sud"],    
-  ['071123-PHF-moule_W.jpg', '', 'Moule', "Meuble permettant le coulage et le moulage des pastilles en béton dense"],    
-  ['sechoir-W.jpg', '', 'Séchoir', "Meuble conçu et réalisé dans le cadre de la réponse au concours 1% artistique de la Halle aux farines, novembre 2007"],    
-  ['PHF-071128-chariot-W.JPG', 'vertical', 'Chariot', ""],
+  ['Surface_vivante-071123-PHF-moule_W.jpg', '', 'Moule', "Meuble permettant le coulage et le moulage des pastilles en béton dense"],    
+  ['Surface_vivante-sechoir-W.jpg', '', 'Séchoir', "Meuble conçu et réalisé dans le cadre de la réponse au concours 1% artistique de la Halle aux farines, novembre 2007"],    
+  ['Surface_vivante-PHF-071128-chariot-W.JPG', 'vertical', 'Chariot', ""],
   ['Surface_vivante-6-ph-Thomas_Porchet-25_halle_aux_farines_segers_090217-w.jpg', 'vertical', "Surface Vivante 6 Ph Thomas Porchet 25 halle aux farines segers", "©Thomas & Porchet"],
   [ 'Surface_vivante-6-ph-Thomas_Porchet-26_halle_aux_farines_segers_090217-w.jpg', 'vertical', 'Surface vivante 6 ph Thomas Porchet 26 halle aux farines segers 090217 w', '©Thomas & Porchet'],
   [ 'Surface_vivante-6-ph-Thomas_Porchet-27_halle_aux_farines_segers_090217-w.jpg', 'vertical', 'Surface vivante 6 ph Thomas Porchet 27 halle aux farines segers 090217 w', '©Thomas & Porchet'],
@@ -28,7 +28,8 @@ $images = [
   [ 'Surface_vivante-6-ph-Thomas_Porchet-63_halle_aux_farines_segers_090217-w.jpg', 'horizontal', 'Surface vivante 6 ph Thomas Porchet 63 halle aux farines segers 090217 w', '©Jean-Pierre Porchet & Frédérique Thomas / Rectorat de Paris Université Paris Diderot'],
   [ 'Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg', 'horizontal', 'Surface vivante 6 ph Thomas Porchet 67 halle aux farines segers 090217 w', '©Jean-Pierre Porchet & Frédérique Thomas / Rectorat de Paris Université Paris Diderot'],
   [ 'Surface_vivante-6-ph-Thomas_Porchet-Thomas&Porcher-04555-w.jpg', 'horizontal', 'Surface vivante 6 ph Thomas Porchet Thomas&Porcher 04555 w', '©Jean-Pierre Porchet & Frédérique Thomas / Rectorat de Paris Université Paris Diderot'],
-  [ 'Surface_vivante-6-ph-Thomas_Porchet-Thomas&Porcher-04551-w.jpg', 'vertical', 'Surface vivante 6 ph Thomas Porchet Thomas&Porcher 04551 w', '©Jean-Pierre Porchet & Frédérique Thomas / Rectorat de Paris Université Paris Diderot']
+  [ 'Surface_vivante-6-ph-Thomas_Porchet-Thomas&Porcher-04551-w.jpg', 'vertical', 'Surface vivante 6 ph Thomas Porchet Thomas&Porcher 04551 w', '©Jean-Pierre Porchet & Frédérique Thomas / Rectorat de Paris Université Paris Diderot'],
+  [ 'Surface_vivante-201209-pastilles+livret-w.jpg', 'horizontal', 'Un séchoir à pastilles et les éditions qui retracent ce projet, cette histoire']
 ];
 ?>
             <div id ="mediasRealisation">

@@ -16,10 +16,10 @@ $images = [
     [ 'motifs_02-210504-LZ190913-motif-Souvigny-frise-sous_verre-24x36-w.jpg', 'horizontal', 'frise de Souvigny, dessin sous verre, 24x36 cm', ''],
     [ 'motifs_02-210504-LZ210203-vague-ruban_brun-bleu_ceruleum-sous_verre-24x36-w.jpg', 'horizontal', 'ruban beige sur bleu, dessin sous verre, 24x36 cm', ''],
     [ 'ligne-points_roses.jpg', 'horizontal',  ''],
-    [ '151130-motifs-01-livret.JPG', 'horizontal', 'Livret motifs 01', ''],
-    [ 'JZ150824-notre_dame_la_grande-motif-ruban-arche.jpg', 'horizontal', 'Notre Dame la grande motif ruban arche', ''],
-    [ 'JZ150901-motif-cercles.jpg', 'horizontal', 'Motif cercles', ''],
-    [ 'JZ150901-Poitiers-notre_dame_la_grande-motif-caissons.jpg', 'vertical', 'Poitiers notre dame la grande motif caissons', '']
+    [ 'motifs-01-151130-livret.JPG', 'horizontal', 'Livret motifs 01', ''],
+    [ 'motifs-JZ150824-notre_dame_la_grande-motif-ruban-arche.jpg', 'horizontal', 'Notre Dame la grande motif ruban arche', ''],
+    [ 'motifs-JZ150901-motif-cercles.jpg', 'horizontal', 'Motif cercles', ''],
+    [ 'motifs-JZ150901-Poitiers-notre_dame_la_grande-motif-caissons.jpg', 'vertical', 'Poitiers notre dame la grande motif caissons', '']
 ];
 ?>
             <div id ="mediasRealisation">
