@@ -14,11 +14,7 @@ $images = [
     [ 'lampes_caddie-4_42-bocal_clous-w.jpg', 'vertical', 'lampe bocal à clous, photogramme 18x24cm', ''],
     [ 'lampes_caddie-baguette-config-01-w.JPG', 'horizontal', 'lampe baguette, configuration', ''],
     [ 'lampes_caddie-photomaton-w.jpg', 'vertical', 'caddie, photomaton', ''],
-    [ 'lampes_caddie-livret-210708-01-w.JPG', 'horizontal', 'livret, couverture', ''],
-    [ 'lampes_caddie-livret-210708-02-w.JPG', 'horizontal', 'livret', ''],
-    [ 'lampes_caddie-livret-210708-03-w.JPG', 'horizontal', 'livret, photogrammes', ''],
-    [ 'lampes_caddie-livret-210708-05-w.JPG', 'horizontal', 'livret, configurations', ''],
-    [ 'lampes_caddie-livret-210708-16-w.JPG', 'horizontal', 'livret, colportages', '']
+    [ 'lampes_caddie-livret-210708.gif', 'horizontal', 'une édition', '']
 ];
 ?>
             <div id ="mediasRealisation">

@@ -12,12 +12,12 @@ require_once('inc/header.realisation.inc.php');
 $images = [
     [ 'fantomes_I-190313-poignee-buche_sculpture-7-w.JPG', 'horizontal', 'poignée buche, 2019', ''],
     [ 'fantomes_I-210409-sculpture-bonhomme_rose-yeux_rebond-paysage-w.jpg', 'horizontal', "rebond d'yeux", ''],
-    [ 'fantomes_I-210909-fantome-petite_sculpture-grosse_bite-w.JPG', 'horizontal', 'bite béquille', ''],
+    [ 'fantomes_I-210909-fantome-petite_sculpture-grosse_bite-w.JPG', 'vertical', 'bite béquille', ''],
     [ 'fantomes_I-LW09-bonomme_rose-fellation-w.jpg', 'vertical', 'fellation, esquisse', ''],
     [ 'fantomes_I-210909-suce_ta_bite-auto_pipe-4-w.JPG', 'vertical', 'auto-pipe', ''],
     [ 'fantomes_I-210909-sculpture_fantome-tete_sang_cassee-hemoglobine-05-w.JPG', 'vertical', 'tête cassée', ''],
     [ 'fantomes_I-211028-sculpture-echelle_escalier-l_80cm-w.jpg', 'vertical', 'échelle escalier', ''],
-    [ 'fantomes_I-LT48-sculpture-bonhomme-tete-buche_tuyaux-w.jpg', 'horizontal', 'tête de bûche', ''],
+    [ 'fantomes_I-LT48-sculpture-bonhomme-tete-buche_tuyaux-w.jpg', 'vertical', 'tête de bûche', ''],
     [ 'fantome_I-livret-anim.gif', 'horizontal', 'édition', '']
 ];
 ?>
@@ -35,7 +35,7 @@ $images = [
                 Je réalise que j'ai quelques petites sculptures mais surtout beaucoup d'esquisses pour d'autres. Quand je commence à les réaliser ces esquisses, quand je commence à passer du dessin à la sculpture beaucoup d'autres viennent. Elles sont d'abord timides, un peu honteuses puis essaient tant bien que mal de s'accepter en comprenant un peu qui elles sont.<br>Le tome II est en cours</p><br><br>
                 
                 <h2>une édition</h2>
-                <p>L'édition réunit esquisses et photos de près de 40 sculptures. Imprimée et façonnée à l'atelier, Aubervilliers 2021.<br>18x24 cm, 80 pages, 20 € + fdp</p>
+                <p>Le livre réunit esquisses et photos de près de 40 sculptures.<br><br>80 pages, 18x24 cm broché<br>Imprimé et façonné à l'atelier, Aubervilliers<br>1° éd. 2021<br>dépôt légal 2023 n° 10000000877015<br>ISBN 978-2-494939-03-5<br>tirages numérotés<br>20 € + fdp</p>
             </div>
 
         </section>

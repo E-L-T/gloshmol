@@ -10,6 +10,83 @@ require_once('inc/header.index.inc.php');
             <div id="realisations">
             
                 <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>missiles.php">
+                    <img src="images/missile-230118-BA23-13-5-18x24-w.jpg" alt="missiles"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Missiles</strong></p>
+                        <p class="motCle">Dessin / livret / Sculpture</p>
+                        <p class="annee">2023</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>bonhomme_rose.php">
+                    <img src="images/bonhomme_rose-dessin-MG32-swing-jambe_tete_inversion-w2.jpg" alt="bonhomme rose"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Bonhomme rose</strong></p>
+                        <p class="motCle">Dessin / livret / Sculpture</p>
+                        <p class="annee">2023</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>musee_armee.php">
+                    <img src="images/musee_armee-FA116-fusil fondu-w.jpg" alt="musée de l'armée"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Musée de l'armée</strong></p>
+                        <p class="motCle">Dessin / livret</p>
+                        <p class="annee">2023</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin sculpture">
+                    <a href="<?= RACINE_SITE ?>tapisseries_Apocalypse.php">
+                    <img src="images/tapisseries_Apocalypse-MF14-Angers-motif_nuage-w.jpg" alt="tapisseries de l'Apocalypse"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Tapisseries de l'Apocalypse</strong></p>
+                        <p class="motCle">Dessin / livret</p>
+                        <p class="annee">2022</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin sculpture">
+                    <a href="<?= RACINE_SITE ?>Gap_Queyras.php">
+                    <img src="images/Gap_Queyras-MJ24-Gap-musee-Queyras-mangeoire_poule-w.jpg" alt="Gap Queyras"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Gap, musée du vieux Queyras</strong></p>
+                        <p class="motCle">Dessin / livret</p>
+                        <p class="annee">2022</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin sculpture">
+                    <a href="<?= RACINE_SITE ?>du_bois_des_feuilles.php">
+                    <img src="images/du_bois_des_feuilles-220422-sculpture-bois_feuille-oblique_arche-w2.jpg" alt="du bois des feuilles"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Du bois des feuilles</strong></p>
+                        <p class="motCle">Dessin / Sculpture / livret</p>
+                        <p class="annee">2022</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>bois_graves.php">
+                    <img src="images/bois_graves-JZ161116-bois_grave-brun_rectangles_verts_obliques-w.jpg" alt="bois gravés"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Bois gravés</strong></p>
+                        <p class="motCle">Dessin / Livret</p>
+                        <p class="annee">2013-2022</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>carnets_de_dessin.php">
                     <img src="images/carnets_dessin-bleu_rose-211218-hirizontal-w.JPG" alt="carnets de dessin"/>
                     <div class="texteRealisation">
@@ -24,7 +101,7 @@ require_once('inc/header.index.inc.php');
                     <a href="<?= RACINE_SITE ?>fantomes.php">
                     <img src="images/fantomes_I-210409-sculpture-bonhomme_rose-yeux_rebond-paysage-w.jpg" alt="fantômes"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>fantômes</strong></p>
+                        <p class="titre"><strong>Fantômes</strong></p>
                         <p class="motCle">Dessin / Sculpture</p>
                         <p class="annee">2021</p>
                     </div>
@@ -230,10 +307,10 @@ require_once('inc/header.index.inc.php');
                 </div>
 
                 <div class="realisation exposition installation dessin sculpture livret">
-                    <a href="<?= RACINE_SITE ?>caddie_livrets.php">
-                    <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livrets"/>
+                    <a href="<?= RACINE_SITE ?>caddie_livres.php">
+                    <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livres"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>Caddie de livrets</strong></p>
+                        <p class="titre"><strong>Caddie de livres</strong></p>
                         <p class="motCle">Exposition / Installation / Dessin / Sculpture / Livret</p>
                         <p class="annee">2018</p>
                     </div>
@@ -275,7 +352,7 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation exposition installation livret" id="7">
                     <a href="<?= RACINE_SITE ?>faites-vos-jeux.php">
-                    <img src="images/Gonesse-grade_rose-w.jpg" alt="Dégradé rose"/>
+                    <img src="images/Gonesse-rideau_grade-inetrieur-w.jpg" alt="Dégradé rose"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Faites vos jeux</strong></p>
                         <p class="motCle">Exposition / Installation / Livret</p>
@@ -374,7 +451,7 @@ require_once('inc/header.index.inc.php');
                 
                 <div class="realisation sculpture livret" id="9">
                     <a href="<?= RACINE_SITE ?>serpent.php">
-                    <img src="images/s-FORMATS-03-serpent-120607-w.jpg" alt="Serpent"/>
+                    <img src="images/FORMATS-03-serpent-120607-w.jpg    " alt="Serpent"/>
                     <div class="texteRealisation">
                         <p class="titre"><strong>Serpent</strong></p>
                         <p class="motCle">Sculpture / Livret</p>

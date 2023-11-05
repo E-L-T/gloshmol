@@ -49,6 +49,9 @@ $images = [
                     Architecte : <a href="www.anma.fr">ANMA</a><br>
                     </p>
 
+                    <h3>Un petit livre</h3>
+                    <p>Une édition raconte ce projet<br>20 pages, broché, imprimé et façonné à l'atelier<br>sur commande, 15€ + fdp<br>ISBN 978-2-9587859-7-0<br>
+
                     <h3><em>Points saillants sur le nu des murs</em>, texte de Jean Attali</h3>
 
                     <p>Bertrand Segers écrit en braille sur le nu des murs. Le mot « image », par exemple, ou le mot «écrit». Et si ce dernier mot est trop long pour le pan de mur, il le raccourcit et ne garde que le «cri». Le mot recèle, chaque poète le sait, une inépuisable plasticité.<br><br>

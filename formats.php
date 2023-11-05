@@ -12,7 +12,7 @@ require_once('inc/header.realisation.inc.php');
             <div id ="mediasRealisation">
                 
                 
-                <img src="images/s-FORMATS-01-120414-portes-w.JPG" alt="">
+                <img src="images/FORMATS-01-120414-portes-w.JPG" alt="">
                 <div class="legendeTitre">
                     <p><em>Portes dressées</em></p>
                 </div>
@@ -23,7 +23,7 @@ require_once('inc/header.realisation.inc.php');
                     </p>
                 </div>
 
-                <img src="images/s-FORMATS-02-120607-fabrique-w.JPG" alt="">
+                <img src="images/FORMATS-02-120607-fabrique-w.JPG" alt="">
                 <div class="legendeTitre">
                     <p><em>Fabrique</em></p>
                 </div>
@@ -32,7 +32,7 @@ require_once('inc/header.realisation.inc.php');
                     </p>
                 </div>
 
-                <img src="images/s-FORMATS-03-serpent-120607-w.jpg" alt="">
+                <img src="images/FORMATS-03-serpent-120607-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p><em>Serpent et prismes violet vert</em></p>
                 </div>
@@ -40,7 +40,7 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <img src="images/s-FORMATS-04-120716-treille_armee-w.jpg" alt="">
+                <img src="images/FORMATS-04-120716-treille_armee-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p><em>Treille et armée de carton</em></p>
                 </div>
@@ -48,7 +48,7 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
                 
-                <img src="images/s-FORMATS-05-120604-arche-w.jpg" alt="">
+                <img src="images/FORMATS-05-120604-arche-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p><em>Arche portes</em></p>
                 </div>
@@ -56,15 +56,7 @@ require_once('inc/header.realisation.inc.php');
                     <p>9 pièces<br />Pin laqué 20mm<br />90 x 20 x 50 cm</p>
                 </div>
 
-                <img src="images/s-FORMATS-03-serpent-120607-w.jpg" alt="">
-                <div class="legendeTitre">
-                    <p><em>Serpent et prismes violet vert</em></p>
-                </div>
-                <div class="legendeDetails">
-                    <p></p>
-                </div>
-
-                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/s-FORMATS-06-120716-Chanot-w.JPG" alt=""></div>
+                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/FORMATS-06-120716-Chanot-w.JPG" alt=""></div>
                 <div class="vertical animated animatedFadeInUp fadeInUplegendeTitre">
                     <p>Portes dressées sous verrière</p>
                 </div>
@@ -72,7 +64,7 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/s-FORMATS-07-120716-grade_vert-elice-w.JPG" alt=""></div>
+                <div class="vertical animated animatedFadeInUp fadeInUp"><img src="images/FORMATS-07-120716-grade_vert-elice-w.JPG" alt=""></div>
                 <div class="vertical animated animatedFadeInUp fadeInUplegendeTitre">
                     <p>Grade vert et Elice</p>
                 </div>
@@ -80,7 +72,7 @@ require_once('inc/header.realisation.inc.php');
                     <p></p>
                 </div>
 
-                <img src="images/s-FORMATS-08-120509-paysage_profond-maquette-w.jpg" alt="">
+                <img src="images/FORMATS-08-120509-paysage_profond-maquette-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Un paysage profond, maquette</p>
                 </div>
@@ -88,7 +80,7 @@ require_once('inc/header.realisation.inc.php');
                     <p>18 x 24 x 6cm</p>
                 </div>
 
-                <img src="images/s-FORMATS-09-paysage_profond-120607-w.jpg" alt="">
+                <img src="images/FORMATS-09-paysage_profond-120607-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Un paysage profond</p>
                 </div>
@@ -96,7 +88,7 @@ require_once('inc/header.realisation.inc.php');
                     <p>Sculpture filaire, trône et paysage</p>
                 </div>
 
-                <img src="images/s-FORMATS-10-120608-trone-perspective_profonde-w.jpg" alt="">
+                <img src="images/FORMATS-10-120608-trone-perspective_profonde-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Trône et filaire, perspective</p>
                 </div>
@@ -107,7 +99,7 @@ require_once('inc/header.realisation.inc.php');
                     Photo Chloé Esdraffo </p>
                 </div>
 
-                <img src="images/s-FORMATS-11-120701-Chanot-performance-J_Attali-02-w.jpg" alt="">
+                <img src="images/FORMATS-11-120701-Chanot-performance-J_Attali-02-w.jpg" alt="">
                 <div class="legendeTitre">
                     <p>Paysage</p>
                 </div>

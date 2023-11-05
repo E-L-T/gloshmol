@@ -14,8 +14,8 @@ require_once('inc/header.realisation.inc.php');
 // S'il n'y a pas de légendes, laisser tout de même les apostrophes vides.
 
 $images = [
-    [ 'Lisbonne_dessins-livret-191002-1-w.jpg', 'horizontal', 'Lisbonne dessins, livret', ''],
-    [ 'Lisbonne_dessins-livret-191002-2-w.jpg', 'horizontal', 'Lisbonne dessins, livret', ''],
+    [ 'Lisbonne_dessins-livret-191002-1-w.jpg', 'horizontal', 'Lisbonne dessins', ''],
+    [ 'Lisbonne_dessins-livret-191002-2-w.jpg', 'horizontal', 'Lisbonne dessins', ''],
 
 ];
 ?>
@@ -28,14 +28,12 @@ $images = [
             </div>
 
             <div id ="presentationRealisation">
-                <h2>Lisbonne dessins, livret</h2>
+                <h2>Lisbonne dessins</h2>
                 <!-- Placer le titre à l'intérieur  des balises h2 ci-dessus-->
                 <p>"Chloé vient d’avoir 40 ans. Quand on lui a demandé ce qu’elle voulait pour son anniversaire elle a dit qu’elle voulait des vacances avec moi alors tous les amis ont donné dans une cagnotte, on a laissé les filles à belle maman et on est parti quatre jours à Lisbonne."...<p>
                 <!--Placer le texte dans des balises <p>, comme ci-dessus. la balise <br> indique un retour à la ligne   -->
                 <!-- Placer les intertitres dans des balises <h3> -->
-                <p>18x24 cm, 68 pages, une centaine de dessins reproduits en grande majorité à l'échelle.
-Imprimé à l'atelier, Aubervilliers 2019
-15€ + fdp (sans l'abeille)</p>
+                <p>18x24 cm, 68 pages<br>Imprimé, broché et façonné à l'atelier, Aubervilliers 2019<br>ISBN 978-2-494939-00-4<br>20€ + fdp (sans l'abeille)</p>
 
 
             </div>

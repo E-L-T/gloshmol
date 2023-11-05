@@ -14,7 +14,7 @@ $images = [
     [ 'LMQP-dalle-st_cyr-w.jpg', 'horizontal', 'Dalle St cyr', ''],
     [ 'LMQP-porte2-090405-St_Cyr-07-w.JPG', 'horizontal', 'Porte St Cyr', ''],
     [ 'LMQP-St_Cyr-090405-22-w.JPG', 'horizontal', 'St Cyr 22', ''],
-    [ 'LMQP-tour-090323-02-w.JPG', 'horizontal', 'Tour', '']
+    [ 'LMQP-.jpg', 'horizontal', 'livret', '']
 ];
 ?>
             <div id ="mediasRealisation">
@@ -39,8 +39,8 @@ $images = [
                 Ce premier site d’expérimentation donne une entrée dans ce projet par l’échelle domestique : les figures assemblées dans un premier temps sont celles de la maison.
                 Une fois ces figures éprouvées, d’autres assemblages contextuels seront déplacés.</p>
 
-                <h3>Livret</h3>
-                <p>Imprimé et façonné à l'atelier, Aubervilliers.<br>18x24 cm - 20 pages - 15 euros + fdp</p>
+                <h3>Edition</h3>
+                <p>Livre imprimé, broché et façonné à l'atelier, Aubervilliers.<br>18x24 cm - 20 pages - 15 euros + fdp</p>
             </div>
 
         </section>

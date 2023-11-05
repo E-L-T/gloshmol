@@ -10,10 +10,13 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
-    [ 'small_design_II-201211-livret-w.jpg', 'horizontal', 'small design II, multiprise électrique', ''],
-    [ 'small_design_II-210215-livret-1-w.jpg', 'horizontal', 'small design II, dans la jungle', ''],
-    [ 'small_design_II-210215-livret-2-w.jpg', 'horizontal', 'small design II, sellette', ''],
-    [ '', 'horizontal', '+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+', ''],
+    [ 'small_design-310322-meuble-tabouret-galette-w.JPG', 'vertical', 'restauration de tabourets, les galettes', ''],
+    [ 'small_design_II-210310-meuble_lustre-w.jpg', 'horizontal', 'lustre', ''],
+    [ 'small_design_II-210205-chaise-17-w.jpg', 'vertical', 'chaise pin', ''],
+    [ 'small_design_II-200508-etagere_Moulins-2-w.jpg', 'horizontal', 'étagère modèle Moulins', ''],
+    [ 'small_design_II-200611-interrupteur-w.jpg', 'vertical', 'inter', ''],
+    [ 'small_design-II-201211-livre.gif', 'horizontal', 'édition', ''],
+    [ 'ligne-points_roses.jpg', 'horizontal',  ''],
     [ 'small_design-livret-191017-09.jpg', 'horizontal', 'small design I, mangeoire poule', ''],
 ];
 ?>
@@ -27,7 +30,7 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>Small design I et II</h2>
-                <p>"Le small design c’est comme le great design mais en small.<br />Le small design II c'est pareil mais en II fois mieux"<br /><br /><br /><br />Small design II, Livret 68 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2021<br /><br>20 €+fdp<br /><br><br><br>Small design I, Livret 32 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2017<br /><br />15 € + fdp </p>
+                <p>"Le small design c’est comme le great design mais en small.<br />Le small design II c'est pareil mais en II fois mieux"<br /><br /><br /><br />Small design II, 68 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2021<br /><br>20 €+fdp<br /><br><br><br>Small design I, Livret 32 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2017<br /><br />15 € + fdp </p>
             </div>
 
         </section>

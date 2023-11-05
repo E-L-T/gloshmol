@@ -10,9 +10,9 @@ require_once('inc/header.realisation.inc.php');
 
 //Mettre ici infos sur images en respectant le format: fichier, vertical ou '' pour horizontal, legendeTitre, legendeDetails.
 $images = [
-    [ 'musee_air_espace-200901-3-w.jpg', 'horizontal', 'couverture', ''],
-    [ 'musee_air_espace-200901-4-w.jpg', 'horizontal', 'couverture', ''],
-    [ 'musee_air_espace-200901-6-w.jpg', 'horizontal', 'couverture', ''],
+    [ 'musee_air_espace-200901-3-w.jpg', 'horizontal', 'livret de dessins', ''],
+    [ 'musee_air_espace-200901-4-w.jpg', 'horizontal', '', ''],
+    [ 'musee_air_espace-200901-6-w.jpg', 'horizontal', '', ''],
 ]
 ?>
             <div id ="mediasRealisation">
@@ -25,12 +25,12 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>Musée de l'air et de l'espace</h2>
-                <p>"Parfois je rêve que je vole.
+                <p>"Parfois je rêve que je vole. Le musée de l’air et de l’espace est au Bourget et c’est «notre endroit», «notre musée», on habite pas loin et on sait qu’en famille on peut y aller d’un saut, faire notre petit tour des collections. "
 
-Je suis très lié au musée de l’air et de l’espace, très lié.
-
-Le musée de l’air et de l’espace est au Bourget et c’est «notre endroit», «notre musée», on habite pas loin et on sait qu’en famille on peut y aller d’un saut, faire notre petit tour des collections. "<br /><br />Livret 60 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2020<br />15 € + fdp </p>
-                    - <a href="https://www.museeairespace.fr/" target="_blank">site du musée de l'air et de l'espace</a><br />
+                <h3>On va voir les avions, musée de l'air et de l'espace</h3>
+                Livre aux éditions 18x24<br>60 pages, 18x24 cm broché<br>Couverture Fabriano cartacrea 220<br>impression sur DCP 100<br>imprimé façonné à l'atelier, Aubervilliers<br>1° éd. 2020<br>dépôt légal 2023 n°10000000874114<br>ISBN 978-2-9587859-2-5<br>tirages numérotés<br>20 € + fdp</p>
+                
+                - <a href="https://www.museeairespace.fr/" target="_blank">site du musée de l'air et de l'espace</a><br />
 
 
             </div>

@@ -31,7 +31,7 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>3 anneaux, sculpture</h2>
-                <p> - sculpture<br> - année 2019<br> - bûche glanée sur un trottoir d’Aubervilliers<br> - hauteur : <br> - largeur : <br>accompagnant l’oeuvre :<br> - une notice de médiation<br> - boîte de rangement, de stockage et d’archivage<br> - QR code avec informations numériques relatives à l’oeuvre (photo + notice)<br><br>dispositif de monstration<br> - sur une tablette, une table, un socle<br><br>peut être manipulée<br> - oui, conseillé<br> - appartient au fonds d'art contemporain de la ville d'Aubervilliers, acquisition 2021<br>
+                <p> - sculpture<br> - année 2019<br> - bûche glanée sur un trottoir d’Aubervilliers<br> - appartient au fonds d'art contemporain de la ville d'Aubervilliers, acquisition 2021<br>
  </p><br><br>
                 
                 <h2>description, récit de l'oeuvre, notice</h2>

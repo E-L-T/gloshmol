@@ -44,7 +44,7 @@ $images = [
                 <h3>18x24cm, agrafé</h3>
                 <p>Le modèle agrafé permet la double page, il s'utilise sans pince. Il peut être plus ou moins souple en fonction du grammage du papier, c'est une sorte de cahier. En terme d'objet il est simple. La couverture est en cuir, il peut être monté avec différents papiers, peut comporter en fonction du grammage un nombre de pages variable.<br>25€ + fdp</p>
 
-                <h3>18x24cm, boulonnédos bois vernis</h3>
+                <h3>18x24cm, boulonné, dos bois vernis</h3>
                 <!-- Placer les intertitres dans des balises <h3> -->
                 <p>Les carnets boulonnés sont bien pratiques avec leur dos rigide, on peut dessiner debout, sans table. On peut les défaire, les démonter pour les travailler et les numériser, extraire un dessin sans détruire le folio, scanner sans que le pli du livre n'apparaisse.<br>Le papier est un papier dessin 90 g polyvalent et souple, le carnet compte 60 pages. Les pages sont numérotées au dos ce qui permet de remonter le carnet dans l'ordre. Le bois utilisé pour le dos est récupéré, traité, vernis au tampon. La couverture est en cuir. A la fin du carnet une note raconte comment je m'en sers.<br>35€ + fdp</p>
 

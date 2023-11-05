@@ -13,36 +13,15 @@ require_once('inc/header.realisation.inc.php');
             <div id ="identificationContenu">
                 <h2>A propos</h2>
                 <h3>art / architecture</h3>
-                <p>Architecte diplômé, enseignant en école d’architecture, je nourris une relation étroite avec l’architecture. J’ai travaillé à de nombreuses occasions en tant qu’artiste sur des projets d’architecture ou d’urbanisme. C’est dans le cadre de ces missions que j’ai construit mon travail artistique.</p>
+                <p>Dessiner, dessiner, dessiner... pour apprendre à voir. <br>Ranger, classer, organiser pour articuler une pensée, pour construire un chemin.<br><br>En 2001 j’obtiens mon diplôme d’architecte. Je le présente au titre de performance au Palais de Tokyo en 2002, à l’invitation d’Arnaud Labelle Rojoux.<br>J’ai cherché du travail en agence. On m’a confié des missions artistiques dans le cadre du projet d’architecture ou d’urbanisme, je suis devenu artiste.
+</p>
 
-                <h3>langage</h3>
-                <p>Ma relation à l’architecture est familière, les langages manipulés par l’architecte ne me sont pas étrangers, je les connais comme je connais les contraintes et les enjeux qui sous-tendent sa pratique.
-                    Cette langue décrit une discipline. De cette discipline je peux reprendre à mon compte, au compte de ma pratique artistique les points suivants :
-                    - une discipline emprunte d’une concrétude parfois brutale (nécessité d’usage, réglementations...)
-                    - le dialogue avec les acteurs variés de la ville
-                    - une transformation pour une vie meilleure</p>
-                <h3>contexte</h3>
-                <p>C’est dans le contexte que je puise une part importante de mes ressources. Les techniques de représentation permettent d’engager un dialogue avec l’espace de nos pratiques quotidiennes. La représentation vise à rendre à nouveau présent une chose à laquelle on accorde une existence. C’est ce contexte qui dit ce qu’il faut faire et moi je dis comment.
-                    Chacun de mes projets nécessite un temps long consacré à la pratique et à l’analyse du site, de l’existant.</p>
+                <h3>Quelques moments particulièrement importants de mon parcours.</h3>
+                <p>Le 1% de la Halle aux Farines, Université Paris Diderot.<br>En 2002 Nicolas Michelin m’offre de travailler à une proposition artistique sur ce concours qu’il vient de gagner. Je livrerai l’œuvre 8 ans plus tard en assurant moi-même le chantier de cette sculpture sur 3000 m² de murs en béton.<br><br>En 2003 et 2004 je dessine dans des petites villes de la Somme, dans le cadre de l’actualisation des PLU. Le dessin est activé comme un outil d’analyse, de communication et comme un regard sensible sur ces territoires.<br><br>En 2008 mon projet JSI est lauréat au concours Europan 8, concours européen d’urbanisme. C’est une proposition expérimentale sur un site minier au sud de Lille.<br><br>De 2009 à 2013 je préside une association d’artistes installée dans un hangar sur l’aérodrome de Saint Cyr l’école. J’y réalise des sculptures de grande dimension. Le format que j’ai adopté depuis plus de 10 ans alors, devient la matière assemblée dans les sculptures qui agglomèrent des planches 18x24 cm.<br><br>En 2012 pour l’agence EXP je conçois un projet de land art avec des terres de déblai. L’étude est toujours en cours.<br><br>En 2017 avec l’atelier Martel je suis invité à concevoir un mobilier circulaire (matière de réemploi) pour la DCPA. Le mobilier sera réalisé partiellement.<br><br>
 
-                <h3>dessin</h3>
-                <p>Le dessin est au coeur de ma pratique et de mon enseignement. Il est un lieu d’expériences et de mise en oeuvre de matière. La transposition d’espaces dans le plan engage des mécaniques ouvertes.
-                    Sur mon site je mets en ligne plus de 10000 dessins parce que rien ne permet plus simplement de partager un espace désiré, une urbanité pacifiée.</p>
-
-                <h3>matière et fabrique</h3>
-                <p>L’artiste comme l’architecte peut être convaincu que la matière n’est pas inerte. Je la travaille, la malaxe, la regarde jusqu’à ce qu’elle me dise ce qu’il faut que je fasse avec. Ma production n’est pas virtuelle ni dématérialisée, elle est physique et actuelle. Ce travail permet d’engager une matière raisonnée dans son métabolisme, dans sa fabrique et dans son coût.
-                    De 2009 à 2013 j’ai présidé une association d’artistes dans un lieu de création, un atelier de 600 m² sur un aérodrome à côté de Versailles. Nous y avons partagé des techniques, des savoir-faire, des machines. J’ai pu y réaliser des sculptures de grande dimension et m’y consacrer à des recherches brutes (livrets joints).</p>
-
-                <h3>document</h3>
-                <p>Dessins, peintures, photographies, maquettes, gravures ... les pièces que je produis respectent un certain nombres de règles qui participent de la construction de leur statut de document.
-                    Dans chaque situation il y a une production de dessins qui ont vocation à partager une information, à être diffusés. Ainsi les règles de forme et d’archivage permettent des éditions de livrets, la mise en ligne de ces documents et des dispositifs facilités pour exposer les oeuvres.</p>
-
-                <h3>réalisation</h3>
-                <p>Le dessin, la fabrique, les règles de document ... ces méthodologies construisent un cheminement qui doit conduire à la réalisation. Je tiens à contrôler l’étape décisive et essentielle de la réalisation de l’oeuvre. Je tiens à ne mettre en oeuvre que des techniques que je suis en mesure de réaliser.
-                    Pour le 1% de la Halle aux Farines (commande publique Université Paris 7 Denis Diderot, 2009) j’ai pu assurer la réalisation d’une sculpture monumentale sans maîtrise d’oeuvre déléguée.</p>
-
-                <h3>espace sensible</h3>
-                <p>Si l’art est étranger à sa langue c’est parce qu’il la construit et la réinvente pour en faire une langue vivante. Les méthodologies que je construis visent à donner corps à une entité qui échappe car c’est là que l’espace s’incarne, qu’il est habité.</p>
+</p>
+                <h3>Quelques pôles qui structurent l’œuvre.</h3>
+                <p>18x24<br>La quasi totalité des documents que je produis respectent un format, 18x24 cm. Ce format m’oblige à une méthode, offre des avantages considérables en terme d’archivage et confère une cohérence à une œuvre qui convoque des médiums divers (dessin, peintures, gravures, sculptures, design, éditions...).<br><br>Dessin<br>Le dessin occupe une place centrale dans mon travail. C’est une discipline du quotidien qui comprend non seulement la réalisation de ces dessins mais également leur systématique numérisation ainsi que la mise en ligne. Ainsi un fonds de 16000 dessins est accessible sur mon site, un imagier.<br><br>Matière et fabrique<br>Je crois que l’apprentissage d’un médium, d’une fabrique, d’une sorte de bricolage savant m’a toujours passionné. J’ai pu mettre en place à la fois un atelier, un outil sophistiqué et des méthodes qui me permettent de réaliser du mobilier ou des sculptures en réduisant presque à zéro l’achat de matière. Je travaille principalement le bois, occasionnellement le métal que je glane en quantité, que je valorise et stocke.<br><br>Édition<br>Les expériences nombreuses et diverses que croisent mon travail se traduisent dans des éditions que je réalise. Elles sont au format 18x24, je les imprime et les façonne à mon atelier à Aubervilliers. Elles sont diffusées selon divers canaux (centres d’art, musées, librairies...). La collection de livres et livrets compte actuellement une cinquantaine d’opus.<br><br>Libre de poésie<br>Je reste attaché à la ville et à l’architecture mais le chemin creuse une recherche artistique et poétique.</p>
 
                 <h3>Colportages</h3>
                 <p>expositions &eacute;ph&eacute;m&egrave;res et personnelles<br>
@@ -116,6 +95,7 @@ require_once('inc/header.realisation.inc.php');
                 LE FLOCH Maud, compagnie off<br>
                 LE RESTIF Claire, CREDAC, Ivry<br>
                 MANGION Eric, FRAC PACA<br>
+                MARCHES Dominique<br>
                 MAURIZZIO Gian, Galerie d&rsquo;architecture, galeriste<br>
                 OLIVIER MARTIN H&eacute;l&egrave;ne, architecte<br>
                 MICHELIN Nicolas, architecte urbaniste<br>
@@ -129,7 +109,7 @@ require_once('inc/header.realisation.inc.php');
                 PIFARETTI Bernard, peintre<br>
                 POIDEVIN Jean Luc, Nexity<br>
                 POTIN Marc, ing&eacute;nieur<br>
-                POURTAUD Fran&ccedil;ois, &eacute;cole d&rsquo;art, Juvisy-sur-Orge<br>
+                POULAIN Yvan, arthot&egrave;que, Caen<br>
                 RASSOUW Beno&icirc;t, artiste<br>
                 RAYNAUD Olivier, architecte<br>
                 REBOIS Didier, Europan Europe, IVM<br>
@@ -154,6 +134,7 @@ require_once('inc/header.realisation.inc.php');
                 TORCQ Marie-H&eacute;l&egrave;ne, architecte<br>
                 TONKA Hubert, architecte<br>
                 TREGUER Ga&euml;l<br>
+                VAlENTIN Fr&eacute;d&eacute;rique et Philippe, Paris<br>
                 VASSAL Jean-Philippe, architecte<br>
                 Vertige<br>
                 VIERGET-RIAS Isabelle, DRAC IDF<br>

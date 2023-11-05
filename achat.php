@@ -25,8 +25,10 @@ $images = [
             </div>
 
             <div id ="presentationRealisation">
-                <h2>achat</h2>
-                <p>Pour toute commande (livret, dessin, peinture...) merci de m'adresser un mail. Le paiement peut s'effectuer par virement, paylib, sumup.</p>
+                <h2>éditions 18x24</h2>
+                <p>Pour toute commande (livre, dessin, peinture...) merci de m'adresser un mail. Le paiement peut s'effectuer par virement, paylib, sumup.</p>
+                
+                - <a href="https://www.gloshmol.com/editions_18x24-catalogue.pdf" target="_blank">catalogue des éditions 18x24</a><br />
             </div>
 
         </section>
