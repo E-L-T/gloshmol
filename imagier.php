@@ -67,9 +67,12 @@ if ($requeteBrute) {
         }
     }   
 } else {
-    //Tableau antechronologique pour affichage par défaut
-    $resultatImages = array_reverse($nomsImages);
+    // Toutes les images si pas de requete
+    $resultatImages = $nomsImages;
 }
+
+// En ordre antechronologique
+$resultatImages = array_reverse($resultatImages);
 
 $count = count($resultatImages);
 $end = end($resultatImages);
