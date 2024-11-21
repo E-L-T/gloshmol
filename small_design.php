@@ -30,7 +30,7 @@ $images = [
 
             <div id ="presentationRealisation">
                 <h2>Small design I et II</h2>
-                <p>"Le small design c’est comme le great design mais en small.<br />Le small design II c'est pareil mais en II fois mieux"<br /><br /><br /><br />Small design II, 68 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2021<br /><br>20 €+fdp<br /><br><br><br>Small design I, Livret 32 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2017<br /><br />15 € + fdp </p>
+                <p>"Le small design c’est comme le great design mais en small.<br />Le small design II c'est pareil mais en II fois mieux"<br /><br /><br /><br />Small design II<br>68 pages, 18x24 cm, broché, numéroté<br>imprimé façonné à l'atelier, Aubervilliers 2021<br />ISBN : 978-2-494939-22-6<br>20 €+fdp<br /><br><br><br>Small design I<br>32 pages, 18x24 cm, broché, numéroté<br>imprimé façonné à l'atelier, Aubervilliers <br>1° édition 2017<br />ISBN : 978-2-494939-21-9<br />15 € + fdp </p>
             </div>
 
         </section>

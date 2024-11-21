@@ -93,6 +93,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="videoWrapper tailleVideo1">
                     <iframe src="https://player.vimeo.com/video/861087213?h=289c9b455c" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
+                    <p>2 livres : <I> Bonhomme rose, dessins 1 & 2</I></p>
 
 
             </div>

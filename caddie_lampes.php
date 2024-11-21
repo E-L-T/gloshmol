@@ -30,8 +30,8 @@ $images = [
                 <p>Ce travail est une archive de 1998, 1999. Il s'agit de lampes accompagnées de photogrammes qui les représentent. L'importance de ce caddie est double:<br>
                  - choix du format 18x24 cm pour les documents<br> - premiers colportages du caddie</p><br><br>
                 
-                <h2>caddie de lampes, livret</h2>
-                <p>Le livret "caddie de lampes" réunit le contenu du caddie, tous les photogrammes à l'échelle 1/1. Les colportages sont racontés, certains illustrés de  photos. D'autres modèles de lampes ou photogrammes de lumières sont joints parce qu'ils sont liés.<br>64 pages, 20 € + fdp</p>
+                <h2>Une édition</h2>
+                <p>Le livre "caddie de lampes" réunit le contenu du caddie, tous les photogrammes à l'échelle 1/1. Les colportages sont racontés, certains illustrés de  photos. D'autres modèles de lampes ou photogrammes de lumières sont joints parce qu'ils sont liés.<br>ISBN : 978-2-494939-37-0<br>Imprimé et façonné à l'atelier, Aubervilliers<br>Exemplaires numérotés<br>64 pages, 18x24cm, broché<br>20 € + fdp</p>
             </div>
 
         </section>

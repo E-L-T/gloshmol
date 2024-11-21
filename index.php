@@ -9,6 +9,28 @@ require_once('inc/header.index.inc.php');
     
             <div id="realisations">
             
+                <div class="realisation dessin sculpture">
+                    <a href="<?= RACINE_SITE ?>astelle.php">
+                    <img src="images/astelle-LZ220204-serpent-tissu_plie-w.jpg" alt="astelle"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Astelle<br>Un laboratoire de sculpture</strong></p>
+                        <p class="motCle">Sculpture</p>
+                        <p class="annee">2024</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="realisation dessin">
+                    <a href="<?= RACINE_SITE ?>ciel_papiers_dechires.php">
+                    <img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-12-231115-general-w.jpg" alt="missiles"/>
+                    <div class="texteRealisation">
+                        <p class="titre"><strong>Ciel et papiers déchirés<br>Galerie Philippe Valentin</strong></p>
+                        <p class="motCle">Exposition</p>
+                        <p class="annee">2023</p>
+                    </div>
+                    </a>
+                </div>
+
                 <div class="realisation dessin">
                     <a href="<?= RACINE_SITE ?>missiles.php">
                     <img src="images/missile-230118-BA23-13-5-18x24-w.jpg" alt="missiles"/>
@@ -154,9 +176,9 @@ require_once('inc/header.index.inc.php');
 
                 <div class="realisation dessin exposition">
                     <a href="<?= RACINE_SITE ?>motifs.php">
-                    <img src="images/motifs_02-210506-livret-3-w.jpg" alt="motifs"/>
+                    <img src="images/motifs_03-index-w.jpg" alt="motifs"/>
                     <div class="texteRealisation">
-                        <p class="titre"><strong>Motifs 01 et 02</strong></p>
+                        <p class="titre"><strong>Motifs 01, 02 et 03</strong></p>
                         <p class="motCle">Dessin / Exposition / Livret</p>
                         <p class="annee">2015/2021</p>
                     </div>

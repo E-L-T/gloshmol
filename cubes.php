@@ -32,7 +32,9 @@ $images = [
             <div id ="presentationRealisation">
                 <h2>Meubles cubes</h2>
                     <h3></h3>
-                    <p>Les cubes mesurent 37 cm d'arrête. Ne me demandez pas pourquoi, je ne sais pas, je sais par contre que ça marche, qu'avec cette dimension on peut faire beaucoup de choses, mettre toutes sortes de choses dedans, combiner... <br /><br />Un livret réunit ces meubles en modèles. Près de 400 cubes on été réalisés. Ils sont parfois agglomérés en gros meubles, parfois en éléments architectoniques comme le plancher à caissons ou un mur, parfois encore en architecture comme dans le projet d'extension d'un pavillon en 2006.<br /><br />Livret 60 pages, 18x24 cm, imprimé façonné à l'atelier, Aubervilliers 2021<br />20 € + fdp </p>
+                    <p>Les cubes mesurent 37 cm d'arrête. Ne me demandez pas pourquoi, je ne sais pas, je sais par contre que ça marche, qu'avec cette dimension on peut faire beaucoup de choses, mettre toutes sortes de choses dedans, combiner... <br /></p>
+                    <h3>Edition</h3>
+                    <p>Cubes<br>Un livre réunit ces meubles en modèles. Près de 400 cubes on été réalisés. Ils sont parfois agglomérés en gros meubles, parfois en éléments architectoniques comme le plancher à caissons ou un mur, parfois encore en architecture comme dans le projet d'extension d'un pavillon en 2006.<br /><br />76 pages, 18x24 cm, broché, numéroté<br>imprimé façonné à l'atelier, Aubervilliers 2021<br />Edition 18x24<br>ISBN : 978-2-494939-24-0<br>20 € + fdp </p>
                     <h3>Fiches techniques</h3>
                         <p>
                             <a href="<?= RACINE_SITE ?>documents/M-cube_1tiroir.pdf">Cube à un tiroir</a><br/><br>

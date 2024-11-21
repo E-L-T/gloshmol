@@ -38,7 +38,7 @@ $images = [
 
                 <h3>Edition</h3>
                     <p>Un livre réunit les dessins réalisés dans les musées de Strasbourg.
-                    60 pages, 18x24 cm, imprimé et façonné à l'atelier, Aubervilliers 2021. 20 euros + fdp</p> 
+                    60 pages, 18x24 cm, imprimé et façonné à l'atelier, Aubervilliers 2021.<br>ISBN : 978-2-494939-09-7<br> 20 euros + fdp</p> 
             </div>
 
         </section>

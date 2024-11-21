@@ -17,6 +17,14 @@ require_once('inc/header.realisation.inc.php');
                 <div class="legendeDetails">
                 </div>
 
+                <div class="vertical"><img src="images/missile-240922-montfort_interieur-missile-Julie_Gouet-2-w.jpg" alt=""></div>
+                <div class="legendeTitre">
+                    <p>Missile et cabane</p>
+                </div>
+                <div class="legendeDetails">
+                    <p>Expososition Montfort intérieur, commissariat Stéphanie Brivois, chezMano architecture<br>PVC et bois laqué, H 3,10 m</p>
+                </div>
+
                 <div class="vertical"><img src="images/missile-ML02-human_missile-deguisement.jpg" alt=""></div>
                 <div class="legendeTitre">
                     <p>Human Missile</p>
