@@ -14,6 +14,8 @@ require_once('inc/header.realisation.inc.php');
 // S'il n'y a pas de légendes, laisser tout de même les apostrophes vides.
 
 $images = [
+    [ 'carnets_dessins-241204-carnets_agraffes-bleu_orange-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu azurin, papier saumon Vadebourg 120g, 40 feuilles', ''],
+    [ 'carnets_dessins-241204-carnets_boulonnes-2-w.jpg', 'horizontal', 'carnets boulonnés, couverture cuir, dos contreplaqué vernis tampon, papier étude 90g, 60 feuilles numérotées', ''],
     [ 'carnets_dessin-bleu_rose-211218-hirizontal-w.JPG', 'horizontal', 'carnets agrafés, cuir rose, papier bleu Vadebourg 80g, 80 feuilles', ''],
     [ 'carnets_dessin_bleus-200220-04-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu gris, papier crème 160g, 40 feuilles', ''],
     [ 'carnets_dessin_bleus-200220-09-w.jpg', 'horizontal', 'carnets agrafés, cuir bleu gris et marron, papier crème', ''],
