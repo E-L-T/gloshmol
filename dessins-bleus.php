@@ -38,8 +38,8 @@ $images = [
                 <h2>Dessins bleus</h2>
                 <!-- Placer le titre à l'intérieur  des balises h2 ci-dessus-->
                 <p>LMQP<br />
-                Une collection de quelques centaines de dessins<br />
-                Aquarelles au bleu de Lectoure<br/>Format 18x24 cm<br/><br/>Un livre réunit l'ensemble de la collection. 18x24 cm, 32 pages, 15 € + fdp<br>ISBN 978-2-9587859-6-3
+                Une collection 300 dessins<br />
+                Aquarelles au bleu de Lectoure<br/>Format 18x24 cm<br/><br/>Un livre réunit l'ensemble de la collection. 18x24 cm, 32 pages, 20 € + fdp<br>ISBN 978-2-9587859-6-3
                 </p>
             </div>
 
