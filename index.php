@@ -9,7 +9,7 @@ require_once('inc/header.index.inc.php');
     
             <div id="realisations">
             
-                <div class="realisation dessin sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>astelle.php">
                     <img src="images/astelle-LZ220204-serpent-tissu_plie-w.jpg" alt="astelle"/>
                     <div class="texteRealisation">
@@ -20,7 +20,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>ciel_papiers_dechires.php">
                     <img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-12-231115-general-w.jpg" alt="missiles"/>
                     <div class="texteRealisation">
@@ -31,7 +31,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>missiles.php">
                     <img src="images/missile-230118-BA23-13-5-18x24-w.jpg" alt="missiles"/>
                     <div class="texteRealisation">
@@ -42,7 +42,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>bonhomme_rose.php">
                     <img src="images/bonhomme_rose-dessin-MG32-swing-jambe_tete_inversion-w2.jpg" alt="bonhomme rose"/>
                     <div class="texteRealisation">
@@ -53,7 +53,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>musee_armee.php">
                     <img src="images/musee_armee-FA116-fusil fondu-w.jpg" alt="musée de l'armée"/>
                     <div class="texteRealisation">
@@ -64,7 +64,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>tapisseries_Apocalypse.php">
                     <img src="images/tapisseries_Apocalypse-MF14-Angers-motif_nuage-w.jpg" alt="tapisseries de l'Apocalypse"/>
                     <div class="texteRealisation">
@@ -75,7 +75,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Gap_Queyras.php">
                     <img src="images/Gap_Queyras-MJ24-Gap-musee-Queyras-mangeoire_poule-w.jpg" alt="Gap Queyras"/>
                     <div class="texteRealisation">
@@ -86,7 +86,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>du_bois_des_feuilles.php">
                     <img src="images/du_bois_des_feuilles-220422-sculpture-bois_feuille-oblique_arche-w2.jpg" alt="du bois des feuilles"/>
                     <div class="texteRealisation">
@@ -97,7 +97,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>bois_graves.php">
                     <img src="images/bois_graves-JZ161116-bois_grave-brun_rectangles_verts_obliques-w.jpg" alt="bois gravés"/>
                     <div class="texteRealisation">
@@ -108,7 +108,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>carnets_de_dessin.php">
                     <img src="images/carnets_dessin-bleu_rose-211218-hirizontal-w.JPG" alt="carnets de dessin"/>
                     <div class="texteRealisation">
@@ -119,7 +119,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>fantomes.php">
                     <img src="images/fantomes_I-210409-sculpture-bonhomme_rose-yeux_rebond-paysage-w.jpg" alt="fantômes"/>
                     <div class="texteRealisation">
@@ -130,7 +130,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>3_anneaux_notice.php">
                     <img src="images/3_anneaux-211014-sculpture-3_trois_anneaux-3-w.JPG" alt="3 anneaux"/>
                     <div class="texteRealisation">
@@ -141,7 +141,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Strasbourg_lalala.php">
                     <img src="images/Strasbourg-LU10-musee_oeuvre_notre_Dame-chapiteau-colonne_engagee-2-w.jpg" alt="Strasbourg_lalala"/>
                     <div class="texteRealisation">
@@ -152,7 +152,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>caddie_lampes.php">
                     <img src="images/lampes_caddie-flexible_config-1-160311-w.JPG" alt="caddie de lampes"/>
                     <div class="texteRealisation">
@@ -163,7 +163,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>cubes.php">
                     <img src="images/cubes-130416-M-condiments-w.JPG" alt="meubles cubes"/>
                     <div class="texteRealisation">
@@ -174,7 +174,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin exposition">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>motifs.php">
                     <img src="images/motifs_03-index-w.jpg" alt="motifs"/>
                     <div class="texteRealisation">
@@ -185,7 +185,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Musee_arts_decoratifs.php">
                     <img src="images/MAD-210321-Musee_arts_decoratifs-livret_dessins-01-w.jpg" alt="musée des arts décoratifs, dessins"/>
                     <div class="texteRealisation">
@@ -196,7 +196,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>small_design.php">
                     <img src="images/small_design_II-201211-livret-w.jpg" alt="small design I et II"/>
                     <div class="texteRealisation">
@@ -207,7 +207,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>TGI-tribunal_de_grande_instance.php">
                     <img src="images/TGI-dessins_livrets-191017-w.jpg" alt="TGI-tribunal_de_grande_instance"/>
                     <div class="texteRealisation">
@@ -218,7 +218,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
             
-                <div class="realisation livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>allumettes.php">
                     <img src="images/allumettes-livret-w.jpg" alt="allumettes"/>
                     <div class="texteRealisation">
@@ -229,7 +229,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>musee_arts_et_metiers.php">
                     <img src="images/musee_arts_metiers-191017-livret-6-w.jpg" alt="musée des arts et métiers, livret de dessins"/>
                     <div class="texteRealisation">
@@ -240,7 +240,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>musee_air_et_espace.php">
                     <img src="images/musee_air_espace-200901-6-w.jpg" alt="musée de l'air et de l'espace"/>
                     <div class="texteRealisation">
@@ -251,7 +251,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>musee_ceramique_Sevres.php">
                     <img src="images/musee_ceramique_Sevres-200328-livret-w.jpg" alt="livret, musée de la céramique de Sèvres"/>
                     <div class="texteRealisation">
@@ -262,7 +262,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>fusee.php">
                     <img src="images/fusee-190721-cerf_volant-Mers_les_bains-132-w.jpg" alt="Fusée"/>
                     <div class="texteRealisation">
@@ -273,7 +273,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Rotterdam.php">
                     <img src="images/Rotterdam-livret-200328-08-W.jpg" alt="Rotterdam, dessins"/>
                     <div class="texteRealisation">
@@ -284,7 +284,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>toile_de_jouy.php">
                     <img src="images/Toile_Jouy-livret-191017-13-w.jpg" alt="musée de la Toile de Jouy"/>
                     <div class="texteRealisation">
@@ -295,7 +295,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Cluny_Abbaye.php">
                     <img src="images/Cluny-abbaye-livret-191017-10-w.jpg" alt="abbaye de Cluny"/>
                     <div class="texteRealisation">
@@ -306,7 +306,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>caca_invasion.php">
                     <img src="images/caca_invasion-livret-191017-03-w.jpg" alt="caca invasion"/>
                     <div class="texteRealisation">
@@ -317,7 +317,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>Lisbonne_dessins.php">
                     <img src="images/Lisbonne_dessins-livret-191002-1-w.jpg" alt="Lisbonne dessins"/>
                     <div class="texteRealisation">
@@ -328,7 +328,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation dessin sculpture livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>caddie_livres.php">
                     <img src="images/caddie_livrets-181031-w.JPG" alt="caddie livres"/>
                     <div class="texteRealisation">
@@ -339,7 +339,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation dessin sculpture livret">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>un-escalier-dans-la-vitrine.php">
                     <img src="images/Chatellerault-01-KZ180819-escaliers.jpg" alt="Escalier"/>
                     <div class="texteRealisation">
@@ -350,7 +350,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-               <div class="realisation installation dessin">
+               <div class="realisation">
                     <a href="<?= RACINE_SITE ?>DCPA.php">
                     <img src="images/DCPA_Bedier-scenarios-bestiaire-04-01-180521-w.jpg" alt="DCPA"/>
                     <div class="texteRealisation">
@@ -361,7 +361,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-               <div class="realisation dessin exposition">
+               <div class="realisation">
                     <a href="<?= RACINE_SITE ?>dessins-bleus.php">
                     <img src="images/HZ-LMQP-bleu_maison_ombre-070416-w.jpg" alt="dessins bleus"/>
                     <div class="texteRealisation">
@@ -372,7 +372,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation livret" id="7">
+                <div class="realisation" id="7">
                     <a href="<?= RACINE_SITE ?>faites-vos-jeux.php">
                     <img src="images/Gonesse-rideau_grade-inetrieur-w.jpg" alt="Dégradé rose"/>
                     <div class="texteRealisation">
@@ -383,7 +383,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin livret" id="6">
+                <div class="realisation" id="6">
                     <a href="<?= RACINE_SITE ?>grades-verts.php">
                     <img src="images/grades_verts-livrets-13-w.jpg" alt="Grades verts"/>
                     <div class="texteRealisation">
@@ -394,7 +394,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>    
 
-                <div class="realisation dessin livret" id="8">
+                <div class="realisation" id="8">
                     <a href="<?= RACINE_SITE ?>dessins-erotiques.php">
                     <img src="images/dessins_erotiques-couv-w.jpg" alt="Dessins érotiques"/>
                     <div class="texteRealisation">
@@ -405,7 +405,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation" id="5">
+                <div class="realisation" id="5">
                     <a href="<?= RACINE_SITE ?>soleil-rose.php">
                     <img src="images/soleil_rose-portes-18x24.jpg" alt="Soleil rose"/>
                     <div class="texteRealisation">
@@ -416,7 +416,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture" id="4">
+                <div class="realisation" id="4">
                     <a href="<?= RACINE_SITE ?>leger_souffle.php">
                     <img src="images/leger_souffle-130108-MQ_10-w.jpg" alt="Léger souffle"/>
                     <div class="texteRealisation">
@@ -427,7 +427,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation archives" id="3">
+                <div class="realisation" id="3">
                     <a href="<?= RACINE_SITE ?>club_B8.php">
                     <img src="images/club_B8-5-101014-M_archives-2.jpg" alt="Club B8"/>
                     <div class="texteRealisation">
@@ -438,7 +438,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>2_portes.php">
                     <img src="images/portes-121016-w.jpg" alt="2 portes"/>
                     <div class="texteRealisation">
@@ -449,7 +449,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
                 
-                <div class="realisation exposition" id="2">
+                <div class="realisation" id="2">
                     <a href="<?= RACINE_SITE ?>formats.php">
                     <img src="images/FORMATS-120414-portes-7-w.jpg" alt="Club B8"/>
                     <div class="texteRealisation">
@@ -460,7 +460,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition" id="1">
+                <div class="realisation" id="1">
                     <a href="<?= RACINE_SITE ?>bs-au-b8.php">
                     <img src="images/BSauB8-110702-general-w.JPG" alt="Exposition au B8"/>
                     <div class="texteRealisation">
@@ -471,7 +471,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>              
                 
-                <div class="realisation sculpture livret" id="9">
+                <div class="realisation" id="9">
                     <a href="<?= RACINE_SITE ?>serpent.php">
                     <img src="images/FORMATS-03-serpent-120607-w.jpg    " alt="Serpent"/>
                     <div class="texteRealisation">
@@ -482,7 +482,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture" id="10">
+                <div class="realisation" id="10">
                     <a href="<?= RACINE_SITE ?>collier.php">
                     <img src="images/COLLIER-110307-ping_pong-w.JPG" alt="Ping-pong"/>
                     <div class="texteRealisation">
@@ -493,7 +493,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div> 
 
-                <div class="realisation sculpture" id="11">
+                <div class="realisation" id="11">
                     <a href="<?= RACINE_SITE ?>voute.php">
                     <img src="images/VOUTE-101103-ph4-w.jpg" alt="Voûte"/>
                     <div class="texteRealisation">
@@ -504,7 +504,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture" id="12">
+                <div class="realisation" id="12">
                     <a href="<?= RACINE_SITE ?>roue.php">
                     <img src="images/ROUE-101014-onde-Velizy-Gasp_Remus_Mat_BS-056-2-w2.jpg" alt="Roue"/>
                     <div class="texteRealisation">
@@ -515,7 +515,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation sculpture exposition" id="13">
+                <div class="realisation" id="13">
                     <a href="<?= RACINE_SITE ?>HZ_expo.php">
                     <img src="images/HZ_expo-100712-HZ-photos-07-wlg.jpg" alt="HZ Expo"/>
                     <div class="texteRealisation">
@@ -526,7 +526,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition" id="14">
+                <div class="realisation" id="14">
                     <a href="<?= RACINE_SITE ?>des-intrus-au-musee.php">
                     <img src="images/Chinon-BIS-boite_esther-w.jpg" alt="Des intrus au musée"/>
                     <div class="texteRealisation">
@@ -537,7 +537,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition" id="15">
+                <div class="realisation" id="15">
                     <a href="<?= RACINE_SITE ?>ondes.php">
                     <img src="images/ondes-100115-ph-Idris-05-w2.jpg" alt="Ondes"/>
                     <div class="texteRealisation">
@@ -548,7 +548,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>LMQP.php">
                     <img src="images/LMQP-angle-090405-St_Cyr-04-w.JPG" alt="LMQP"/>
                     <div class="texteRealisation">
@@ -559,7 +559,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition installation sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>cri.php">
                     <img src="images/CRI-PHF-071018-expo_CRI-ceh-W.jpg" alt="cri"/>
                     <div class="texteRealisation">
@@ -570,7 +570,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>paris-hopital-cochin-niches.php">
                     <img src="images/PCN-060825-22-LG.jpg" alt="PCN"/>
                     <div class="texteRealisation">
@@ -581,7 +581,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>image-braille.php">
                     <img src="images/image_braille2.jpg" alt="image braille"/>
                     <div class="texteRealisation">
@@ -592,7 +592,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>beauvais-place-des-halles.php">
                     <img src="images/BPH-04-GX30-BPH-w.jpg" alt="Beauvais Place des Halles"/>
                     <div class="texteRealisation">
@@ -603,7 +603,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>lin-soupe.php">
                     <img src="images/LIN_soupe-SudEst2esq.jpg" alt="Lin Soupe"/>
                     <div class="texteRealisation">
@@ -614,7 +614,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>OPED.php">
                     <img src="images/OPED-4-maquette dilatation.jpg" alt="Oped"/>
                     <div class="texteRealisation">
@@ -625,7 +625,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>somme-roux-plu.php">
                     <img src="images/FH39-BlV-percee.jpg" alt="Somme Roux PLU"/>
                     <div class="texteRealisation">
@@ -636,7 +636,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>boulogne-ile-seguin.php">
                     <img src="images/BIS-02_1-pointe_sud-W.jpg" alt="Boulogne Île Seguin"/>
                     <div class="texteRealisation">
@@ -647,7 +647,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="http://www.gloshmol.com/OA3_3-ENSAPM.html">
                     <img src="images/40-flux-humain-plateforme-les-halles-12-08.jpg" alt="Analyse et dessin constructif"/>
                     <div class="texteRealisation">
@@ -658,7 +658,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-visiteur.php">
                     <img src="images/GI211-PHFD-040908-W.jpg" alt="Paris Halle aux Farines - Visiteur">
                     <div class="texteRealisation">
@@ -669,7 +669,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation installation sculpture">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>paris-halle-aux-farines-surface-vivante.php">
                     <img src="images/Surface_vivante-6-ph-Thomas_Porchet-67_halle_aux_farines_segers_090217-w.jpg" alt="Paris Halle aux Farines - Surface vivante">
                     <div class="texteRealisation">
@@ -680,7 +680,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>ville-dense-ville-haute.php">
                     <img src="images/HVD-070421-cercle_densite-W.jpg" alt="VDVH">
                     <div class="texteRealisation">
@@ -691,7 +691,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>aventure.php">
                     <img src="images/ERCO-070621-Erco-Michelin-04.jpg" alt="Aventure">
                     <div class="texteRealisation">
@@ -713,7 +713,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition sculpture dessin">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>gonesse-ville-en-vues.php">
                     <img src="images/GVV-060226-MQ2-w.jpg" alt="GVV">
                     <div class="texteRealisation">
@@ -724,7 +724,7 @@ require_once('inc/header.index.inc.php');
                     </a>
                 </div>
 
-                <div class="realisation exposition">
+                <div class="realisation">
                     <a href="<?= RACINE_SITE ?>colportage-sacs.php">
                     <img src="images/col_sacs-193-Wirtz-w.jpg" alt="Colportage">
                     <div class="texteRealisation">

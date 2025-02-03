@@ -25,13 +25,6 @@
                 <nav>
                 <div id="menuRealisations">
                 <a href="<?= RACINE_SITE ?>index.php" class="menu <?= $realisations_active ?>">Réalisations</a>
-                <div id="filtres">
-                   <a href="#" class="sousMenu" id="filtreExposition">Expositions</a>
-                    <a href="#" class="sousMenu" id="filtreDessin">Dessins</a>
-                    <a href="#" class="sousMenu" id="filtreInstallation">Installations</a>
-                    <a href="#" class="sousMenu" id="filtreSculpture">Sculptures</a>
-                    <a href="#" class="sousMenu" id="filtreLivret">Livrets</a>                   
-                </div>
             </div>
                 <div id="imagier"><a href="<?= RACINE_SITE ?>imagier.php" class="menu <?= $imagier_active ?>">Imagier</a></div>
 
