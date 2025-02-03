@@ -14,7 +14,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Motif gravé sur le couvercle d'un écritoire</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>encre et gouache, 18x24 cm</p>
                 </div>
 
@@ -22,7 +22,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Lanterne à pétrole ou à huile</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>encre, 18x24 cm</p>
                 </div>
 
@@ -30,7 +30,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Conscience de chaisier</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>encre et acrylique, 18x24 cm</p>
                 </div>
 

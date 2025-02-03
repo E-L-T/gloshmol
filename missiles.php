@@ -21,7 +21,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Missile et cabane</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>Expososition Montfort intérieur, commissariat Stéphanie Brivois, chezMano architecture<br>PVC et bois laqué, H 3,10 m</p>
                 </div>
 
@@ -29,7 +29,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Human Missile</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>ML02, encre</p>
                 </div>
 
@@ -37,7 +37,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Ciel et papiers déchirés</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>acrylique, 18x24 cm, 50 exemplaires</p>
                 </div>
 

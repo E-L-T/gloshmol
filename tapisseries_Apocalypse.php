@@ -22,7 +22,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Fleurs, arbre</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>craies de cire sur papier bleu, 18x24 cm</p>
                 </div>
 
@@ -30,7 +30,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Tayaut</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>encre, 18x24 cm</p>
                 </div>
 
@@ -38,7 +38,7 @@ require_once('inc/header.realisation.inc.php');
                 <div class="vertical legendeTitre">
                     <p>Fleuve coulant du trône de Dieu</p>
                 </div>
-                <div class="legendeDetails">
+                <div class="vertical legendeDetails">
                     <p>encre 18x24 cm</p>
                 </div>
 
