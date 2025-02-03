@@ -11,7 +11,7 @@ require_once('inc/header.realisation.inc.php');
 ?>
             <div id ="mediasRealisation">
                 <div class="vertical"><img src="images/bonhomme_rose-peinture-LZ210321-3_trois_jambes-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Trois jambes. Peinture</p>
                 </div>
                 <div class="legendeDetails">
@@ -27,7 +27,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/bonhomme_rose-peinture-LZ210524-coupe_horizontale-ventre-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Coupe horizontale, un plan. Peinture</p>
                 </div>
                 <div class="legendeDetails">
@@ -35,7 +35,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/bonhomme_rose-peinture-LZ210524-couple-siamois_jambe_bras-assis-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Siamois</p>
                 </div>
                 <div class="legendeDetails">
@@ -43,7 +43,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/bonhomme_rose-dessin-LA09-kronos-manger_enfant-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Chronos</p>
                 </div>
                 <div class="legendeDetails">
@@ -51,7 +51,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/bonhomme_rose-dessin-LG32-manifestation_banderole_linge-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Manif. Dessin</p>
                 </div>
                 <div class="legendeDetails">
@@ -59,7 +59,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/bonhomme_rose-dessin-MD19-leche-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Lèche moi</p>
                 </div>
                 <div class="legendeDetails">
@@ -75,7 +75,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
                 
                 <div class="vertical"><img src="images/bonhomme_rose-dessin-MJ56-douche_sein_lait_maman-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Douche de lait</p>
                 </div>
                 <div class="legendeDetails">
@@ -83,7 +83,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
                 
                 <div class="vertical"><img src="images/bonhomme_rose-dessin-ML17-golden_shower-pisse-pipi-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Douche d'or</p>
                 </div>
                 <div class="legendeDetails">

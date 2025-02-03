@@ -11,7 +11,7 @@ require_once('inc/header.realisation.inc.php');
 ?>
             <div id ="mediasRealisation">
                 <div class="vertical"><img src="images/Gap_Queyras-MJ18-Gap-musee-Queyras-motif_boite-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Motif gravé sur le couvercle d'un écritoire</p>
                 </div>
                 <div class="legendeDetails">
@@ -19,7 +19,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/Gap_Queyras-MJ26-Gap-musee-Queyras-lanterne_huile_petrole-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Lanterne à pétrole ou à huile</p>
                 </div>
                 <div class="legendeDetails">
@@ -27,7 +27,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/Gap_Queyras-MJ34-Gap-musee-Queyras-conscience_chaisier-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Conscience de chaisier</p>
                 </div>
                 <div class="legendeDetails">

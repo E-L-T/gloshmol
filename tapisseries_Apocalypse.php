@@ -19,7 +19,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/tapisseries_Apocalypse-ME42-chateau_Angers-fleurs_arbres-vegetal-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Fleurs, arbre</p>
                 </div>
                 <div class="legendeDetails">
@@ -27,7 +27,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/tapisseries_Apocalypse-MF06-Angers-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Tayaut</p>
                 </div>
                 <div class="legendeDetails">
@@ -35,7 +35,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/tapisseries_Apocalypse-MF19-Angers-fleuve_coulant_trone_dieu-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Fleuve coulant du trône de Dieu</p>
                 </div>
                 <div class="legendeDetails">

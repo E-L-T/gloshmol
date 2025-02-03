@@ -75,7 +75,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-07-231115-gueuse-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Gueuse</p>
                 </div>
                 <div class="legendeDetails">
@@ -83,7 +83,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-08-231115-echelle-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Echelle</p>
                 </div>
                 <div class="legendeDetails">
@@ -91,7 +91,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-09-231115-missile-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Missile</p>
                 </div>
                 <div class="legendeDetails">
@@ -99,7 +99,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-10-231115-grand_masque-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Grand masque</p>
                 </div>
                 <div class="legendeDetails">
@@ -107,7 +107,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-11-231115-fellation-groupe-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Fellation, portes</p>
                 </div>
                 <div class="legendeDetails">
@@ -115,7 +115,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/ciel_papiers_dechires-galerie_Philippe_Valentin-12-231115-buste_plie_en_deux_portes-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Buste plié en deux, portes</p>
                 </div>
                 <div class="legendeDetails">

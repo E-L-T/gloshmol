@@ -11,7 +11,7 @@ require_once('inc/header.realisation.inc.php');
 ?>
             <div id ="mediasRealisation">
                 <div class="vertical"><img src="images/astelle-MB30-bonhomme_rose-sculpture-mi_bonhomme-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p><I>ça va? - MB30</I>, carton de l'exposition</p>
                 </div>
                 <div class="legendeDetails">
@@ -19,7 +19,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/astelle-220127-sculpture-janus-mi_homme_assemblage-H43xL45xP20-2-final-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>ça va? collection particulière</p>
                 </div>
                 <div class="legendeDetails">
@@ -35,7 +35,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/astelle-MB39-sculpture-animal_rose-roulant-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Jouet à roulettes - MB39</p>
                 </div>
                 <div class="legendeDetails">
@@ -43,7 +43,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/astelle-220402-sculpture-jouet_roulettes-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Jouet à roulettes</p>
                 </div>
                 <div class="legendeDetails">
@@ -51,7 +51,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/astelle-220402-sculpture_peinture-bouche_dent_peur-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>AAAAAAAHHHHHHHH</p>
                 </div>
                 <div class="legendeDetails">
@@ -59,7 +59,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/astelle-220612-sculpture_bois-18x24-U-pend-fragment-w.JPG" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Tissu - 18x24 cm</p>
                 </div>
                 <div class="legendeDetails">

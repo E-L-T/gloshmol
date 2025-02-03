@@ -11,21 +11,21 @@ require_once('inc/header.realisation.inc.php');
 ?>
             <div id ="mediasRealisation">
                 <div class="vertical"><img src="images/musee_armee-EX63-bombe avion-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Bombe d'avion</p>
                 </div>
                 <div class="legendeDetails">
                 </div>
 
                 <div class="vertical"><img src="images/musee_armee-EX66-masque gaz enfant-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Masque à gaz de bébé</p>
                 </div>
                 <div class="legendeDetails">
                 </div>
 
                 <div class="vertical"><img src="images/musee_armee-FA099-casque-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Casque</p>
                 </div>
                 <div class="legendeDetails">
@@ -48,7 +48,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/musee_armee-GE18-plan_relief-Conchée-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Plan relief de Conchée</p>
                 </div>
                 <div class="legendeDetails">
@@ -56,7 +56,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/musee_armee-GE46-costume-sapeur_génie-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Uniforme du sapeur</p>
                 </div>
                 <div class="legendeDetails">
@@ -64,7 +64,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/musee_armee-GE50-costume-cantinière-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Cantinière</p>
                 </div>
                 <div class="legendeDetails">

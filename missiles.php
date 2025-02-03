@@ -18,7 +18,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/missile-240922-montfort_interieur-missile-Julie_Gouet-2-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Missile et cabane</p>
                 </div>
                 <div class="legendeDetails">
@@ -26,7 +26,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/missile-ML02-human_missile-deguisement.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Human Missile</p>
                 </div>
                 <div class="legendeDetails">
@@ -34,7 +34,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/missiles-MZ230224-papier_dechire-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Ciel et papiers déchirés</p>
                 </div>
                 <div class="legendeDetails">
@@ -42,7 +42,7 @@ require_once('inc/header.realisation.inc.php');
                 </div>
 
                 <div class="vertical"><img src="images/Missile-230212-colportage-Philippe_Valentin-galerie-1-w.jpg" alt=""></div>
-                <div class="legendeTitre">
+                <div class="vertical legendeTitre">
                     <p>Chez Philippe Valentin</p>
                 </div>
                 <div class="legendeDetails">
