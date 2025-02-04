@@ -931,7 +931,7 @@ footer span {
     .blocImagier
     {
         width: 90vw;
-        margin-left: 5vw;
+      	/* margin-left: 5vw; */
         margin-right: 5vw;
         
     }
@@ -969,7 +969,7 @@ footer span {
 
         .blocImagier{
             width: 50vw;
-            margin-left: 25vw;
+            /* margin-left: 25vw; */
             margin-right: 25vw;
         }
 
